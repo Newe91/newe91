@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Determine best-fit topology</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header>
+
+        <!-- side bar -->
+        <div class="side-bar">
+
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 3</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+            <div>
+                <h1><span class="samp">Unit of Competence:</samp> Determine best-fit topology</h1>
+                <hr style="border:1px solid var(--orange);"><br>
+                
+                    <ul class='bk shortcutmenu'>
+                        <li><a  href='#first'><span class="samp">Unit 1:</span> Introduction to computer network</a></li> 
+                        <li><a href='#second'><span class="samp">Unit 2:</span> Determine user needs </a></li>
+                        <li><a href='#three'><span class="samp">Unit 3:</span> Develop best topology</a></li>
+                        <li><a href='#Video-tutorials'><span class="samp"></span> Video-tutorials</a></li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class="note"id='first'>
+            <h2>Unit 1: Introduction to computer network</h2>
+            <h3>Definition of computer network</h3>
+            <p>Network is a group of connected computers that allows people to share resources.</p>
+
+            <h3>Advantage of a computer network</h3>
+            <p>
+                <ul class="kb">
+                    <li>Sharing hardware such as printer</li>
+                    <li>File sharing</li>
+                    <li>Increased storage capacity</li>
+                    <li>Centralized administration and support</li>
+                    <li>Increased cost efficiency and etc...</li>
+                </ul>
+            </p>
+
+            <h3>Disadvantage of a computer network</h3>
+            <p>
+                <ul class="kb">
+                    <li>Security issue</li>
+                    <li>Rapid spread of computer virus</li>
+                    <li>Expensive setup</li>
+                    <li>Dependency on the main servers and etc...</li>
+                </ul>
+            </p>
+
+            <h3>Server and client and others terms</h3>
+            <p><b>Server</b> provide shared resources to network users.<br>
+                <b>Clients</b> access shared network resources provided by a server.<br>
+                <b>Resources</b> is any service or device, such as files, printers, or other items, made available for use by
+                members of the network.<br>
+                <b>Media</b> is wires that make the physical connections.<br>
+            </p>
+
+            <h3>Type of network based on the area coverage of the network</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Local Area Network(LAN)</b> used to interconnect distributed communities of computers located within
+                        a single building.</li>
+                    <li><b>Metropolitan area Network(MAN)</b> a larger network that usually spans several buildings in the same city.</li>
+                    <li><b>Wide area Network(WAN)</b> it's cover larger area best example is internet.</li>
+                </ul>
+            </p>
+
+            <h3>Types of network based on configuration</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Peer-to-Peer network</b>  is also <b>called Workgroup.</b> There are no dedicated servers and there is no hierarchy among the computers. All
+                        the computers are equal and therefore are known as peers.
+                        <br><b>Advantages of peer to peer network</b>
+                        <ul class="kb">
+                            <li>Easy to install and configure</li>
+                            <li>The cost of installation and operation is less</li>
+                            <li>A full time network administrator is not required</li>
+                        </ul>
+                        <b>Disadvantages of peer to peer network</b>
+                        <ul class="kb">
+                            <li>Shared resources can be accessed by everyone</li>
+                            <li>Backup has to be performed on each computer separately</li>
+                            <li>No centralized security</li>
+                        </ul>
+                    </li>
+                    <li><b>Client/server network</b> is also
+                        <b>called Domain.</b> There are dedicated servers and there is hierarchy among the computers.
+                        <br><b>Advantages of server based network</b>
+                        <ul class="kb">
+                            <li>Centralized resources</li>
+                            <li>Efficient</li>
+                            <li>Security</li>
+                            <li>Scalability</li>
+                        </ul>
+                        <b>Disadvantages of server based network</b>
+                        <ul class="kb">
+                            <li>If the server goes down, it takes part or the whole network with it</li>
+                            <li>It is more expensive to install</li>
+                            <li>Needs to be maintained by staff with high IT skills</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Network topology</h3>
+            <p>Network topology refers to the arrangement of
+                computers, cables and other components on the network.</p>
+            
+            <h3>Category of topology</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Logical:</b> describes the way network data flows through the physical components.</li>
+                    <li><b>Physical:</b> describes how the physical components on a network are connected.</li>
+                </ul>
+            </p>
+
+            <h3>Common types of topology</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Bus topology</b>  is often referred to as a <b>linear bus</b> because the computers are connected in a straight line. 
+                        <br><b>Advantage of bus topology</b>
+                        <ul class="kb">
+                            <li>A bus network topology is the cheapest of all topologies</li>
+                            <li>No special configuration is required</li>
+                            <li>It is easy to install and no special equipment is needed for installation</li>
+                            <li>It needs less cable length than do other topologies</li>
+                                
+                        </ul>
+                        <b>Disadvantage of bus topology</b>
+                        <ul class="kb">
+                            <li>A break in cable or a missing terminator can bring down the entire network</li>
+                            <li>It is not possible to add or remove computers without disrupting the network</li>
+                            <li>It is difficult to troubleshoot and administer</li>
+                            <li>Adding of more computers degrades performance</li>
+                                
+                        </ul>
+                    </li>
+                    <li><b>Ring topology</b> connects computers on a single circle of cable.
+                        <br><b>Advantage of ring topology</b>
+                        <ul class="kb">
+                            <li>Fast Execution</li>
+                            <li>Better administration</li>
+                            <li>Easy to install</li>
+                                
+                        </ul>
+                        <b>Disadvantage of ring topology</b>
+                        <ul class="kb">
+                            <li>Quite expensive</li>
+                            <li>Slow activity rate</li>
+                            <li>Unprotected use</li>
+                            <li>Difficult to troubleshoot</li>
+                            <li>Break in a cable or fault computer can bring slow down entire network</li>
+                                
+                        </ul>
+                    </li>
+                    <li><b>Star topology</b> computer are connected to a centralized component called a
+                        hub or switch.<br>
+                        <b>Advantage of star topology</b>
+                        <ul class="kb">
+                            <li>Easy to install </li>
+                            <li>No disruptions to the network when adding and removing devices</li>
+                            <li>Easy to detect faults and to remove parts</li>
+                                
+                        </ul>
+                        <b>Disadvantage of star topology</b>
+                        <ul class="kb">
+                            <li>If the centralized point fails the network fails</li>
+                            <li>Requires more cable length than a linear topology</li>
+                            <li>More expensive than linear bus topologies because of the cost of the hubs</li>
+                        </ul>
+                    </li>
+                    <li><b>Mesh topology</b> offers superior redundancy and reliability. In a mesh topology, each computer is
+                        connected to every other computer by separate cabling.
+                        <b>Advantage of mesh topology</b>
+                        <ul class="kb">
+                            <li>Redundancy and reliability</li>
+                            <li>A mesh network is highly reliable because of redundant multiple paths between computers</li>
+                            <li>The failure of a single computer or a cable fault does not affect network operations</li>
+                            <li>Computers can be added or removed without affecting the network</li>
+                        </ul>
+                        <b>Disadvantage of mesh topology</b>
+                        <ul class="kb">
+                            <li>Uses a lot of cabling</li>
+                            <li>It is difficult to install and troubleshoot</li>
+                            <li>It is very expensive because of the length of cable required to make multiple redundant connections</li>
+                            <li>Only a limited number of computers can be connected in a mesh topology</li>
+                        </ul>
+                    </li>
+                    <li><b>Hybrid topology</b> it is a combination of two or more standard topologies for example star bus.
+                        <br><b>Advantages of hybrid topology</b>
+                        <ul class="kb">
+                            <li>Reliable to use</li>
+                            <li>Any topology can be combined to make a new network</li>
+                            <li>Scalable and very effective</li>
+                        </ul>
+                        <b>Disadvantages of hybrid topology</b>
+                        <ul class="kb">
+                            <li>Costly very expensive</li>
+                            <li>Difficult to install</li>
+                            <li>Occur cable failure</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Network transmission media</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Guided transmission media</b> data transmission is through wired system.</li>
+                    <li><b>Unguided transmission media</b> data transmission through wireless system.
+                        <br><b>Types of wireless system</b>
+                        <ul class="kb">
+                            <li>Infrared transmission</li>
+                            <li>Laser transmission</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Commonly types of cables</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Twisted pair</b> surrounded by insulation, a braided metal
+                        shielding and an outer cover.<br><b>There are two types of coaxial cable:-</b>
+                        <ul class="kb">
+                            <li>Thin(thinnet) cable</li>
+                            <li>Thick(thicknet) cable</li>
+                        </ul>
+                    </li>
+                    <li><b>Coaxial cable</b> consists of two insulated strands of copper wire twisted around each
+                        other.<br><b>Two types of twisted pair cable:-</b>
+                        <ul class="kb">
+                            <li>Shielded twisted pair cable(STP)</li>
+                            <li>Unshielded twisted pair cable(UTP)<br>
+                                <b>There are five categories of unshielded twisted pair cable(UTP):-</b>
+                                <ul class="kb">
+                                    <li>Category 1(Cat1) This refers to traditional UTP telephone cable that can carry voice but not data
+                                        transmissions. Most telephone cable prior to 1983 was Category 1 cable.</li>
+                                    <li>Category 2(Cat2) This category certifies UTP cable for data transmissions up to 4 megabits per second
+                                        (Mbps). It consists of four twisted pairs of copper wire.</li>
+                                    <li>Category 3(Cat3) This category certifies UTP cable for data transmissions up to 16 Mbps. It consists of
+                                        four twisted pairs of copper wire with three twists per foot.</li>
+                                    <li>Category 4(Cat4) This category certifies UTP cable for data transmissions up to 20 Mbps. It consists of
+                                        four twisted pairs of copper wire.</li>
+                                    <li>Category 5(Cat5) This category certifies UTP cable for data transmissions up to 100 Mbps. It consists of
+                                        four twisted pairs of copper wire.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Optical fiber</b> optical fibers carry digital data signals in the form of modulated pulses of light. It was high speed cable.</li>
+                </ul>
+            </p>
+
+            <h3>Consideration for cable selection</h3>
+            <p>
+                <ul class="kb">
+                    <li>Installation logistics</li>
+                    <li>Shielding</li>
+                    <li>Crosstalk</li>
+                    <li>Transmission rates</li>
+                    <li>Cost and etc...</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note"id='second'>
+            <h2>Unit 2: Determine user needs</h2>
+            <h3>Mode of transmission</h3>
+            <p>The way in which data is transmitted from one place to another is <b>called data transmission mode.</b></p>
+            <h3>Types of mode of transmission</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Simplex mode</b> data is sent in one
+                        direction only from sender to receiver. Senders
+                        cannot even be sure that the data is received. <b>Examples of simplex transmission</b> are radios, walkie-talkies and television. </li>
+                    <li><b>Half-Duplex mode</b> the communication can take place in both directions but only in one direction at a
+                        time. <b>Example</b> internet browser.</li>
+                    <li><b>Full-Duplex mode</b> the communication can take place in both directions simultaneously. <b>Example</b> telephone.</li>
+                </ul>
+            </p>
+
+            <h3>Parallel vs serial transmission</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Parallel transmission</b>  bits of data flow concurrently through separate communication lines. parallel transmission is
+                        commonly used to transfer data from computer to printer.</li>
+                    <li><b>Serial transmission</b> bits of data flow in sequential order through single communication line. Serial transmission is
+                        typically slower than parallel transmission because data is sent sequentially in a bit-by-bit fashion. Serial
+                        mouse uses serial transmission mode in computer.</li>
+                </ul>
+            </p>
+
+            <h3>Data transfer methods</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Circuit switching</b> it is not broken up.
+                        <br><b>Advantages of circuit switching</b>
+                        <ul class="kb">
+                            <li>Circuit is dedicated to the call no interference no sharing</li>
+                            <li>Guaranteed the full bandwidth for the duration of the call</li>
+                            <li>Guaranteed quality of service</li>
+                        </ul>
+                        <b>Disadvantages of circuit switching</b>
+                        <ul class="kb">
+                            <li>The equipment may be unused for a lot of the call, if no data is being sent,
+                                the dedicated line still remains open</li>
+                            <li>Takes a relatively long time to set up the circuit</li>
+                            <li>During a disaster the network may become unavailable.</li>
+                        </ul>
+                    </li>
+                    <li><b>Packet switching</b> the message gets broken into small data packets.
+                        <br><b>Advantages of packet switching</b>
+                        <ul class="kb">
+                            <li>Security</li>
+                            <li>Bandwidth used to full potential</li>
+                            <li>Devices of different speeds can communicate</li>
+                            <li>Not affected by line failure</li>
+                            <li>Do not have to wait for a direct connection to become available</li>
+                            <li>During a disaster, when the public telephone network might stop working, emails and texts can still be sent via packet switching</li>
+                        </ul>
+                        <b>Disadvantages of packet switching</b>
+                        <ul class="kb">
+                            <li>Under heavy use there can be a delay</li>
+                            <li>Data packets can get lost or become corrupted</li>
+                            <li>Protocols are needed for a reliable transfer</li>
+                            <li>Not so good for some types data streams e.g real-time video streams can lose frames
+                                due to the way packets arrive out of sequence.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Synchronous and asynchronous data transmission</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Synchronous data transmission</b> the sender and receiver operate on the same clock signal. This means that both devices share the same time reference, which allows them to transmit and receive data simultaneously.</li>
+                    <li><b>Asynchronous data transmission</b> the sender and receiver do not share a common clock signal. Instead, data is transmitted in separate packets or frames, with each packet containing start and stop bits that indicate the beginning and end of the data.</li>
+                </ul>
+            </p>
+
+            <h3>The open system interconnection(OSI) reference model</h3>
+            <p>The OSI reference model
+                represents the seven layers of the process by which data is packaged and transmitted from a sending
+                application through the physical wires to the receiving application.</p>
+
+            <h3>The seven layers of the OSI reference model </h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Application layer</b> this layer relates to the
+                        services that directly support user applications such as software for internet explorer and email.</li>
+                    <li><b>Data link layer</b> makes to application to open, use and close a connection.</li>
+                    <li><b>Network layer</b> responsible for the delivery of packets from the source host to the destination host based on their IP addresses.</li>
+                    <li><b>Transport layer</b> responsible for end-to-end communication between applications running on different devices.</li>
+                    <li><b>Session layer</b> responsible for establishing, maintaining and terminating connections between two devices.</li>
+                    <li><b>Presentation layer</b> responsible for data formatting, encrypting and compressing data before it is sent across the network. </li>
+                    <li><b>Physical layer</b> responsible for transmitting raw data bits over a physical medium.</li>
+                </ul>
+            </p>
+
+            <h3>Protocol</h3>
+            <p>Protocol a set of rule and procedures which govern communication between computers.</p>
+            <h3>Common types of protocols</h3>
+            <p><ul class="kb">
+                <li><b>User Datagram Protocol(UDP)</b> connectionless protocol</li>
+                <li><b>Transmission control protocol(TCP)</b> connection based protocol</li>
+                <li><b>Internet Protocol(IP)</b> is a packet-switched protocol that performs addressing and route selection.</li>
+                <li><b>IP(Internet Protocol)</b> an address is a unique identifier assigned to each device connected to a network that uses the Internet Protocol for communication.</li>
+                <li><b>Simple Mail Transfer Protocol(SMTP)</b> used to send and receive e-mail.</li>
+                <li><b>Post Office Protocol(POP3)</b> 3 stand for version 3 ,retrieves emails from a server to a client device.</li>
+                <li><b>Internet Message Access Protocol(IMAP)</b> is a protocol used for accessing email messages on a mail server by an email client.</li>
+                <li><b>File Transfer Protocol(FTP)</b> is a protocol used for transferring files between computers on a network.</li>
+                <li><b>Simple Network Management Protocol(SNMP)</b> used for network management.</li>
+                <li><b>Hypertext Transfer Protocol(HTTP)</b> is the protocol used for transmitting hypertext requests and information between servers and browsers.</li>
+                <li><b>Hypertext Transfer Protocol Secure(HTTPS)</b> is a secure version of HTTP.</li>
+                <li><b>Internet Control Message Protocol(ICMP)</b> used by IP and higher-level protocols to send and receive status reports about information being
+                    transmitted.</li>
+                <li><b>Domain Name System(DNS)</b> translates domain names into IP addresses to locate resources on the internet.</li>
+                <li><b>Dynamic Host Configuration Protocol(DHCP)</b> assigns IP addresses dynamically to devices on a network.</li>
+                <li><b>Address Resolution Protocol(ARP)</b> determines hardware address(MAC addresses) that correspond to an IP address</li>
+                <li><b>Reverse Address Resolution Protocol(RARP)</b> provides an IP number to a
+                    requesting hardware address.</li>
+                <li><b>Telnet</b> is a network protocol that allows users to connect to remote computers and access their resources over a network and etc...</li>
+            </ul></p>
+
+            <h3>Transmission control protocol/internet protocol(TCP/IP)</h3>
+            <p>The TCP/IP protocol does not exactly match the OSI reference model. Instead of seven layers, it uses only
+                four.<br> <ul class="listno">
+                    <li><b>Network interface layer</b> corresponding to the physical and data-link layers of the OSI reference model.</li>
+                    <li><b>Internet layer</b> corresponding  to the network layer of the OSI reference mode.</li>
+                    <li><b>Transport layer</b> corresponding to the transport layer of the OSI reference mode.</li>
+                    <li><b>Application layer</b> Corresponding to the session, presentation and application layers of the OSI reference model.</li>
+                </ul></p>
+
+        </section>
+
+        <section class="note"id='three'>
+            <h2>Unit 3: Develop best topology</h2>
+            <h3>Connectivity devices</h3>
+            <h3>Network interface cards(NIC)</h3>
+            <p>Also called network adapter receive electrical signals and convert them into data. Network interface cards(NIC) connectivity device is mandatory in network.</p>
+
+            <h3>Switch</h3>
+            <p>A switch is a network device that connects devices together on a computer network by using packet switching to receive, process and forward data to the destination device.</p>
+
+            <h3>Hub</h3>
+            <p>Hub is used as the central hardware component in a star topology.</p>
+            
+            <h3>Repeater</h3>
+            <p>Repeater use for extend the length to which the signal can be transmitted over the same network. 
+            </p>
+
+            <h3>Bridges</h3>
+            <p>Bridge in computer network is a smart device that is used for creating one bigger network by connecting smaller subnetworks.</p>
+
+            <h3>Router</h3>
+            <p>Router is a device  that connect two or  more packet switch network or subnetwork.</p>
+
+            <h3>Gateway</h3>
+            <p>Gateway enable communication between different architectures and environments.</p>
+
+            <h3>Media Access Control(MAC) address</h3>
+            <p>MAC addresses are the physical addresses of
+                network devices.</p>
+
+            <h3>IP address</h3>
+            <p>An IP address consists of two parts a network address that identifies the network and a host address that
+                identifies.</p>
+            <h3>Types of IP address</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Internet protocol version 4(IPV4)</b> source and destination addresses are 32 bits (4 bytes)
+                        in length.</li>
+                    <li><b>Internet protocol Version 6(IPV6)</b> source and destination addresses are 128 bits (16
+                        bytes) in length.</li>
+                </ul>
+            </p>
+
+            <h3>Network classes</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Class A network</b><br>
+                        <ul class="kb">
+                            <li>Have an 8-bit network ID and a 24-bit host ID</li>
+                            <li>Allowing for a large number of hosts over 16 million on each network</li>
+                            <li>This class will only support 126 networks and each network can support 16,777,214 hosts</li>
+                            <li>The possible ranges 1.0.0.0 - 127.255.255.255</li>
+                            <li>The default subnet mask for Class A networks is 255.0.0.0</li>
+                        </ul>
+                    </li>
+                    <li><b>Class B network</b><br>
+                        <ul class="kb">
+                            <li>Class B networks have a 16-bit network ID and a 16-bit host ID </li>
+                            <li>Allowing for a moderate number of hosts over 65,000 on each network</li>
+                            <li>This class will support 16,384 networks and limited to 65,534 hosts per network</li>
+                            <li>The possible ranges 128.0.0.0 - 191.255.255.255</li>
+                            <li>The default subnet mask for Class B networks is 255.255.0.0</li>
+                        </ul>
+                    </li>
+                    <li><b>Class C network</b><br>
+                        <ul class="kb">
+                            <li>Class C networks have a 24-bit network ID and an 8-bit host ID</li>
+                            <li>Allowing for a small number of hosts up to 254 on each network</li>
+                            <li>The possible ranges 192.0.0.0 - 223.255.255.255</li>
+                            <li>The default subnet mask for Class C networks is 255.255.255.0</li>
+                        </ul>
+                    </li>
+                    <li><b>Class D network</b><br>
+                        <ul class="kb">
+                            <li>Class D networks are used for multicasting which is a method of sending data to multiple destinations simultaneously</li>
+                            <li>There can be up to 268 million multicast groups in a Class D network</li>
+                            <li>The possible ranges 224.0.0.0 - 255.255.255.254</li>
+                        </ul>
+                    </li>
+                    <li><b>Class E network</b><br>
+                        <ul class="kb">
+                            <li>Class E networks are reserved for future use and are not currently in use</li>
+                            <li>The possible ranges 224.0.0.0 - 255.255.255.254</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <table>
+                <tr>
+                    <th>Network class</th>
+                    <th>Octet</th>
+                    <th>Default subnet mask</th>
+                </tr>
+                <tr>
+                    <td>Class A</td>
+                    <td>1 - 126</td>
+                    <td>255.0.0.0</td>
+                </tr>
+                <tr>
+                    <td>Class B</td>
+                    <td>128 - 190</td>
+                    <td>255.255.0.0</td>
+                </tr>
+                <tr>
+                    <td>Class C</td>
+                    <td>191 - 223</td>
+                    <td>255.255.255.0</td>
+                </tr>
+                <tr>
+                    <td>Class D</td>
+                    <td>224 - 239</td>
+                </tr>
+                <tr>
+                    <td>Class E</td>
+                    <td>240 - 254</td>
+                </tr>
+            </table>
+
+            <h3>Public and private IP address</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Private IP address</b> are typically used on local networks including home, school and business LANs. Private
+                        networks are non routable. Devices with private IP addresses cannot connect directly to the Internet.</li>
+                    <li><b>Public IP address</b> for use on the Internet or other wide area network (WAN).</li>
+                </ul>
+            </p>
+
+            <h3>Static and Dynamic IP address</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Static IP address</b><br>
+                        <ul class="kb">
+                            <li>A static IP address is a permanent unchanging IP address assigned to a specific device.
+                            <li>This type of IP address is manually configured and does not change unless it is manually changed by the user or network administrator.</li>
+                        </ul>
+                    </li>
+                    <li><b>Dynamic IP address</b><br>
+                        <ul class="kb">
+                            <li>A dynamic IP address is a temporary IP address assigned by a Dynamic Host Configuration Protocol (DHCP) server</li>
+                            <li>This type of IP address changes each time the device connects to the network or after a certain period of time.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Subnet mask</h3>
+            <p>A subnet mask or sub network mask is a 32 bit number which is used to identify which portion of the
+                IP address identifies the network portion and which part indicates the host part or portion. </p>
+
+            <h3>Subnneting</h3>
+            <p>The process of breaking down an IP network into smaller sub-networks called <b>subnets.</b>
+                <b>Subnetting</b> a technique that allows a network administrator to divide one physical network into smaller
+                logical network.</p>
+
+            <table>
+                <tr>
+                    <th>Notations/CIDR</th>
+                    <th>Bit</th>
+                    <th>Subnets</td>
+                    <th>Host</th>
+                </tr>
+                <tr>
+                    <td>/24</td>
+                    <td>2<sup>8</sup></td>
+                    <td>256</td>
+                    <td>254</td>
+                </tr>
+                <tr>
+                    <td>/25</td>
+                    <td>2<sup>7</sup></td>
+                    <td>128</td>
+                    <td>126</td>
+                </tr>
+                <tr>
+                    <td>/26</td>
+                    <td>2<sup>6</sup></td>
+                    <td>64</td>
+                    <td>62</td>
+                </tr>
+                <tr>
+                    <td>/27</td>
+                    <td>2<sup>5</sup></td>
+                    <td>32</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>/28</td>
+                    <td>2<sup>4</sup></td>
+                    <td>16</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>/29</td>
+                    <td>2<sup>3</sup></td>
+                    <td>8</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>/30</td>
+                    <td>2<sup>2</sup></td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+            </table>
+
+            <br><br>
+            <p><b>Example:-</b> given IP 192.168.4.0/24; A 74 host, B 52 host, C 28 host. Find notations/CIDR, Bit, Total possible hosts, Network ID address,Network address range, Broadcast address and subnet mask?</p>
+            <table class='desktop'>
+                <tr>
+                    <td>Name</td>
+                    <td>Hosts</td>
+                    <td>Notations/CIDR</td>
+                    <td>Bit</td>
+                    <td>Total possible hosts</td>
+                    <td>Network ID</td>
+                    <td>Network address range</td>
+                    <td>Broadcast address</td>
+                    <td>Subnet mask</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>74</td>
+                    <td>/25</td>
+                    <td>2<sup>7</sup></td>
+                    <td>126</td>
+                    <td>192.168.4.0</td>
+                    <td>192.168.1.4 - 126</td>
+                    <td>192.168.1.127</td>
+                    <td>255.255.55.128</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>52</td>
+                    <td>/26</td>
+                    <td>2<sup>6</sup></td>
+                    <td>62</td>
+                    <td>192.168.1.128</td>
+                    <td>192.168.1.129 - 190</td>
+                    <td>192.168.1.191</td>
+                    <td>255.255.55.192</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>28</td>
+                    <td>/27</td>
+                    <td>2<sup>5</sup></td>
+                    <td>30</td>
+                    <td>192.168.1.192</td>
+                    <td>192.168.1.193 - 222</td>
+                    <td>192.168.1.223</td>
+                    <td>255.255.55.224</td>
+                </tr>
+            </table>
+
+            <table class="mobile">
+                <tr>
+                    <th>Name</th>
+                    <th>A</td>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                <tr>
+                    <td>Hosts</td>
+                    <td>74</td>
+                    <td>52</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Notations/CIDR</td>
+                    <td>/25</td>
+                    <td>/26</td>
+                    <td>/27</td>
+                </tr>
+                <tr>
+                    <td>Bit</td>
+                    <td>2<sup>7</sup></td>
+                    <td>2<sup>6</sup></td>
+                    <td>2<sup>5</sup></td>
+                </tr>
+                <tr>
+                    <td>Total possible hosts</td>
+                    <td>126</td>
+                    <td>62</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Network ID address</td>
+                    <td>192.168.4.0</td>
+                    <td>192.168.1.128</td>
+                    <td>192.168.1.192</td>
+                </tr>
+                <tr>
+                    <td>Network address range</td>
+                    <td>192.168.1.4 - 126</td>
+                    <td>192.168.1.129 - 190</td>
+                    <td>192.168.1.193 - 222</td>
+                </tr>
+                <tr>
+                    <td>Broadcast address</td>
+                    <td>192.168.1.127</td>
+                    <td>192.168.1.191</td>
+                    <td>192.168.1.223</td>
+                </tr>
+                <tr>
+                    <td>Subnet mask</td>
+                    <td>255.255.55.128</td>
+                    <td>255.255.55.192</td>
+                    <td>255.255.55.224</td>
+                </tr>
+            </table>
+
+            <ul class="listno verysmall">
+                <li><b>A</b><br>
+                    <ul class="kb">
+                        <li>74 hosts</li>
+                        <li>Notations/CIDR /25</li>
+                        <li>Bit 2<sup>7</sup></li>
+                        <li>Total possible hosts 126</li>
+                        <li>Network ID address 192.168.4.0</li>
+                        <li>Network address range 192.168.1.4 - 192.168.1.126</li>
+                        <li>192.168.1.127</li>
+                        <li>255.255.55.128</li>
+                    </ul>
+                </li>
+                <li><b>B</b><br>
+                    <ul class="kb">
+                        <li>52 hosts</li>
+                        <li>Notations/CIDR /26</li>
+                        <li>Bit 2<sup>6</sup></li>
+                        <li>Total possible hosts 62</li>
+                        <li>Network ID address 192.168.1.128</li>
+                        <li>Network address range 192.168.1.129 - 192.168.1.190</li>
+                        <li>192.168.1.191</li>
+                        <li>255.255.55.192</li>
+                    </ul>
+                </li>
+                <li><b>C</b><br>
+                    <ul class="kb">
+                        <li>28 hosts</li>
+                        <li>Notations/CIDR /27</li>
+                        <li>Bit 2<sup>5</sup></li>
+                        <li>Total possible hosts 30</li>
+                        <li>Network ID address 192.168.1.192</li>
+                        <li>Network address range 192.168.1.193 - 192.168.1.222</li>
+                        <li>192.168.1.223</li>
+                        <li>255.255.55.224</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">Video tutorial</h2>
+            <div class="box-container video">
+                <a class="box"href='https://youtu.be/mpFWIZ318eQ?si=-AM514c8CmNfbx5O'target= "">
+                    <div class="video-content">
+                        <p>
+                            Types of topology
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box"href='https://youtu.be/vv4y_uOneC0?si=BvkUtlFSz8ZwR3DF'target= "">
+                    <div class="video-content">
+                        <p>
+                            Open System Interconnection Mode
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box"href='https://youtu.be/bgamrwBxejc?si=XzBlAF5YvmgPl9Ka'target= "">
+                    <div class="video-content">
+                        <p>
+                            Understanding CIDR notation
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box"href='https://youtu.be/RYmt_aSvkxE?si=K_H90NBXkUTeDwlG'target= "">
+                    <div class="video-content">
+                        <p>
+                            Calculating subnets,broadcast,first host,last host,network address,subnet mask
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- <section class="note" id="last">
+            <h2 class="heading">Question and answer</h2>
+
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../../images/Question and answers/best topology cover.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../../images/Question and answers/access and use internet first.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../../images/Question and answers/access and use internet second.jpg" style="width:100%">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(1)" alt="Question and Answer">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(2)" alt="Unit 1: Introduction to the internet">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(3)" alt="Unit 1: Introduction to the internet">
+                    </div>
+                </div>  
+            </div>
+        </section> -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

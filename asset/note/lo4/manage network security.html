@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Manage network security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header>
+
+        <!-- side bar -->
+        <div class="side-bar">
+
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 4</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+                <h1><span class="samp">Unit of Competence:</samp> Manage network security</h1>
+                <hr style="border:1px solid var(--orange);"><br>
+                    <ul class='bk shortcutmenu'>
+                        <li><a  href='#first'><span class="samp">Unit 1:</span> Define a process for design security</a></li> 
+                        <li><a href='#second'><span class="samp">Unit 2:</span> Threats to network security </a></li>
+                        <li><a href='#three'><span class="samp">Unit 3:</span> Analyze security risks</a></li>
+                        <li><a href='#four'><span class="samp">Unit 4:</span> Create a security design</a></li>
+                        <li><a href='#five'><span class="samp">Unit 5:</span> Design and implement response to security incidents</a></li>
+                        <li><a href='#Video-tutorials'><span class="samp"></span> Video-tutorials</a></li>
+                    </ul>
+        </section>
+
+        <section class="note"id='first'>
+            <h2>Unit 1: Define a process for design security</h2>
+            <h3>Introduction network security design</h3>
+            <p><b>Network security design is a strategy approach to creating a secure network infrastructure.</b>
+                It involves planning, implementing and managing various security measure  to protect data, system and communication
+                within a network.<br><b> Network security design is an ongoing process</b> that requires regular review and adaptation to address emerging threats and changes
+                in the organizational landscape. By adapting a comprehensive and proactive approach, organizations can create a robust network security framework to safeguard their digital assets. 
+                <br> 
+                <b>Key considerations in network security design:-</b>
+                <ul class="listno">
+                    <li><b>Risk assessment</b> Identify and evaluate potential risks and threats to the 
+                    network. This include understanding the value of asset ,potential vulnerabilities and the like hood of various security incidents.</li>
+                    <li><b>Security goals and objectives</b> define clear security goal and objectives aligned with organizational
+                        overall business objectives. This include confidentiality, integrity, availability and compliance with industry regulations.</li>
+                    <li><b>Defense in depth strategy</b> implement multiple layers of security controls to create a defense in depth strategy.
+                        This include combination  of technologies, policies and procedures to mitigate risks at various levels.
+                    </li>
+                    <li><b>Segmentation</b> divide the network into segments to contain and isolate potential security incident.
+                        Segmentation helps prevent lateral movement of attackers within  the network and limits the impact fo security breaches.
+                    </li>
+                    <li><b>Access controls</b> Enforce strong access controls by implementing authentication and authorization mechanisms.
+                        This include user access policies, role based access control(RBAC) and least privilege principles.
+                    </li>
+                    <li><b>Data encryption</b> use encryption protocols to protect sensitive data during transmission and storage.
+                        This crucial, especially  for data traversing public networks or stored in the cloud.
+                    </li>
+                    <li><b>Firewall configuration</b> Deploy firewalls strategically to control and monitor incoming and outgoing network traffic.
+                        Consider both hardware and software firewalls to provide a comprehensive defense against unauthorized access.
+                    </li>
+                    <li><b>Intrusion detection and prevention systems(IDPS)</b> Integrate IDPS to detect and respond to potential security incidents in real time.
+                        There system can analyze network traffic, identify anomalies and take proactive measure to prevent or mitigate threats.
+                    </li>
+                    <li><b>Virtual private networks(VPNS)</b> Implement VPNs to secure remote access and communication over untrusted networks.
+                        This is essential for protecting data as it travels between locations and the load network.
+                    </li>
+                    <li><b>Security auditing and monitoring</b> establish continuous monitoring and auditing processes to detect and security
+                        events promptly. This include the analysis of logs, alerts and other indicators of compromise.
+                    </li>
+                    <li><b>Incident response plan</b> develop a well defined incident response plan that outlines the steps to be taken in the event of a security incident.
+                        This include roles and responsibilities ,communication plan and strategies for recovery.
+                    </li>
+                    <li><b>Vendor and third party security</b> evaluate and ensure the security practices of third party vendors and partners.
+                        This is crucial to prevent security weaknesses introduced through external connections.
+                    </li>
+                    <li><b>User education and awareness</b> educate users about security best practices and potential threats.
+                        A well informed user base can serve as an additional layer of defense against social engineering and other user centric attacks.
+                    </li>
+                    <li><b>Regular security assessments</b> conduct regular security assessment, including penetration testing and scanning, to identify and address potential weaknesses in the network.</li>
+                    <li><b>Scalability and flexibility</b> design the network security infrastructure to be scalable and adaptable to evolving threats and business requirements.</li>
+                </ul>
+            </p>
+
+
+            <h3>Network security phase</h3>
+            <p><b>Key phase as network security design</b>
+                <ul class="listno">
+                    <li><b>Requirements analysis</b> understanding the organization business objectives, regulatory requirements and the value of assets  requiring protection.
+                        <ul class="kb">
+                            <b>Activity perform in requirements analysis:-</b>
+                            <li>Conduct a risk assessment to identify potential threats and vulnerabilities</li>
+                            <li>Define security goal and objectives</li>
+                            <li>Gather requirements from stakeholders, include user and managers</li>
+                        </ul>
+                    </li>
+                    <li><b>Design planning</b> develop a comprehensive plan for the network security design.
+                        <ul class="kb">
+                            <b>Activity perform in design planning:-</b>
+                            <li>Define the scope of network</li>
+                            <li>Establish the security architecture including defense-in-depth strategies</li>
+                            <li>Plan for network segmentation and access control</li>
+                            <li>Consider scalability and flexibility in the design</li>
+                        </ul>
+                    </li>
+                    <li><b>Topology design</b> define the physical and logical layout of the network.
+                        <ul class="kb">
+                            <b>Activity perform in topology design:-</b>
+                            <li>Design the network topology to align with security goals</li>
+                            <li>Identify critical assets an their placement within the network</li>
+                            <li>Implement segmentation to isolate different network segments.</li>
+                        </ul>
+                    </li>
+                    <li><b>Security control selection</b> identify and select appropriate security control and technologies.
+                        <ul class="kb">
+                            <b>Activity perform in security control selection:-</b>
+                            <li>Choose firewalls and common network devices properly</li>
+                            <li>Determine the use of encryption</li>
+                            <li>Select access control mechanisms and authentication methods</li>
+                        </ul>
+                    </li>
+                    <li><b>Policy and procedure development</b> establish security policies and procedure to guide implementation and ongoing management.
+                        <ul class="kb">
+                            <b>Activity perform in policy and procedure development:-</b>
+                            <li>Develop user policy</li>
+                            <li>Create incident response plans</li>
+                            <li>Define security policies related to data protection, usage and acceptable use.</li>
+                        </ul>
+                    </li>
+                    <li><b>Implementation</b> deploy the designed security controls and configurations.
+                        <ul class="kb">
+                            <b>Activity perform in implementation:-</b>
+                            <li>Install and configure firewalls ,intrusion detection systems, VPNs and other security appliances</li>
+                            <li>Implement access controls and encryption</li>
+                            <li>Conduct thorough testing to ensure proper functionality</li>
+                        </ul>
+                    </li>
+                    <li><b>Testing and validation</b> verify the effectiveness of the implemented security measures.
+                        <ul class="kb">
+                            <b>Activity perform in testing and validation:-</b>
+                            <li>Perform penetration testing to identify vulnerabilities</li>
+                            <li>Conduct security audits and assessments</li>
+                            <li>Validate that security controls align with the established policies</li>
+                        </ul>
+                    </li>
+                    <li><b>Training and awareness</b> educate users and IT staffs about security best practices.
+                        <ul class="kb">
+                            <b>Activity perform in training and awareness:-</b>
+                            <li>Provide training on security policy and procedures</li>
+                            <li>Raise the awareness about common security threats and social engineering tactics</li>
+                            <li>Ensure users understand their role in maintaining network security</li>
+                        </ul>
+                    </li>
+                    <li><b>Monitoring and management</b> establish ongoing monitoring and management process.
+                        <ul class="kb">
+                            <b>Activity perform in monitoring and management:-</b>
+                            <li>Set up continuous monitoring of network Activity</li>
+                            <li>Implement security information and event management solution</li>
+                            <li>Develop incident response and management procedures</li>
+                        </ul>
+                    </li>
+                    <li><b>Documentation and reporting</b> maintain detail documentation and generate reports for stakeholders.
+                        <ul class="kb">
+                            <b>Activity perform in documentation and reporting:-</b>
+                            <li>Document the network security design ,configuration and policies</li>
+                            <li>Generate regular report on security metrics, incidents and compliance</li>
+                        </ul>
+                    </li>
+                    <li><b>Continuous improvement</b> continuously access and improve the network security posture.
+                        <ul class="kb">
+                            <b>Activity perform in continuous improvement:-</b>
+                            <li>Conduct regular security assessments and updates</li>
+                            <li>Stay informed about emerging threats and technologies</li>
+                            <li>Update security controls and policies as needed</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note"id='second'>
+            <h2>Unit 2: Threats to network security </h2>
+            <h3>Overview network security attack</h3>
+            <p>Network security attacks comes in various form, each aiming to exploit vulnerabilities
+                in a system or network to compromise its integrity,confidentiality or availability.
+            </p>
+            <h3>Some common network security attacks</h3>
+            <ul class="listno">
+                <li><b>Malware</b>
+                    <p>
+                    Malware they designed to harm or exploit systems.<br>
+                    <b>Types of malware</b> viruses, worms,trojan horses,ransomware and spyware.<br>
+                    <b>Impact:</b> Unauthorized access, data theft, system disruption.
+                    </p>
+                </li>
+                <li><b>Phishing</b>
+                    <p>
+                    Social engineering attack where attackers impersonate trustworthy entities to trick individuals into revealing sensitive information.
+                    <br>Forms of phishing</b> email phishing, spear phishing, voice phishing, sms phishing.
+                    <br><b>Impact:</b> Unauthorized access,identity theft, financial loss.</p>
+                </li>
+                <li><b>Denial-of-service(DoS) and Distributed denial-of-service(DDos) attacks</b>
+                    <p>
+                    Overloading a system, network or service with excessive traffic to disrupt normal functioning.<br>
+                    <b>Impact:</b> Service outage, network slowdown,loss of availability.
+                    </p>
+                </li>
+                <li><b>Man-in-the-middle attacks</b>
+                    <p> 
+                    Intercepting and potentially altering communication between two parties without their knowledge.<br>
+                    <b>Forms of man-in-the-middle attack</b> Eavesdropping, session hijacking, SSL stripping.
+                    <br><b>Impact:</b> Data interception, unauthorized access.
+                    </p>
+                </li>
+                <li><b>SQL injection</b>
+                    <p>Exploiting vulnerabilities in web application by injecting malicious SQL code into input fields.
+                    <br><b>Impact:</b> Unauthorized access to databases, data manipulation.
+                    </p>
+                </li>
+                <li><b>Cross-site scripting(XSS)</b>
+                    <p>
+                    Injecting malicious scripts into webpages viewed by other users.
+                    <br><b>Form of Cross-site scripting(XSS)</b> Stored XSS, reflected XSS, DOM-based XSS
+                    <br><b>Impact:</b> Cookie theft, session hijacking, defacement.
+                    </p>
+                </li>
+                <li><b>Zero-day exploits</b>
+                    <p>
+                    Attacks that target undiscovered vulnerabilities(zero-day vulnerabilities) before a patch or fix is available.
+                    <br><b>Impact:</b> Unauthorized access, data breaches, system compromises.
+                    </p>
+                </li>
+                <li><b>Brute fore attacks</b>
+                    <p>
+                    Repeatedly attempting various combinations of usernames and passwords until the correct credentials are found.
+                    <br><b>Impact:</b> Unauthorized access, account compromise.
+                    </p>
+                </li>
+                <li><b>Eavesdropping(packet sniffing)</b>
+                    <p>
+                    Unauthorized interception and monitoring of network traffic.
+                    <br><b>Impact:</b> Unauthorized access to sensitive information.
+                    </p>
+                </li>
+                <li><b>DNS spoofing</b>
+                    <p>
+                    Redirecting DNS queries to malicious sites.
+                    <br><b>Impact:</b> Man-in-the-middle attacks, phishing, data theft.
+                    </p>
+                </li>
+                <li><b>Social engineering</b>
+                    <p>
+                    Manipulating individuals into divulging confidential information or performing actions against their interests.<br>
+                    <b>Forms os social engineering</b> Impersonation, pretesting, baiting.
+                    <br><b>Impact:</b> Unauthorized access, data breaches, compromised security.
+                    </p>
+                </li>
+                <li><b>Insider threats</b>
+                    <p>
+                    Malicious actioiins or negligence by individuals within an organization.
+                    <br><b>Forms of insider threats</b> Intentional data theft, accidental data exposure.
+                    <br><b>Impact:</b> Data breaches,compromised security.
+                    </p>
+                </li>
+            </ul>
+
+            <h3>Network vulnerabilities</h3>
+            <p>Network vulnerabilities refer to weaknesses or flaws in a computer network security that can be exploited by attackers to compromise the confidentiality, integrity or availability of the network and its data.
+            </p>
+            <h3>Common network vulnerabilities</h3>
+            <ul class="listno">
+                <li><b>Weak passwords</b>
+                    <p>Passwords that are easy to guess or are not strong enough can be exploited by attackers. It's essential to enforce strong password policies and use multi-factor-authentication where possible.
+                </li>
+                <li><b>Outdated software and patching</b>
+                    <p>Failure to update and patch operating systems, appications and network devices can leave vulnerabilities open for exploitation. Regularly applying security patches helps address known vulnerabilities.
+                    </p>
+                </li>
+                <li><b>Unsecured network protocols</b>
+                    <p>Unsecured or outdated network protocols may expose sensitive information to eavesdropping. It's important to use secure protocols such a "<b>HTTPS</b> instead of HTTP" and disable deprecated protocols.
+                    </p>
+                </li>
+                <li><b>Lack of encryption</b>
+                    <p>Failure to encrypt sensitive data during transmision or storage can expose it to unauthorized access. Implementing encryption protocols such as SSL/TLS for data in transit and encryption for stored data is crucial.</p>
+                </li>
+                <li><b>Unsecured wireless networks</b>
+                    <p>Open or poorly configured Wi-Fi networks can be exploited by unauthorized users. Employ strong encryption(WPA), use complex password and regularly updata Wi-Fi passwords.</p>
+                </li>
+                <li><b>Insufficient access controls</b>
+                    <p>Inadequate access controls can lead to unauthorized access or privilege escalation. Implement the principle of least privilege, regularly review user access levels and ensure proper user authentication.</p>
+                </li>
+                <li><b>Misconfigured firewalls and routers</b> 
+                    <p>Improperly configured firewalls and routers may allow unauthorized access to the network. Regularly review and update firewall rules to ensure they align with security policies.</p>
+                </li>
+                <li><b>Phishing attacks</b>
+                    <p>Social engineering attacks, such as phishing can exploit human vulnerabilities to gain unauthorized access. Employee training and awareness programs are essential to mitigate the risks associated with phishing.</p>
+                </li>
+                <li><b>Malware and viruses</b>
+                    <p>Malicious software can exploit vulnerabilities to infiltrate a network. Emplyee anti-malware tools, keep them updated and regularly scan for malware.</p>
+                </li>
+                <li><b>Unrestricted physical access</b>
+                    <p>Physical access to network infrastructure can lead to unauthorized manipulation. Restrict physical access to network devices and sevure server rooms.</p>
+                </li>
+                <li><b>Denial-service(DoS) attacks</b>
+                    <p>DoS attacks can disrupt network services by overwhelming them with traffic. Implementating DoS protection measures and having redundancy in critical services can help mitigate these attacks.</p>
+                </li>
+            </ul>
+
+            <h3>Threat Model</h3>
+            <p>Network security threat model is a systematic approach to identifying and understanding potential security threats to a network. Developing a threat model helps organizations anticipate, prioritize and mitigate potenitial risks to their network infrastructure.</p>
+            <h3>Key components and steps involved in creating a network security threat model:-</h3>
+            <ul class="listno">
+                <li><b>Asset identification</b>
+                    <p>Identify and enumerate all assets within the network. This includes hardware(servers,touters,switches), software(applicatioins,operating systems),data(sensitive information) and human resources.</p>
+                </li>
+                <li><b>Threat enumeration</b>
+                    <p>Enumerate potential threats and vulnerabilites that could impact the network. Consider external and innternal threats, including malicious action, malware, inseder threats and natural disasters.</p>
+                </li>
+                <li><b>Vulnerability assessment</b>
+                    <p>Conduct a thorough vulnerabilit assessment to identify weaknesses in the network. This involves scanning systems and applications  for known vulnerabilities and weaknesses in configurations.</p>
+                </li>
+                <li><b>Risk assessment</b>
+                    <p>Evaluate the likelihood and potential impact of identified threats. Assign risk levels based on the combination of the threats's likelihood and impact. This helps prioritize the mitigation efforts.</p>
+                </li>
+                <li><b>Attack surface analysis</b>
+                    <p>Analze the networks's attack surface, which includes all points where an attacker could potentially gain unauthorized access. This involves understanding entry points, interfaces and potential weak links in the network.</p>
+                </li>
+                <li><b>Security controls evaluation</b>
+                    <p>Evaluate the effectiveness of existing security controls, such as firewalls, intrusion detection system, access controls and encryption mechanisms. Identify any gaps or areas where controls can be strengthened.</p>
+                </li>
+                <li><b>Incident response planning</b>
+                    <p>Develop an incident response plan outlining the steps to be taken in the event of a security incident. This includes detection. containment, eradication, recovery and lessons learned.</p>
+                </li>
+                <li><b>User and access coontrols</b>
+                    <p>Assess user authentication and access controls, Ensure that the principle of least privileges is implemented and regularly review and update usr access levels.</p>
+                </li>
+                <li><b>Data protection</b>
+                    <p>Implement measures to protect sensitive data, both in transit and at rest.This includes encryption, data classification and access controls.</p>
+                </li>
+                <li><b>Network monitoring</b>
+                    <p>Implement comprehensive network monitoring to detect unusual or suspicious activitites. Use intrusion detection and prevention systems to identify and respond to potential security incidents.</p>
+                </li>
+                <li><b>Patch management</b>
+                    <p>Establish a robust patch management process to ensure that all systems and software are regularly updated with the latest security patches.</p>
+                </li>
+                <li><b>Physical security</b>
+                    <p>Consider physical security aspects, such as access to server rooms, data centers and networking equipment. Restrict phyical access to prevent unauthorized tampering.</p>
+                </li>
+                <li><b>Security awareness training</b>
+                    <p>Conduct regular security awareness training for emplyess to educate them about security best practices, social engineering threats and the importance of reporting suspicious Activity.</p>
+                </li>
+                <li><b>Regulatory compliance</b>
+                    <p>Ensure that the network security measures align with relevant regulatory requirements and industry standards. This include ODPR,HIPAA,PCI DSS and etc...</p>
+                </li>
+                <li><b>Continuous improvement</b>
+                    <p>Regularly revisit and update the threat model to account for changes in techonlogy, business processes and emerging threats. Network security is an evolving field and continuous improvement is essential.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="note"id='three'>
+            <h2>Unit 3: Analyze security risks</h2>
+            <h3>Network security risk management</h3>
+            <p>Network security risk management involves identifying, assessing and mitigating potential risks to the security of an organization's computer networks.</p>
+            <h3>Key elements of network security risk management</h3>
+            <ul class="listno">
+                <li><b>Risk identification</b> the process of identifying potential threats and vulnerabilities network environement. <b>Outcome:</b> Comprehensive list of potential risks specific to the network.
+                    <br><b>Activity perform in risk identification</b>
+                    <ul class="kb">
+                        <li>Network assessments and audits</li>
+                        <li>Vulnerability scanning</li>
+                        <li>Threat intelligence analysis</li>
+                    </ul>
+                </li>
+                <li><b>Asset valuation</b> Evaluating the value of network assets including hardware, software, data and intelletual property. <b>Outcome:</b> Proritizaion of assets based on their importance to the organization.
+                    <br><b>Activity perform in asset valuation</b>
+                    <ul class="kb">
+                        <li>Asset inventory and categorization</li>
+                        <li>Assigning value to critical assets</li>
+                    </ul>
+                </li>
+                <li><b>Risk assessment</b> Evaluating identified risks in terms of their likelihood and potential impact on the network.  <b>Outcome:</b> Prioritized list of network risks based on likelihood and impact.
+                    <br><b>Activity perform in risk assessment</b>
+                    <ul class="kb">
+                        <li>Quantitative risk analysis(assigning numerical values)</li>
+                        <li>Qualitative risk analysis(subjective assessments)</li>
+                        <li>risk matrices and heat maps</li>
+                    </ul>
+                </li>
+                <li><b>Threat modeling</b> Identifying potential threats and attack vectors to understand how adversaries might exploit vulnerabilites. <b>Outcome:</b> Model illustating potential threats and attack scenarious.
+                    <br><b>Activity perform in treat modeling</b>
+                    <ul class="kb">
+                        <li>Analyzing network architecture</li>
+                        <li>Identifying entry points and weak links</li>
+                        <li>Considering potential attacker motivations</li>
+                    </ul>
+                </li>
+                <li><b>Risk mitigation and controls</b> Developing and implementing strategies to reduce the impact or likelihood of identified risks. <b>Outcome:</b> Implemented measures to enhance network security.
+                    <br><b>Activity perform in risk mitigation and controls</b>
+                    <ul class="kb">
+                        <li>Deploying security controls(firewalls, intrusion detection prevention system)</li>
+                        <li>Encryption of sensitive data</li>
+                        <li>Regular patch management</li>
+                    </ul>
+                </li>
+                <li><b>Incident response planning</b>  Developing a plan outlining the steps to be taken in the event of a network security incident. <b>Outcome:</b> Documented incident response plan for efficient and effective response.
+                    <br><b>Activity perform in incident response planning</b>
+                    <ul class="kb">
+                        <li>Establishing an incident response team</li>
+                        <li>Defining incident categories and severity levels</li>
+                        <li>Conducting tabletop exercises</li>
+                    </ul>
+                </li>
+                <li><b>Continuous monitoring</b> Regularly monitoring network Activity to detect and respond to potential security incidents. <b>Outcome:</b> Ongoing awareness of network security status.
+                    <br><b>Activity perform in continuous monitoring</b>
+                    <ul class="kb">
+                        <li>Network traffic analysis</li>
+                        <li>Intrusion detection and prevention</li>
+                        <li>Log analysis</li>
+                    </ul>
+                </li>
+
+                <li><b>User education and awareness</b> Education users about security best practices and raising awareness about potential risks. <b>Outcome:</b> Informed and vigilant users contributing to network security.
+                    <br><b>Activity perform in user education and awareness</b>
+                    <ul class="kb">
+                        <li>Security awareness training</li>
+                        <li>Phishing simulation exercises</li>
+                        <li>Communication of security policies</li>
+                    </ul>
+                </li>
+                <li><b>Security audits and assessments</b> Conducting regular assessments and audits to evaluate the effectiveness of security controls and policies. <b>Outcome:</b> Identificatioin of areas for improvement in network security measures.
+                    <br><b>Activity perform in Security audits and assessment </b>
+                    <ul class="kb">
+                        <li>Penetration testing</li>
+                        <li>Compliance audits</li>
+                        <li>Security policy reviews</li>
+                    </ul>
+                </li>
+                <li><b>Documentation and reporting</b> Documenting all aspects of network security risk management including assessment, mitigationplans and incident responses. <b>Outcome:</b> Comprehensive documentation for internal and external reporting.
+                    <br><b>Activity perform in documentation and reporting </b>
+                    <ul class="kb">
+                        <li>Maintaining risk registers and documentation</li>
+                        <li>Creating regular security reports</li>
+                        <li>Archiving historical security data</li>
+                    </ul>
+                </li>
+                <li><b>Regulatory compliance</b> Ensuring that network security measures align with relevant regulatory requirements and industry stadards. <b>Outcome:</b> Adherence to applicable laws and standards.
+                    <br><b>Activity perform in regulatory compliance </b>
+                    <ul class="kb">
+                        <li>Regular compliance assessments</li>
+                        <li>Keeping up-to-date with legal and regulatory changes</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Assets that require protection</h3>
+            <p>Identifying and protecting network assets is a crucial aspect of network security risk management. Various assets within a network require protection to ensure the confidentiality,integrity and availability of information.</p>
+            <h3>Key network assets that typically need safeguarding</h3>
+            <ul class="listno">
+                <li><b>Hardware assets</b>
+                    <ul class="kb">
+                        <li><b>Servers</b> Critical systems that host applications, databases and services.</li>
+                        <li><b>Routers and switches</b> Network devices responsible for directing and controlling data traffic.</li>
+                        <li><b>Firewalls</b> Devices  that filter and control incoming and outgoing network traffic based on predetermined security rules.</li>
+                    </ul>
+                </li>
+                <li><b>Software assets</b>
+                    <ul class="kb">
+                        <li><b>Operating system</b> The foundationnal software that manages hardware and provides services for computer programs.</li>
+                        <li><b>Applications</b> Software programs and tools used for specific functions or tasks within the network. </li>
+                        <li><b>Security software</b> Antivirus, anti-malware,intrusion detectioin prevention systems and other security tools. </li>
+                    </ul>
+                </li>
+                <li><b>Data assets</b>
+                    <ul class="kb">
+                        <li><b>Sensitive data</b> Personally identifiable information(PII), financial data, intellectual property and other confidential information. </li>
+                        <li><b>Databases</b> repositories of structured informationa access and manipulated by application. </li>
+                    </ul>
+                </li>
+                <li><b>Network infrastructure</b>
+                    <ul class="kb">
+                        <li><b>Cabling and connectivity</b> Physical components that enable data transmission between devices. </li>
+                        <li><b>Wireless network</b> Wi-Fi infrastructure providing connectivity without physical cables. </li>
+                        <li><b>Virtual private network(VPN)</b> Secure tunnels for remote access or connecting geographically dispersed networks. </li>
+                    </ul>
+                </li>
+                <li><b>Endpoints</b>
+                    <ul class="kb">
+                        <li><b>Computers and workstations</b> Devices used by end-users to access the network and its resources. </li>
+                        <li><b>Mobile devices</b> Smartphones, tablets and other portable devices accessing the network. </li>
+                    </ul>
+                </li>
+                <li><b>Authentication credential</b>
+                    <ul class="kb">
+                        <li><b>Usernames and passwords</b> Access credentials for individuals accessing network resources. </li>
+                        <li><b>Encryption keys</b> Keys used to encrypt and decrypt sensitive data during transmission. </li>
+                    </ul>
+                </li>
+                <li><b>Network services</b>
+                    <ul class="kb">
+                        <li><b>Domain name system(DNS)</b> Translates human-readable domin names into ip address. </li>
+                        <li><b>Dynamic host configuration protocol(DHCP)</b> Allocates and manages ip addresses in a network. </li>
+                        <li><b>Directory services</b> Stores and organizes information about network resources,users and groups. </li>
+                    </ul>
+                </li>
+                <li><b>Communication channels</b>
+                    <ul class="kb">
+                        <li><b>Internet connectivity</b> Providing access to the internet. </li>
+                        <li><b>Internal network</b> Local area network(LAN), Wide area network(WAN) and other network segments.</li>
+                    </ul>
+                </li>
+                <li><b>Physical security</b>
+                    <ul class="kb">
+                        <li><b>Server rooms and data centers</b> Physical spaces housing critical network infrastructure.</li>
+                        <li><b>Networking equipment</b> Router, switches and other devices vulnerable to physical tampering. </li>
+                    </ul>
+                </li>
+                <li><b>Monitoring and logging systems</b>
+                    <ul class="kb">
+                        <li><b>Security information and event management(SIEM)</b> aggregates and analyzes security data. </li>
+                        <li><b>Logs and audit trails</b> Records of systems and network Activity for analysis and troubleshooting. </li>
+                    </ul>
+                </li>
+                <li><b>Personnel assets</b>
+                    <ul class="kb">
+                    <li><b>Security personnel</b> Individuals responsible for implementing and managing security measures. </li>
+                    <li><b>System administrator</b> Individuals managing and maintaining network infrastructure.   </li>
+                    </ul>
+                </li>
+                <li><b>Policies and documentation</b>
+                    <ul class="kb">
+                    <li><b>Security policies</b> Guidelines and rules governing network usage and security practices. </li>
+                    <li><b>Documentation</b> Records of configurations, procedures and incident responses.   </li>
+                    </ul>
+                </li>
+                <li><b>Backup systems</b>
+                    <ul class="kb">
+                    <li><b>Data backups</b> Copies of critical data to recover from data loss or system failures. </li>
+                    <li><b>Disaster recovery systems</b> Plans and processes for resuming operations after a catastrophic event.</li>
+                    </ul>
+                </li>
+                <li><b>External services</b>
+                    <ul class="kb">
+                    <li><b>Cloud services</b> Third-party services hosted externally such a infrastructure as a service or software as serrvics. </li>
+                    <li><b>Third-party connections</b> Partnerships and integrations with external entities when conducting a network security risk assessment, it's essential to identify, prioritize and protect these assets based on their importance.  </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Creating a risk management plan</h3>
+            <p>Creating a network security risk management plan involves a systematic approach to identify, assess and mitigate potential risks to the security of an organizaions computer networks.</p>
+            <ul class="listno">
+                <li><b>Define the scope and objectives</b>
+                    <p>Clearly define the scope of the network security risk management plan.
+                    <br>Identify the primary objectives such as protecting sensitive data, ensuring system availability and preventing unauthorized access.
+                    </p>
+                </li>
+                <li><b>Identify and classify assets</b>
+                    <p>List all network including hardware, software, data and personnel.
+                    <br>Classify assets based on their criticality and importance to the organization.
+                    </p>
+                </li>
+                <li><b>Identify threats and vulnerabilities</b>
+                    <p>Conduct a thorough assessment to identify potential threats and vulnerabilites.
+                    <br>Consider external and internal threats such as insider threats and natural disasters.</p>
+                </li>
+                <li><b>Risk assessment</b>
+                    <p>Evaluate each identified risk in terms of likelihood and impact.
+                    <br>Prioritize risks based on their potential impact on network security.
+                    </p>
+                </li>
+                <li><b>Risk mitigation and controls</b>
+                    <p>Develop strategies to mitigate identified risks such as:-
+                        <ul class="kb">
+                            <li>Implementing security controls(firewalls, antivirus software, intrusionn detectionn systems).</li>
+                            <li>Regularly updating and patching systems</li>
+                            <li>Implementing encryption for sensitive data</li>
+                            <li>Establishing and enforcing strong access controls</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Incident response planning</b>
+                    <p>
+                        <ul class="kb">
+                            <li>Develop an incident response plan outlining the steps to be taken in the event of a security incident.</li>
+                            <li>Define roles and responsibilities for incident response team members.</li>
+                            <li>Conduct tabletop exercises to test the effectiveness of the plan</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Continuous monitoring </b>
+                    <p>
+                        <ul class="kb">
+                            <li>Implement continuous monitoring mechanisms in detect and respond to security incidents in real-time.</li>
+                            <li>Utilize intrusion detection systems, log analysis and network traffic monitoring.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>User education and awareness </b>
+                    <p>
+                        <ul class="kb">
+                            <li>Implement security awareness training programs for employees.</li>
+                            <li>Conduct phishing simulation exercises to educate user about social engineering risks.</li>
+                            <li>Establish clear communication channels for reporting security concerns </li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Security audits and assessments</b>
+                    <p>
+                        <ul class="kb">
+                            <li>Conduct regular security audits and assessments to evaluate the effectiveness of security controls.</li>
+                            <li>Perform penetration testing and vulnerability assessments.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="note" id="four">
+            <h2>Unit 4: Create a security design</h2>
+            <h3>Attacker scenarios and threats</h3>
+            <ul class="listno">
+                <li><b>Social engineering</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers exploit human psychology to manipulate individuals into divulging confidential information or performing actions that may compromise security.</li>
+                            <li><b>Threats:</b> Phishing, pretesting, baiting and other social engineering techiques can lead to unauthorized access, data breaches and system compromise.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Credential stuffing</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers use previously stolen usernames and passwords to gain unauthorized access to user accounts.</li>
+                            <li><b>Threats:</b> Unauthorized access, identity theft and potential for lateral movement within a network.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Brute force attacks</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers systematically try all possible combinations of passwords until the correct one is found.</li>
+                            <li><b>Threats:</b> Unauthorized access, account takeover and potential compromise of sensitive information.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Physical security threats</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers gain access to physical infrastructure such as data centers or server rooms to compromise network security.</li>
+                            <li><b>Threats:</b> Threats of hardware, unauthorized access and potential disruption of services.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Wi-Fi eavesdropping</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers intercept and monitor wi-fi communications to gain unauthorized access or gather sensitive information</li>
+                            <li><b>Threats:</b> Eavesdropping, unauthorized access to data and potential compromise of user credentials.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>USB based attackers</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers use infected USB drives to introduce malware or gain unauthorized access to system.</li>
+                            <li><b>Threats:</b> Malware infection, data theft and potential compromise of network security.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Web application vulnerabilities </b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers exploit vulnerabilities in web applications to gain unauthorized access, manipulate data or launch other attacks.</li>
+                            <li><b>Threats:</b> SQL injection, cross-site scripting(XSS) and other web application vulnerabilities can lead to data breaches and unauthorized access.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Supply chain attackers</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers compromise the supply chain,injecting malicious code or hardware during the production process.</li>
+                            <li><b>Threats:</b> Compromised software or hardware, potential for widespread data braches or system compromise.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Insecure APIS</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario</b> Attackers exploit vulnerabilities in application programming interfaces(APIS) to gain unauthorized access or manipulate data.</li>
+                            <li><b>Threats</b> Unauthorized access to sensitive data, data manipulation and potential disruption of services.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>IoI exploitation</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers target vulnerabilities in internet of Things(IoT) devices to gain access to networks or launch attacks.</li>
+                            <li><b>Threats:</b> Unauthorized access, data breaches and disruption of connected systems.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>File upload vulnerabilities </b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers exploit flaws in systems that allow file uploads, uploading malicious files to compromise servers or applications.</li>
+                            <li><b>Threats:</b> Execution of malicious code, potential compromise of server integrity.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li><b>Cross-site request forgery(CSRF)</b>
+                    <p>
+                        <ul class="kb">
+                            <li><b>Scenario:</b> Attackers trick users into performing unintended actions on web applications where they are authenticated.</li>
+                            <li><b>Threats:</b> Unauthorized actions on behalf of the victim, potentially leading to data maniplation or loss.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+
+            <h3>Designing security measures</h3>
+            <p>Designing effective security measures involves implementing a combination of technical controls, policies and practices to safeguard an organizaions assets including data,systems and networks.</p>
+            <h3>Comprehensive guide on designing security measures</h3>
+            <ul class="listno">
+                <li><b>Risk assessment</b>
+                    <ul class="kb">
+                        <li>Identify and assess potential risks and vulnerabilities to your organizaions assets.</li>
+                        <li>Prioritize risks based on their potential impact and likelihood of occurrence.</li>
+                        <li>Consider external and internal threats including natural disaster, human errors and malicious Activity.</li>
+                    </ul>
+                </li>
+                <li><b>Security policies and procedures</b>
+                    <ul class="kb">
+                        <li>Develop comprehesive security policies and procedures that cover areas such as data protection, access controls,incident response and acceptable use.</li>
+                        <li>Ensure policies are communicated,understood and enforced across the organization.</li>
+                    </ul>
+                </li>
+                <li><b>Access controls</b>
+                    <ul class="kb">
+                        <li>Implement the principle of least privilege, ensuring that users and systems have the minimum level of access needed to perform their duties.</li>
+                        <li>Use strong authentication mechanisms such as multi-factor-authentication(MFA) to enhance access security.</li>
+                    </ul>
+                </li>
+                <li><b>Encryption</b>
+                    <ul class="kb">
+                        <li>Encrypt sensitive data at rest, in transit and during processing.</li>
+                        <li>Use strong encryption algorithms to protect confidetial information from unauthorized access.</li>
+                    </ul>
+                </li>
+                <li><b>Network security</b>
+                    <ul class="kb">
+                        <li>Deploy firewalls, intruion detection and prevention systems and secure gateways to monitor and control network traffic.</li>
+                        <li>Segment networks to limit the lateral movement of attackers.</li>
+                    </ul>
+                </li>
+                <li><b>Endpoint security</b>
+                    <ul class="kb">
+                        <li>Use endpoint protection solutions to detect and prevent malware and other malicious Activity on devices.</li>
+                        <li>Keep endpoint software including operating systems and antivirus programs, updated regularly.</li>
+                    </ul>
+                </li>
+                <li><b>Security patching</b>
+                    <ul class="kb">
+                        <li>Regularly update and patch software, operating systems and firmware to address known vulnerabilities.</li>
+                        <li>Establish a patch management process to ensure timely and comprehensive updates.</li>
+                    </ul>
+                </li>
+                <li><b>Incident response plan</b>
+                    <ul class="kb">
+                        <li>Develop and regularly test an incident response plan outlining steps to take in the event of a security incident.</li>
+                        <li>Assign roles responsibilities and establish communication protocols during incidents.</li>
+                    </ul>
+                </li>
+                <li><b>Security awareness training</b>
+                    <ul class="kb">
+                        <li>Educate employees on security best practices including recognizing phishing attempts, using strong passwords and safeguarding sensitive information.</li>
+                        <li>Conduct regular security awareness training sessions.</li>
+                    </ul>
+                </li>
+                <li><b>Physical security</b>
+                    <ul class="kb">
+                        <li>Implement physical security measures such as access controls, surveillance and secure entry points to protect physical assets like servers and data centers.</li>
+                    </ul>
+                </li>
+                <li><b>Monitoring and logging</b>
+                    <ul class="kb">
+                        <li>Implement robust monitoring systems to detect and alert on suspicious Activity.</li>
+                        <li>Maintain detailed logs for auditing and forensic purposes.</li>
+                    </ul>
+                </li>
+                <li><b>Vendor security</b>
+                    <ul class="kb">
+                        <li>Assess and monitor the security practices of third-party vendors and service providers.</li>
+                        <li>Ensure that vendors comply with security standards and adhere to your organization security policies.</li>
+                    </ul>
+                </li>
+                <li><b>Security testing</b>
+                    <ul class="kb">
+                        <li>Conduct regular security assessments including penetration testing and vulnerability scanning to identify and address security weaknesses.</li>
+                    </ul>
+                </li>
+                <li><b>Backup and disaster recovery</b>
+                    <ul class="kb">
+                        <li>Implement regular data backups and test the restoration process.</li>
+                        <li>Develp a comprehensive disaster recovery plan to ensure business continuity in the event of a catastrophic event.</li>
+                    </ul>
+                </li>
+                <li><b>Regulatory compliance</b>
+                    <ul class="kb">
+                        <li>Stay informed about relevant data protection regulations and industry standatds.</li>
+                        <li>Ensure that security measures align with legal and regulatory requirements applicable to your organization.</li>
+                    </ul>
+                </li>
+                <li><b>Continuous improvement</b>
+                    <ul class="kb">
+                        <li>Regularly review and update security measures in response to evolving threats and changes in the business environment.</li>
+                        <li>Conduct periodic security audits to assess the effectiveness of implemented measures.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Obtaining feedback on the designed security measures</h3>
+            <ul class="listno">
+                <li><b>Stakeholder involvement</b>
+                    <ul class="kb">
+                        <li>Involve key stakeholders icluding IT personnel,security teams, executives and end-users in the feedback process</li>
+                        <li>Ensure representationn from different departments and levels within the orgainzation.</li>
+                    </ul>
+                </li>
+                <li><b>Feedback sessions</b>
+                    <ul class="kb">
+                        <li>Conduct regular feedback sessions to gather insights from stakeholders</li>
+                        <li>Schedule one-on-one interviews,focus group or workshops to discuss specific aspects of the security measures</li>
+                    </ul>
+                </li>
+                <li><b>Anonymous surveys</b>
+                    <ul class="kb">
+                        <li>Distribute anonymous surveys to employees to collect candid feedback</li>
+                        <li>Ask questions about the usability,effectiveness and any observed challenges with the security measures</li>
+                    </ul>
+                </li>
+                <li><b>Incident response evaluations</b>
+                    <ul class="kb">
+                        <li>Evaluate the effectiveness of the incident response plan through simulated exercises</li>
+                        <li>Gather feedback on the clarity of procedures, effectiveness of communication and overall response time</li>
+                    </ul>
+                </li>
+                <li><b>Monitoring and logging reviews</b>
+                    <ul class="kb">
+                        <li>Review the effectiveness of monitoring and logging systems</li>
+                        <li>Analyze incidents or near incidents to assess whether the monitoring tools provided adequate visibility</li>
+                    </ul>
+                </li>
+                <li><b>Testing and assessment feedback</b>
+                    <ul class="kb">
+                        <li>Collect feedback from security testing including penetration tests and vulnerability assessments.</li>
+                        <li>Evalute the responsiveness of the organization to identified vulnerability and the effectiveness of rededication efforts</li>
+                    </ul>
+                </li>
+                <li><b>User training assessments</b>
+                    <ul class="kb">
+                        <li>Assess the impact of security awareness training on end-users</li>
+                        <li>Test user knowledge simulated phishing exercises and evaluate their ability to apply security best practices</li>
+                    </ul>
+                </li>
+                <li><b>Key performance indicators(KPIs)</b>
+                    <ul class="kb">
+                        <li>Define and track key performance indicators related to security measures</li>
+                        <li>Monitor metrics such as incident response time, successful phishing prevention rates and the frequency of security awareness training completion</li>
+                    </ul>
+                </li>
+                <li><b>Incident debriefings</b>
+                    <ul class="kb">
+                        <li>Conduct post-incident debriefings to understand what worked well and where improvements can be made</li>
+                        <li>Encourage open communication to identify areas for enhancement</li>
+                    </ul>
+                </li>
+                <li><b>Third-party assessments</b>
+                    <ul class="kb">
+                        <li>Engage external security experts for third-party assessments</li>
+                        <li>Obtain objective insights into the effectiveness of security controls and adherence to industry best practices</li>
+                    </ul>
+                </li>
+                <li><b>Regulatory compliance audits</b>
+                    <ul class="kb">
+                        <li>Conduct audits to ensure compliance with relevant regulations and standards</li>
+                        <li>Use audit findings to identify gaps and improve security measures</li>
+                    </ul>
+                </li>
+                <li><b>Continuous improvement discussioins</b>
+                    <ul class="kb">
+                        <li>Foster a culture of continuous improvement by regularly discussing feedback and potential enhancements</li>
+                        <li>Encourage collaboration among stakeholders to address identified issues</li>
+                    </ul>
+                </li>
+                <li><b>Documentation review</b>
+                    <ul class="kb">
+                        <li>Review documentation related to security measures including policies, procedures and incident reports</li>
+                        <li>Ensure that documentation is up-to-date and aligns with the current security landscape</li>
+                    </ul>
+                </li>
+                <li><b>Techonology updates</b>
+                    <ul class="kb">
+                        <li>Stay informed emerging technologies and threat landscapes</li>
+                        <li>Evaluate whether security measures security need adjustments based on technological advancement or changes in attack vectors</li>
+                    </ul>
+                </li>
+                <li><b>Post-implementation reviews</b>
+                    <ul class="kb">
+                        <li>Conduct post-implementatin reviews for new security measures</li>
+                        <li>Solicit feedback on the deployment process, any disruption caused and the overall effectiveness of the implemented solution</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Developing security policies</h3>
+            <p>Developing security policies is a crucial step in establishing a comprehensive and effective cybersecurity framework for an organization.</p>
+            <h3>Step to guide to help in process of developing security policies</h3>
+            <ul class="listno">
+                <li><b>Understand organizational needs</b>
+                    <p><b>Objective:</b> Clearly define the purpose and goals of the security policies.
+                    <br><b>Action perform in understand organizatioinal needs</b>
+                    <ul class="kb">
+                        <li>Engage with key stakerholders including executives, IT personnel,legal HR and other relevant departments</li>
+                        <li>Identify and understand the specific security needs and challenges faced by the organization</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Regulatory compliance</b>
+                    <p><b>Objective:</b> Ensure that security policies align with relevant regulatory requirements and industry standards.
+                    <br><b>Action perform in regulatory compliance</b>
+                    <ul class="kb">
+                        <li>Identify applicable laws, regulations and industry standards that govern your organization</li>
+                        <li>Ensure that security policies address compliance requirements</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Risk assessment</b>
+                    <p><b>Objective:</b> Identify and prioritize security risks that need to be addressed.
+                    <br><b>Action perform in risk assessment</b>
+                    <ul class="kb">
+                        <li>Conduct a comprehensive risk assessment to identify potential threats and vulnerabilities</li>
+                        <li>Prioritize based on their impact and likelihood</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Data classification</b>
+                    <p><b>Objective:</b> Identify and prioritize security risks that need to be addressed.
+                    <br><b>Action perform in data classification</b>
+                    <ul class="kb">
+                        <li>Classify data into different categories example public,internal,confidential and etc</li>
+                        <li>Develop policies for handing and protecting each category</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Access control polices</b>
+                    <p><b>Objective:</b> Ensure that access to resources is controlled and follows the principle of least privilege.
+                    <br><b>Action perform in access control polices</b>
+                    <ul class="kb">
+                        <li>Define user roles and access levels</li>
+                        <li>Implement policies for granting and revoking access based on job responsibilities</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Authentication and password policies</b>
+                    <p><b>Objective:</b> Establish guidelines for secure authentication.
+                    <br><b>Action perform in authentication and password policies</b>
+                    <ul class="kb">
+                        <li>Define password complexity requirements</li>
+                        <li>Promote the use multi-factor authentication(MFA)</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Network security policies</b>
+                    <p><b>Objective:</b> Secure the organizaions network infrastructures
+                    <br><b>Action perform in network security policies</b>
+                    <ul class="kb">
+                        <li>Implement firewall rules and intrusion detectin prevention systems</li>
+                        <li>Define policies for secure wireless networking and network segmentation</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Endpoint security policies</b>
+                    <p><b>Objective:</b> Ensure the security of end-user devieces
+                    <br><b>Action perform in endpoint security policies</b>
+                    <ul class="kb">
+                        <li>Specify requirements for antivirus software and endpoint protection</li>
+                        <li>Establish policies for encryption and secure configuration of endpoints</li>
+                    </ul>
+                    </p>
+                </li>
+                <li><b>Incident response plan</b>
+                    <p><b>Objective:</b> Provide guidelines for responding to and mitigating security incidents
+                    <br><b>Action perform in incident response plan</b>
+                    <ul class="kb">
+                        <li>Develop an incident response plan with clearly defined roles and responsibilities</li>
+                        <li>Include procedures for reporting and handling incidents</li>
+                    </ul>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="note" id="five">
+            <h2>Unit 5: Design and implement response to security incidents</h2>
+            <h3>Auditing and incident response procedure</h3>
+            <p>Applying audit and incident response procedures involves implementing the outlined processes in a systematic and consistent manner. </p>
+            <h3>Step to apply audit procedure</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Risk assessment</b><p>Regularly conduct risk assessments to identify potential threats and vulnerabilities. Use tools and methodologies to quantify and qualify risks.</p></li>
+                    <li><b>Policy review</b><p>Review and update information security policies based on the results of risk assessments and changes in the organizational landscape. Communicate policy changes to relevant stakeholders.</p></li>
+                    <li><b>Access controls</b><p>Conduct periodic access reviews to ensure users have the appropriate level of access. Implement automated tools for access control monitoring. </p></li>
+                    <li><b>Vulnerability assessments</b><p>Schedule regular vulnerability assessments using reputable tools. Prioritize and remediate identified vulnerabilities based on risk assessments.</p></li>
+                    <li><b>Incident response plan review</b><p>Regularly review and update the incident response plan to align with emerging threats. Conduct tabletop exercises to ensure the plan is effective.</p></li>
+                    <li><b>Compliance checks</b><p>REgularly audit systems and processes to ensure compliance with relevant regulations. Document compliance status and address any non-compliance issues.</p></li>
+                    <li><b>Security awareness training</b><p>Conduct ongoing security awareness training for employees. Utilize simulated phishing exercises to test and improve awareness.</p></li>
+                    <li><b>Logging and monitoring</b><p>Regularly review logs and implement automated alerting systems. Investigate and respond to anomalies or suspicious Activity.</p></li>
+                    <li><b>Physical security checks</b><p>Conduct regular physical security assessments. Ensure that security measures such as surveillance and access controls are effective.</p></li>
+                    <li><b>Documentation</b><p>Maintain detailed records of audit Activity, findings and recommendations. Use documentation to track improvements over time.</p></li>
+                </ul>
+            </p>
+            <h3>Step to apply incident response procedure</h3>
+            <p>
+                <ul class="listno">
+                    <li>
+                        <b>Preparation</b>
+                        <p>Ensure all incident response team members are familiar with their roles. Regularly updat contact information for key team members.</p>
+                    </li>
+                    <li>
+                        <b>Detection</b>
+                        <p>Continuously monitor systems for signs of potential incidents. Use intrusion detectin systems and anomaly detection tools. </p>
+                    </li>
+                    <li>
+                        <b>Notification</b>
+                        <p>Establish a clear and efficient communication plan for reporting and escalating incidents. Provide training on incident reporting proceures to all emplyees.</p>
+                    </li>
+                    <li>
+                        <b>Containment</b>
+                        <p>Quickly isolate affected systems to prevent further damage. Implement temporary fixes to mitigate immediate threats.</p>
+                    </li>
+                    <li>
+                        <b>Eradication</b>
+                        <p>Identify and eliminate the root cause of the incident. Apply patches or updates to close vulnerabilities.</p>
+                    </li>
+                    <li>
+                        <b>Recovery</b>
+                        <p>Restore affected systems and data from backups. Validate the integrity and security of restored systems.</p>
+                    </li>
+                    <li>
+                        <b>Post-incident analysis</b>
+                        <p>Conduct a thorough review of the incident, documenting all action taken. Identify Theorys learned and areas for improvement in the incident response plan.</p>
+                    </li>
+                    <li>
+                        <b>Documentation</b>
+                        <p>Maintain detailed incident reports for future reference. Use documentation to improve the incident response plan and overall security posture.</p>
+                    </li>
+                    <li>
+                        <b>Communication</b>
+                        <p>Communicate effectively with internal and external stakeholders. Provide timely updates on the incident and steps taken for resolution.</p>
+                    </li>
+                    <li>
+                        <b>Legal and regulatory compliance</b>
+                        <p>Ensure compliance with legal and regulatory reporting requirements. Collaborate with legal teams to address any legal implications.</p>
+                    </li>
+                </ul>
+            </p>
+            <h3>Document security incidents</h3>
+            <p>Documenting security incidents is a crucial aspect of incident response. Comprehensive documentation helps organizations analyze, learn from and improve responses to incidents.</p>
+            <h3>Guide on how to document security incidents</h3>
+            <p>
+                <ul class="kb">
+                    <li>
+                        <b>Incident identification</b>
+                        <p>Capture the date and time when the incident was first identified. Note how the incident was discovered(Example; through automated alerts, user reports, system logs and etc...)</p>
+                    </li>
+                    <li>
+                        <b>Incident description</b>
+                        <p>Provide a detailed description of the incident, including the type of incident(Example; data breach, malware infection, unauthorized access). Specify the affected systems,networks or data.</p>
+                    </li>
+                    <li>
+                        <b>Incident classification</b>
+                        <p>Classify the incident based on severity levels(Example; critical, high, medium, low). Use an incident classification framework that aligns with organizational policies.</p>
+                    </li>
+                    <li>
+                        <b>Initial response actions</b>
+                        <p>Document the initial actions taken to contain the incident. Specify the personnel or teams involved in the initial response.</p>
+                    </li>
+                    <li>
+                        <b>Incident impact</b>
+                        <p>Assess and document the impact of the incident on confidentiality, integrity and availability of information assets. Quantify any data loss or system downtime.</p>
+                    </li>
+                    <li>
+                        <b>Root cause analysis</b>
+                        <p>Investigate and document the root cause of the incident. Identify vulnerabilities or weaknesses exploited by the attacker.</p>
+                    </li>
+                    <li>
+                        <b>Containment and eradication</b>
+                        <p>Describe the steps taken to contain adn eradicate the incident. Document any changes made to systems or networks during thus process.</p>
+                    </li>
+                    <li>
+                        <b>Recovery</b>
+                        <p>Outline the recovery process, including system restoration and data recovery. Confirm the integrity and security of restored systems.</p>
+                    </li>
+                    <li>
+                        <b>Theorys learned</b>
+                        <p>Identify and document Theorys leaned from the incidents. Determine areas for improvement in incident response procedures.</p>
+                    </li>
+                    <li>
+                        <b>Communication</b>
+                        <p>Record all communications related to the incident(both internal and external). Document updates provided to stakeholders and any public relations efforts.</p>
+                    </li>
+                    <li>
+                        <b>Legal and regulatory compliance</b>
+                        <p>Document compliance with legal and regulatory reporting requirements. REcord any legal actions taken or advice sought during the incident response.</p>
+                    </li>
+                    <li>
+                        <b>Post-incident analysis</b>
+                        <p>Summarize the post-incident analysis, including insights gained and improvements recommended.</p>
+                    </li>
+                    <li>
+                        <b>Timeline of events</b>
+                        <p>Create a chronological timeline of events from the identification of the incident to its resolution. Include timestamps ofr key actions and milestones.</p>
+                    </li>
+                    <li>
+                        <b>Incident closure</b>
+                        <p>Confirm that the incident is fully resolved before closing the documentation. Document the final status of the incident.</p>
+                    </li>
+                    <li>
+                        <b>Storage and access</b>
+                        <p>Store incident documentation in a secure and accessible location. Ensure that authorized personnel can retrieve and review the documentaion as needed.</p>
+                    </li>
+                    <li>
+                        <b>Continuous improvement</b>
+                        <p>Use incident documentation as a basis for continuous improvements in security measures. REgularly review and update incident response procedures based on documented experiences.</p>
+                    </li>
+                </ul>
+            </p>
+            <h3>Implement configurations for incident</h3>
+            <p>Implement configurations for incident response involves setting up and configuring various tools technologies and processes to enhance the organizations ability to detect, respond to and recover from security incidents.</p>
+
+            <h3>Key configuration to consider</h3>
+            <p>
+                <ul class="listno">
+                    <li>
+                        <b>Incident detection and logging</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Centralized logging</b>
+                                    <p>Implement a centralized logging system to aggregate logs from various sources. Configure log retention policies ofr compliance and analysis.
+                                        <br><b>Network security configurations.</b>
+                                        <ul class="cc">
+                                            <li><b>Intrusion detection and prevention systems(IDPS)</b><p>Configure IDPS to monitor network traffic for anomalies and known attack patterns. Set up alerts and automated responses for suspicious Activity.</p></li>
+                                            <li><b>Firewall rules</b><p>DEfine and enforce firewall rules to restrict unauthorized access to networks and systems. Regularly review and update firewall configurations based on emerging threats.</p></li>
+                                        </ul>
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Endpoint security configurations</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Antivirus and anti-malware software</b>
+                                    <p>Ensure antivirus and anti-malware solutions are installed on all endpoints. Configure regular scans and real-time protection features.
+                                    </p>
+                                </li>
+                                <li>
+                                    <b>Endpoint detection and response(EDR)</b>
+                                    <p>Implement EDR solutions to monitor and respond to suspicious Activity on endpoints. Configure automated response actions for identified threats.</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Access controls</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Identify and access management</b>
+                                    <p>Implement Identify and access management polices to enforce the principle of least privilege. Regularly review and update user access permissions based on job rules.</p>
+                                </li>
+                                <li>
+                                    <b>Multi-factor authentication</b>
+                                    <p>Enable Multi-factor authentication for critical systems and privileged accounts. Configure multi-factor authentication policies to enhance authentication security.</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Incident response platform configurations</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Incident tracking system</b>
+                                    <p>Implement an incident tracking system to document and mange incidents.</p>
+                                </li>
+                                <li>
+                                    <b>Automated incident response(AIR) tools</b>
+                                    <p>Integrate automated incident response tools to execute predefined actions in response to specific events. Configure automated responses for common incident scenarios.</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Communication and notification</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Communication channels</b>
+                                    <p>Establish secure communication channels for incident response and coordination. Configure notification systems for alerting relevant stakeholders during incidents.</p>
+                                </li>
+                                <li>
+                                    <b>Contact lists</b>
+                                    <p>Maintain up to data contact lists for incident response team members and key stake holders. Configure automated notificaionns based on predefined escalation paths.</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Incident simulation and training</b>
+                        <p><b>Tabletop exercises</b><br> Conduct regular tabletop exercise to simulate different incident scenarios. Review and update configurations based on Theorys learned from simulations.</p>
+                    </li>
+                    <li>
+                        <b>Documentation and reporting</b>
+                        <p>
+                            <ul class="kb">
+                                <li>
+                                    <b>Incident reporting templates</b>
+                                    <p>Create standardized incident reporting templates. Configure templates to capture essential information during incident documentation.</p>
+                                </li>
+                                <li>
+                                    <b>Access controls for incident documentation</b>
+                                    <p>Implement access controls to restrict access to incident documentation. Define roles and permission for personal involved in incident response.</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Continuous improvement</b>
+                        <p><b>Review and update configuration</b><br>REgularly review and update configuration based on changes in the threat landscape and organizational structure. Implement feedback from incident post mortem to enhance configurations. </p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Test and sign off incident resolution process</h3>
+            <p>Testing and signing off on an incident involve validating that the incident response process was effective, the security incident has been appropriately addressed and the organization is ready to resume normal operations.</p>
+
+            <h3>Step to testing the incident response</h3>
+            <p>
+                <ul class="listno">
+                    <li>
+                        <b>Scenarios development</b>
+                        <p>Create realistic scenarios based on different types of security incidents that could impact the organizaion.</p>
+                    </li>
+                    <li>
+                        <b>Tabletop exercise</b>
+                        <p>Conduct a tabletop exercise where incident response team members simulate their responses to the identified scenarios. Discuss and validate the actions taken, communication protocols and coordination among team members.</p>
+                    </li>
+                    <li>
+                        <b>Simulation testing</b>
+                        <p>Conduct more hands on simulation testing, simulating an actual incident in a controlled environment. Interact with real incident response tools, systems and data as if it were a live incident.</p>
+                    </li>
+                    <li>
+                        <b>Evaluation</b>
+                        <p>Assess the effectiveness of the incident response plan and the performance of incident response team members. Identify any weaknesses, gaps or areas for improvement in the incident response process.</p>
+                    </li>
+                    <li>
+                        <b>Documentation</b>
+                        <p>Document the entire testing process including the scenarios used, actions taken and observations. REcord Theorys learned and recommendations for improvement.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Step to signing off on the incident</h3>
+            <p>
+                <ul class="listno">
+                    <li>
+                        <b>Resolution confirmation</b>
+                        <p>Verify that the root cause of the incident has been identified and effectively addressed. Confirm that any vulnerabilities or weaknesses exploited by the incident have been remediated.</p>
+                    </li>
+                    <li>
+                        <b>Recovery validation</b>
+                        <p>Ensure that affected systems and data have been restored to their normal state. Validate the integrity and security of restored systems.</p>
+                    </li>
+                    <li>
+                        <b>Post-incident analysis</b>
+                        <p>Conduct a thorough post-incident analysis, reviewing the incident response process and its effectiveness. Document insights gained, Theorys learned and improvements recommended for future incidents.</p>
+                    </li>
+                    <li>
+                        <b>Verification and authorization</b>
+                        <p>Verify the resolution and effectiveness of the incident response process with relevant stakeholders. Obtain formal authorization or sign-off from management, indicating that the incident is officially resolved.</p>
+                    </li>
+                    <li>
+                        <b>Documentation</b>
+                        <p>Document the final resolution of the incident including the verification process and sign-off. Maintain detailed records of the incident response, sign-off and any communication related to the incident.</p>
+                    </li>
+                    <li><b>Communication</b>
+                        <p>Communication the resolutin and sign-off to all relevant stakeholders including internal teams and external parties if necessary. Provide any necessary updates on the incident its rsolution and the measures taken to prevent funture occurrences.</p>
+                    </li>
+                    <li>
+                        <b>Continuous improvement</b>
+                        <p>Use the documented insights and recommendations from the testing and sign-off processes for continuous improvement. Update the incident response plan and associated configurations based on Theorys learned.</p>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">No need video</h2>
+        </section>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Building small wireless LAN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header>
+
+        <!-- side bar -->
+
+        <div class="side-bar">
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 4</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+            <h1><span class="samp">Unit of Competence:</samp> Building small wireless LAN</h1>
+            <hr style="border:1px solid var(--orange);"><br>
+                <ul class='bk shortcutmenu'>
+                    <li><a  href='#first'><span class="samp">Unit 1:</span> Confirm client and equipment requirements</a></li> 
+                    <li><a  href='#second'><span class="samp">Unit 2:</span> Install and configure wireless access point</a></li> 
+                    <li><a  href='#three'><span class="samp">Unit 3:</span> Configure network</a></li> 
+                    <li><a  href='#four'><span class="samp">Unit 4:</span> Train users</a></li> 
+                    <li><a  href='#five'><span class="samp">Unit 5:</span> Monitor and administer wireless network</a></li> 
+                    <li><a  href='#zero'><span class="samp">No Unit:</span> General knowledge</a></li>
+                    <li><a href='#Video-tutorials'><span class="samp"></span>  Video-tutorials</a></li>
+                </ul>
+        </section>
+
+        <section class="note" id="first">
+            <h2>Unit 1: Confirm client and equipment requirements</h2>
+            <h3> Client and organizational requirements</h3>
+            <p>To design a network that meets customers needs,  the organizational goals, organizational
+            constraints, technical goals and technical constraints must be identified. 
+            We begin by explaining how to assess the scope of the design project. After gathering all customer
+            requirements, the designer must identify and obtain any missing information and reassess the scope
+            of the design project to develop a comprehensive understanding of the customer's needs.</P>
+
+            <h3>Assessing the Scope of a network design project</h3>
+            <p><b>When assessing the scope of a network design consider the following:-</b>
+                <ul class="kb">
+                    <li>Whether the design is for a new network or is a modification of an existing
+                        network.</li>
+                    <li>Whether the design is for an entire enterprise network, a subset of the network, or
+                        a single segment or module.</li>
+                    <li>Whether the design addresses a single function or the network's entire
+                        functionality.</li>
+                </ul>
+            </p>
+            <h3>Identify required information</h3>
+            <p>Determining requirements includes extracting initial requirements from the customer and then
+                refining these with other data that has been collected from the organization.
+            </p>
+            <h3>Extracting initial requirements</h3>
+            <p>Initial design requirements are typically extracted from the Request for Proposal (RFP) or Request
+                for Information(RFI) documents that the customer issues. An RFP is a formal request to vendors
+                for proposals that meet the requirements that the document identifies. An RFI is typically a less
+                formal document an organization issues to solicit ideas and information from vendors about a
+                specific project.<br>The first step in the design process should be pre-documenting (sifting, processing, reordering,
+                translating and so forth) the design requirements and reviewing them with the customer for
+                verification and approval, obtaining direct customer input, in either oral or written form.
+            </p>
+            <h3>Approach to developing the design requirements document:-</h3>
+            <p>
+                <ul class="listno">
+                    <li>Extract the initial customer requirements(from the RFP or RFI).</li>
+                    <li>Query the customer for a verbal description of the initial requirements.</li>
+                    <li>Produce a draft document that describes the design requirements.</li>
+                    <li>Verify the design requirements with the customer and obtain customer approval</li>
+                    <li>Revise the document as necessary to eliminate errors and omissions. 2 to 5 are repeated if the
+                        customer has additional comments about the draft document.</li>
+                </ul>
+            </p>
+
+            <h3>Step to gathering data for design requirements</h3>
+            <p>
+                <ul class="listno">
+                    <li>Identify the planned network applications and network services</li>
+                    <li>Determine1 the organizational goals</li>
+                    <li>Determine the possible organizational constraints</li>
+                    <li>Determine the technical goals</li>
+                    <li>Determine the technical constraints that must be taken into account</li>
+                </ul>
+            </p>
+
+            <h3>Planned applications and network services </h3>
+            <p>
+                The designer must determine which applications the customer is planning to use and the importance of each of these applications. Using a table helps organize and categorize the applications and services planned;
+                <br><b>the table should contain the following information:-</b>
+                <ul class="kb">
+                    <li><b>Planned application types:</b> include e-mail, groupware (tools that aid group work), voice networking, web browsing, video on demand (VoD), databases, file sharing and transfer, computer-aided manufacturing and so forth.</li>
+                    <li><b>Applications:</b> specific applications that will be used, such as Microsoft Internet Explorer, Cisco Unified Meeting Place and so forth.</li>
+                    <li><b>Level of importance:</b> the importance of the applications—whether critical, important, or not important is noted.</li>
+                    <li><b>Comments:</b> additional notes taken during the data-gathering process.</li>
+                </ul>
+            </p>
+
+            <h3>Some sample questions a
+                designer might ask to help determine organizational goals include the following:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>What are you trying to accomplish with this project?</li>
+                    <li>What business challenges are you currently facing?</li>
+                    <li>What are the consequences of not resolving these issues?</li>
+                    <li>What is the major objective of this project?</li>
+                    <li>What is driving the change?</li>
+                    <li>What other technology projects and business initiatives will affect your group in the next two to five years?</li>
+                    <li>What skill sets does your technical staff currently have?</li>
+                    <li>What is your goal for return on investment?</li>
+                </ul>
+            </p>
+
+            <h3>Organizational constraints</h3>
+            <p>
+                When assessing organizational goals, it is important to analyze any organizational constraints that
+                might affect the network design.<br>
+                <b></b>Some sample questions the designer might ask to help determine
+                organizational constraints include the following:-</b>
+                <ul class="kb">
+                    <li>What in your current processes works well?</li>
+                    <li>What in your current processes does not work well?</li>
+                    <li>Which processes are labor-intensive?</li>
+                    <li>What are the barriers for implementation in your organization?</li>
+                    <li>What are your major concerns with the implementation of a new solution?</li>
+                    <li>What projects already have budget approval?</li>
+                    <li>Are other planned technology projects and business initiatives compatible with your
+                        current infrastructure and technology solutions?</li>
+                    <li>Do you have a budget for technical development for your staff?</li>
+                    <li>Are there any policies in place that might affect the project?</li>
+                </ul>
+            </p>
+
+            <h3>Typical constraints include the following:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Budget:</b> reduced budgets or limited resources often force network designers to implement
+                        an affordable solution rather than the best technical solution. This usually entails some
+                        compromises in availability, manageability, performance and scalability.</li>
+                    <li><b>Personnel:</b> the availability of trained personnel within the organization might be a design
+                        consideration. Organizations might not have enough trained personnel, or they might not
+                        have enough personnel.</li>
+                    <li><b>Policies:</b> organizations have different policies about protocols, standards, vendors and
+                        applications; to design the network successfully, the designer must understand these
+                        policies.</li>
+                    <li><b>Schedule:</b> the organization's executive management must discuss and approve the project
+                        schedule to avoid possible disagreements about deadlines.</li>
+                </ul>
+            </p>
+
+            <h3>Technical goals</h3>
+            <p>The technical goals of the project must also be determined before the design starts.
+                <b>Some sample
+                questions the designer might ask to help determine technical goals include the following:-</b>
+                <ul class="kb">
+                    <li>What infrastructure issues exist or will exist related to your applications rollouts?</li>
+                    <li>What skill sets does your technical staff need to acquire?</li>
+                    <li>Does your current network have any performance issues?</li>
+                    <li>Which portions of your network are considered mission-critical?</li>
+                </ul>
+            </p>
+
+            <h3>The following list describes some common technical goals:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Improve network performance:</b> an increase in the number of users and the introduction
+                        of new applications might degrade network performance, especially responsiveness and
+                        throughput.</li>
+                    <li><b>Decrease expected downtime and related expenses:</b> when a network failure occurs,
+                        downtime must be minimal and the network must respond quickly to minimize related
+                        costs.</li>
+                    <li><b>Modernize outdated technologies:</b> the emergence of new network technologies and
+                        applications demands regular updates to and replacement of outdated equipment and
+                        technologies.
+                    <li><b>Improve scalability of the network:</b> networks must be designed to provide for upgrades
+                        and future growth.</li>
+                    <li><b>Simplify network management:</b> simplify network management functions so that they are
+                        easy to use and easily understood.</li>
+                </ul>
+            </p>
+
+            <h3>Technical constraints</h3>
+            <p><b>Some sample questions the designer might ask to help determine technical constraints
+                include the following:-</b>
+                <ul class="kb">
+                    <li>How do you determine your technology priorities?</li>
+                    <li>Do you have a technology refresh process?</li>
+                    <li>What urgent technical problems require immediate resolution or mitigation?</li>
+                    <li>Do you have a plan for technical development for your staff in specific areas?</li>
+                    <li>Do any applications require special network features (protocols and so forth)?</li>
+                </ul>
+            </p>
+
+            <h3></h3>
+            <p><b>Good network design addresses constraints by identifying possible trade-offs, such as the following:-</b>
+                <ul class="kb">
+                    <li><b>Existing equipment:</b> the network design process is usually progressive; legacy equipment
+                        must coexist with new equipment.</li>
+                    <li><b>Bandwidth availability:</b> insufficient bandwidth in parts of the network where the
+                        bandwidth cannot be increased because of technical constraints must be resolved by other
+                        means.</li>
+                    <li><b>Application compatibility:</b> if the new network is not being introduced at the same time as
+                        new applications, the design must provide compatibility with old applications.</li>
+                    <li><b>Lack of qualified personnel:</b> lack of qualified personnel suggests that the designer must
+                        consider the need for additional training; otherwise, certain features might have to be
+                        dropped.</li>
+                </ul>
+            </p>
+
+            <h3>Best
+                practices for ensuring that your data and devices are safe from malicious actors:-</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Enabling two-factor authentication(2FA)</b> 
+                        <p>Two-factor authentication adds an extra layer of security to the login process. It requires users to
+                            enter both a username and password as well as a code that is generated by an authenticator app.</p>
+                    </li>
+                    <li><b>Using strong password</b>
+                        <p>Using a strong password is one of the most important best practices for wireless network security.
+                            A strong password is at least eight characters long and includes a mix of upper- and lower-case
+                            letters, numbers and symbols. Passwords should be changed regularly to ensure that they remain
+                            secure.</p>
+                    </li>
+                    <li>
+                        <b>Encrypting data </b>
+                        <p>Encrypting data is another important best practice for wireless network security. Data encryption
+                            scrambles data so that it can only be decrypted and read by authorized users. This helps to protect
+                            sensitive information from being accessed by unauthorized individuals.</p>
+                    </li>
+                    <li>
+                        <b>Disabling SSID broadcast</b>
+                        <p>Disabling SSID broadcast is another best practice for wireless network security. When SSID
+                            broadcast is enabled, it allows anyone within range of the wireless network to see the network name.You can disable SSID broadcast by accessing the wireless router's configuration page and
+                            disabling the SSID broadcast feature.</p>
+                    </li>
+                    <li>
+                        <b>Using MAC filtering</b>
+                        <p>
+                            Using MAC filtering is another best practice for wireless network security. MAC addresses are
+                            unique identifiers assigned to devices that connect to a network.</p>
+                    </li>
+                    <li>
+                        <b>Enabling WPA3 security</b>
+                        <p>Enabling WPA3 security is another best practice for wireless network security. WPA3 is the most
+                            recent and most secure wireless security protocol. It provides stronger protection than WPA2 and
+                            should be used whenever possible.</p>
+                    </li>
+                    <li>
+                        <b>Using a VPN</b>
+                        <p>Using a VPN is another best practice for wireless network security. A VPN encrypts all traffic
+                            between a device and the VPN server, making it more difficult for someone to eavesdrop on the
+                            connection. This is especially important when using public Wi-Fi networks, as they are often less
+                            secure than private ones.</p>
+                    </li>
+                    <li>
+                        <b>Using a firewall</b>
+                        <p>Using a firewall is another best practice for wireless network security. A firewall helps to protect
+                            the network by blocking incoming traffic that is not authorized. This can be especially important
+                            in preventing attacks from malware and other malicious software.</p>
+                    </li>
+                    <li>
+                        <b>Disabling Universal Plug and Play(UPnP)</b>
+                        <p>Universal Plug and Play(UPnP) is a protocol that allows devices to automatically discover and
+                            connect to each other. This can be a security risk, as it allows unauthorized devices to potentially
+                            gain access to the network. To disable UPnP, access the wireless router's configuration page and disable the feature. You can also disable UPnP on individual devices by accessing the settings
+                            menu.</p>
+                    </li>
+                    <li>
+                        <b>Disabling unnecessary services</b>
+                        <p>You often find that routers come with a number of unnecessary services enabled. These can be a
+                            security risk, as they can provide potential attackers with information about the network. To
+                            disable unnecessary services, access the wireless router's configuration page and disable any
+                            services that are not needed.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Define wireless network requirements</h3>
+            <p>Requirements define what the wireless network must do, which provides the foundation for the
+                design. Requirements for a wireless network include needs, such as signal coverage in all elevators
+                and support for voice telephony. Leave the technical details, such as specific technologies (such
+                as 2.4GHz vs. 5GHz 802.11n), components and configuration settings to the designers after all
+                requirements are well-defined and agreed upon.<br>
+                <b>Requirements to consider
+                    before implementing a wireless network, consider the following types of requirements:-</b>
+                <ul class="listno">
+                    <li>
+                        <b>Applications</b>
+                        <p>The wireless network must support user applications, so be sure to fully define them in
+                            the requirements. This could be general office applications, such as web browsing, email and file
+                            transfer.</p>
+                    </li>
+                    <li>
+                        <b>Environment</b>
+                        <p>Provide a description of the environment where the wireless network will operate. For buildings,
+                            include the floor plan, type construction and possible locations for mounting access points.</p>
+                    </li>
+                    <li>
+                        <b>Coverage areas</b>
+                        <p>This describes where users will need access to the wireless network. They might only need
+                            connectivity in their offices and conferences rooms.</p>
+                    </li>
+                    <li>
+                        <b>End users</b>
+                        <p>Be sure to identify whether users are mobile or stationary, which provides a basis for including
+                            enhanced roaming in the design. Mobile users will move about the facility and possible roam
+                            across IP domains, creating a need to manage IP addresses dynamically. Some users, however,
+                            may be stationary, such as wireless desktops.</p>
+                    </li>
+                    <li>
+                        <b>Client devices</b>
+                        <p>You should specify the client devices (and existing client radios) to ensure the solution
+                            accommodates them in the most effective manner.</p>
+                    </li>
+                    <li>
+                        <b>Existing infrastructure</b>
+                        <p>Be certain to describe all existing applicable infrastructure.</p>
+                    </li>
+                    <li>
+                        <b>Security</b>
+                        <p>Describe the sensitivity of the information that will traverse the wireless network.</p>
+                    </li>
+                    <li>
+                        <b>Funding</b>
+                        <p>The requirements stage of a wireless network project is a good time to ask how much money is
+                            available.</p>
+                    </li>
+                    <li>
+                        <b>Schedules</b>
+                        <p></p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Identify components to be installed to meet the technical requirements</h3>
+            <p>Technical requirements are describe how software should function and
+                what its behavior should be. This helps developers and users to understand the best way to use the
+                software.</p>
+
+            <h3>List of technical requirement examples:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Accessibility</li>
+                    <li>Authentication and authorization</li>
+                    <li>Availability</li>
+                    <li>Information security</li>
+                    <li>Maintainability</li>
+                    <li>Performance</li>
+                    <li>Privacy</li>
+                    <li>Reliability</li>
+                </ul>
+            </p>
+
+            <h3>Selecting appropriate position for access point</h3>
+            <p>Wireless Access Point (WAP) placement is an important aspect of setting up and maintaining a
+                wireless network. Proper placement of WAPs ensures good coverage, capacity and performance.
+                <br>
+                <b>Here are some best practices for WAP placement:-</b>
+                <ul class="kb">
+                    <li><b>Conduct a site survey</b>
+                        <p>Before installing any WAPs, conduct a Wireless site survey to
+                        identify areas with poor coverage, high demand and potential sources of interference. This
+                        will help you to determine the optimal location for each WAP.</p></li>
+                    <li><b>Use ceiling-mounted WAPs</b>
+                        <p>Ceiling-mounted WAPs provide better coverage than wall-
+                        mounted WAPs as they can reach a wider area and provide more uniform coverage.</p></li>
+                    <li><b>Place WAPs in the center of the coverage area</b>
+                        <p>In general, WAPs should be placed in the
+                        center of the area they are supposed to cover, as this will ensure good coverage for the entire
+                        area.</p></li>
+                    <li><b>Avoid physical obstructions</b><p>Physical obstructions such as walls, ceilings and furniture
+                        can interfere with wireless signals, so it important to avoid placing WAPs near these types
+                        of obstructions.</p></li>
+                    <li><b>Use multiple WAPs</b><p> In large areas, it important to use multiple WAPs to ensure good
+                        coverage and capacity. This will also help to reduce the risk of congestion and ensure that
+                        users have a good experience.</p></li>
+                    <li><b>Use Power over Ethernet(PoE)</b><p>PoE allows WAPs to receive power over the same cable
+                        that carries the network data, making it easy to install them in a variety of locations.</p></li>
+                    <li><b>Use wireless planning tools</b><p>wireless planning tools can help to predict coverage, capacity,
+                        and performance of wireless networks, by simulating the environment and giving you an
+                        idea of how the wireless network will perform.</p></li>
+                </ul>
+            </p>
+
+            <h3>Five guidelines for you to follow when installing access points</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Place access points where Wi-Fi will be used the most</b>
+                        <p>
+                            The first rule of proper access point placement is to determine the locations where Wi-Fi networks
+                            will be used the most. This seems like it should be obvious, but it makes a huge difference in
+                            determining the optimal placement of access points across an infrastructure. The closer a device is
+                            to an access point, the better its connection will be.</p>
+                    </li>
+                    <li>
+                        <b>Precise access point placement is key</b>
+                        <p>Access point placement is not just about picking the right general area to install a device. You also
+                            need to consider the precise physical placement for the access point in each room/location you
+                            need to service. Access points need to be built in optimal locations to provide the best signal
+                            strength to the areas it will cover.</p>
+                    </li>
+                    <li>
+                        <b>Avoid coverage overlap whenever possible</b>
+                        <p>
+                            When designing your wireless infrastructure, you need to select the best access point locations that
+                            will provide maximum coverage for your business. The simple answer to this problem is installing
+                            access points anywhere you can, but this is almost always a bad idea. Not only does this introduce
+                            unnecessary costs, but it also generates a lot of coverage overlap</p>
+                    </li>
+                    <li>
+                        <b>Electronic devices</b>
+                        <p>
+                            Devices that emit electromagnetic signals, such as microwaves, are notorious for completely
+                            blocking wireless signals. Whenever possible, access points should be placed as far away from
+                            these devices as possible.</p>
+                    </li>
+                    <li>
+                        <b>Building materials</b>
+                        <p>
+                            The building materials of the structures your business operates in can cause varying degrees of
+                            wireless signal interference or blockage. Concrete, brick and other dense materials are infamous
+                            for blocking Wi-Fi signals. Your team should place access points in areas that provide the best
+                            area of coverage when considering the building materials around it.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Wireless Routers</h3>
+            <p> Wireless routers which provide Wi-Fi connectivity, are usually powered
+                by connecting them to a standard electrical outlet. They require a
+                continuous power source to function and transmit wireless signals.</p>
+            <h3>Wireless Access Points</h3>
+            <p>Similar to routers, wireless access points are devices that provide
+                wireless connectivity in a specific area or location. They may be powered through an
+                electrical outlet or, in some cases, through Power over Ethernet (PoE) technology, which
+                allows both data and power to be transmitted over the same Ethernet cable.</p>
+
+            <h3>Wireless Cameras</h3>
+            <p>Wireless security cameras or other types of wireless cameras may be
+                powered by batteries or by connecting them to an electrical outlet. Battery-
+                powered wireless cameras are often designed for flexibility and portability,
+                while those connected to an outlet can provide continuous power.</p>
+            <h3>Wireless Devices</h3>
+            <p>Various wireless devices, such as smartphones, tablets and laptops, have
+                built-in batteries that power their wireless capabilities. These devices need to be periodically
+                recharged to maintain their wireless functionality.</p>
+
+            
+        </section>
+
+        <section class="note" id="second">
+            <h2>Unit 2: Install and configure wireless access point</h2>
+            <h3>What is wireless access points?</h3>
+            <p>A wireless access point is a device used to create a WLAN. This device is connected to an internet hub, wired router, or switch
+                using an Ethernet cable.<br>
+                <b>The Wireless Access Point(WAP)</b> is a networking devices that enables the capability for
+                wireless-capable devices to connect to a wired network.
+            </p>
+            <h3>Things consider to choosing a wireless access point:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Range</li>
+                    <li>Speed</li>
+                    <li>Gain antenna</li>
+                    <li>Guest access</li>
+                    <li>No hardware controllers</li>
+                    <li>Wi-Fi technology</li>
+                    <li>Price</li>
+                </ul>
+            </p>
+
+            <h3>What are Managed LAN Services?</h3>
+            <p>Managed LAN Services (MLS) is a term used to describe a service provided by a third party
+                service provider to manage a company local area network (LAN). This type of service provides
+                remote monitoring and maintenance of the company network infrastructure.
+                This type of service allows companies to reduce their IT costs and increase productivity. <b>The main
+                advantage of MLS</b> over other solutions is its ability to provide 24/7 support and proactive
+                monitoring. It also offers an easy way to access your network remotely.</p>
+
+            <h3>Benefits of using managed LAN services?</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Security:</b> managed LAN services provider can secure your network by installing
+                        firewalls, intrusion detection/prevention systems and other security products.</li>
+                    <li><b>Network Monitoring:</b>  managed LAN services company can monitor your network
+                        24 hours a day, seven days a week. It can alert you when there are problems with your
+                        network.</li>
+                    <li><b>Improved Network Performance:</b> managed LAN service providers usually offer
+                        faster speeds than you could get from a public Internet access point. You won’t have
+                        to wait as long to download large files.</li>
+                    <li><b>Cost Savings:</b> managed LAN service providers offer lower rates than you would pay
+                        for similar services.</li>
+                    <li><b>Reliability:</b> most managed LAN service providers guarantee 99% uptime. If they fail
+                        to deliver this level of reliability, they will reimburse you for the downtime.</li>
+                    <li><b>24-Hour Availability:</b> most managed LAN service providers offer 24-hour
+                        availability. If an issue arises, they will resolve it immediately.</li>
+                </ul>
+            </p>
+
+            <h3>When planning the testing of a WLAN consider the following forms of testing:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Signal coverage testing:</b>
+                        <p>Signal coverage testing determines where client devices are able
+                        to satisfy coverage requirements. This testing may be part of performing a WLAN site
+                        survey or done after the network is installed to determine the as-installed signal coverage.</p></li>
+                    <li><b>Performance testing:</b><p> Performance testing determines whether the WLAN can satisfy user
+                        needs for using specific applications over the WLAN.</p></li>
+                    <li><b>In-motion testing:</b><p> In-motion testing determines whether users can continue to make use
+                        of applications while roaming throughout the coverage areas, especially when the roaming
+                        requires handoffs between access points.</p></li>
+                    <li><b>Security vulnerability testing:</b>
+                        <p>Security vulnerability testing ensures that the WLAN
+                        implements required security mechanisms and offers sufficient protection to unauthorized
+                        access and passive monitoring.</p></li>
+                    <li><b>Acceptance/verification testing:</b><p> After installing a WLAN, it is important to run a series
+                        of acceptance/verification tests to ensure that the WLAN satisfies all requirements. This is
+                        especially important if the organization is having a contractor install the WLAN.</p></li>
+                    <li><b>Simulation testing:</b><p>In some cases, such as when implementing a very large WLAN, it
+                        may be beneficial to simulate the behavior of the WLAN before actually installing it. This
+                        can provide helpful feedback when designing the system, especially if the WLAN will have
+                        critical performance requirements.</p></li>
+                    <li><b>Prototype testing:</b><p>Prototype testing involves implementing an individual function of the
+                        WLAN that is not well understood before deploying the complete system. For example, an
+                        organization may not be very familiar with 802.1X authentication systems and may benefit
+                        by implementing the 802.1X authentication in a lab environment with a limited number of
+                        test client devices.</p></li>
+                    <li><b>Pilot testing:</b><p>Before installing the WLAN across the entire organization, which may
+                        include numerous buildings and different applications.</p></li>
+                </ul>
+            </p>
+
+            <h3>Upgrading the ICT system</h3>
+            <p>
+                The modernization of the system required the replacement of multiple hardware and software
+                elements, the integration of old equipment and the implementation of new systems and
+                applications. Very important was that the entire process was carried out without interrupting
+                ongoing operations, with minimal downtime.<br>
+                <b>Outcome:</b> reduce downtime, improve data management and increase productivity.</p>
+
+            <h3>Implementation of new work processes and communications</h3>
+            <p>Together with the client, we developed new processes that are compatible with the existing system
+                and easy to adopt by the client’s staff. The infinilink team worked closely with client staff to ensure
+                that the new processes optimized efficiency and productivity of operations.
+                <br><b>Outcome:</b> increase productivity, reduce errors and improve communication on operations between
+                staff members.</p>
+            <h3>Training users on the new ICT system</h3>
+            <p>The successful implementation of the new ICT system depended on the ability of the client’s staff
+                to use it. The infinilink team provided the client’s employees with comprehensive training on the
+                features and functionality of the new system, as well as on-site support to ensure staff could use
+                the system confidently and effectively.
+                <b>Outcome:</b> increase staff confidence, reduce errors and increase productivity.
+            </p>
+
+            <h3>Consultancy to executive management on ICT system optimizations</h3>
+            <p>Team has identified ICT areas affecting the client’s business processes that need optimization. We
+                provide concrete recommendations to the executive management of the client company, leading
+                to continuous improvement of system performance and efficiency.
+                <br><b>Outcome:</b> improve system performance, increase efficiency and reduce costs.</p>
+
+            <h3>Full ICT system responsibility for continuous support of business and production
+                processes</h3>
+            <p>To support business and production processes, we ensure that the system is always working
+                optimally. We monitor system performance and take proactive measures to prevent outages and
+                ensure continuity of operations.<br>
+                <b>Outcome:</b> reducing downtime, improving system performance and increasing productivity, with
+                a positive effect on the quality of the client company’s products.</p>
+        </section>
+
+        <section class="note" id="three">
+            <h2>Unit 3:Configure network</h2>
+            <h3>Some of the basic technologies of wireless
+                network systems:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Wireless Local Area Network</b><p>
+                        A Wireless Local Area Network (WLAN) is a type of local area network that uses high frequency
+                        radio waves rather than wires to communicate between network-enabled devices.</p></li>
+                    <li><b>Access Point</b><p>
+                        A wireless access point (AP) is a hardware device that allows wireless communication devices,
+                        such as PDAs and mobile computers, to connect to a wireless network. Usually, an AP connects
+                        into to a wired network and provides a bridge for data communication between wireless and wired
+                        devices.</p></li>
+                    <li><b>Service Set Identifier</b><p>
+                        A Service Set Identifier (SSID) is a configurable identification that allows wireless clients to
+                        communicate with an appropriate access point. With proper configuration, only clients with correct
+                        SSID can communicate with the access points. In effect, the SSID acts as a single
+                        shared password between access points and clients.</p></li>
+                    <li><b>Open System Authentication</b><p>
+                        Open System Authentication is the default authentication protocol for the 802.11 wireless
+                        standard. It consists of a simple authentication request containing the station ID and an
+                        authentication response containing success or failure data. Upon successful authentication, both
+                        stations are considered mutually authenticated.</p></li>
+                    <li><b>Shared Key Authentication</b><p>
+                        Shared Key Authentication is a standard challenge and response mechanism that makes use of
+                        WEP and a shared secret key to provide authentication. Upon encrypting the challenge text with
+                        WEP using the shared secret key, the authenticating client will return the encrypted challenge text
+                        to the access point for verification.</p></li>
+                    <li><b>Ad-Hoc Mode</b><p>
+                        Ad-hoc mode is one of the networking topologies provided in the 802.11 standard. It consists of
+                        at least two wireless stations where no access point is involved in their communication. Ad-hoc
+                        mode WLANs are normally less expensive to run, as no APs are needed for their communication.</p></li>
+                    <li><b>Infrastructure mode</b><p>Infrastructure mode is another networking topology in the 802.11 standard, in addition to ad-hoc
+                        mode. It consists of a number of wireless stations and access points. The access points usually
+                        connect to a larger wired network. This network topology can scale to form large-scale networks
+                        with arbitrary coverage and complexity.</p></li>
+                    <li><b>Wired Equivalent Privacy Protocol</b><p>
+                        Wired Equivalent Privacy (WEP) Protocol is a basic security feature in the IEEE 802.11 standard,
+                        intended to provide confidentiality over a wireless network by encrypting information sent over
+                        the network. A key-scheduling flaw has been discovered in WEP, so it is now considered as
+                        unsecured because a WEP key can be cracked in a few minutes with the aid of automated tools.
+                        Therefore, WEP should not be used unless a more secure method is not available.</p></li>
+                    <li>
+                        <b>Wi-Fi Protected Access</b>
+                        <p>
+                            <b>Wi-Fi Protected Access(WPA)</b> is a wireless security protocol designed to address and fix the
+                            known security issues in WEP. WPA provides users with a higher level of assurance that their data
+                            will remain protected by using Temporal Key Integrity Protocol (TKIP) for data encryption.
+                            802.1x authentication has been introduced in this protocol to improve user authentication.
+                            <br><b>Wi-Fi Protected Access 2(WPA2)</b> based on IEEE 802.11i, is a new wireless security protocol
+                            in which only authorised users can access a wireless device, with features supporting
+                            stronger cryptography(e.g. Advanced Encryption Standard or AES), stronger authentication
+                            control (e.g. Extensible Authentication Protocol or EAP), key management, replay attack
+                            protection and data integrity.<br>
+                            <br><b>Wi-Fi Protected Access 3(WPA3)</b> is a new wireless security standard built on WPA2 but brings
+                            new features to enhance Wi-Fi security for more robust authentication and enhanced cryptographic
+                            strength, while maintaining resiliency of mission critical networks. The WPA3-Personal mode
+                            utilizes the Simultaneous Authentication of Equals key establishment protocol as defined in IEEE
+                            802.11-2016 to strengthen password-based authentication against brute-force attacks.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Parking Lot attack</h3>
+            <p>
+                Access points emit radio signals in a circular pattern and the signals usually extend beyond the
+                physical boundaries of the area they intend to cover. Signals can be intercepted outside buildings,
+                or even through the floors in multi-story buildings. As a result, attackers can implement a "parking
+                lot" attack, where they actually sit in the organization’s parking lot and try to access internal hosts
+                via the wireless network.</p>
+            <h3>Shared Key Authentication Flaw</h3>
+            <p>
+                Shared key authentication can easily be exploited through a passive attack by eavesdropping on
+                both the challenge and the response between the access point and the authenticating client. Such
+                an attack is possible because the attacker can capture both the plaintext (the challenge) and
+                the cipher text (the response).</p>
+            <h3>Service Set Identifier Flaw</h3>
+            <p>
+                Access points come with default SSIDs. If the default SSID is not changed, these units can easily
+                be compromised. In addition, SSIDs are sent over the air as clear text if WEP is disabled, allowing
+                the SSID to be captured by monitoring network traffic. For some products, even when WEP is
+                enabled, management messages containing the SSID will still be broadcasted in clear text by
+                access points and clients, making it possible for an attacker to sniff SSIDs and gain access to the
+                wireless LAN.</p>
+
+            <h3>The Vulnerability of Wired Equivalent Privacy Protocol</h3>
+            <p>Data passing through a wireless LAN with WEP disabled (which is the default setting for most
+                products) is susceptible to eavesdropping and data modification attacks. However, even when
+                WEP is enabled, the confidentiality and integrity of wireless traffic is still at risk because a number
+                of flaws in WEP have been revealed which seriously undermine its claims to security.<br><b>In particular,
+                the following attacks on WEP are possible:-</b>
+                <ul class="kb">
+                    <li>Passive attacks to decrypt traffic based on known plaintext and chosen cipher text
+                        attacks.</li>
+                    <li>Passive attacks to decrypt traffic based on statistical analysis on cipher texts.</li>
+                    <li>Active attacks to inject new traffic from unauthorized mobile stations.</li>
+                    <li>Active attacks to modify data.</li>
+                    <li>Active attacks to decrypt traffic, based on tricking the access point into redirecting
+                        wireless traffic to an attacker's machine.</li>
+                </ul>
+            </p>
+
+            <h3>The most wireless Network Threats</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Accidental Association:</b> overlapping networks,unintentionally connect to neighbors.
+                    <li><b>Malicious Association:</b> malicious access points(Free public Wi-Fi) can steal
+                        passwords.</li>
+                    <li><b>Ad-Hoc Networks:</b> two computers can exchange data.</li>
+                    <li><b>Nontraditional Networks:</b> bluetooth can be used to eavesdrop.</li>
+                    <li><b>MAC Spoofing:</b> change MAC address to match a privileged computer.</li>
+                    <li><b>Man-In-The-Middle Attacks:</b> Using rogue access point between the user and the real
+                        access point.</li>
+                    <li><b>Denial of Service(DoS):</b> Keep the media busy 8. Network Injection: Spoof
+                        routing/management messages</li>
+                </ul>
+            </p>
+
+            <h3>To reduce Wireless Network Threats</h3>
+            <p>
+                <ul class="kb">
+                    <li>Turn-off SSID broadcast</li>
+                    <li>Use Cryptic SSID names</li>
+                    <li>Reduce signal strength</li>
+                    <li>Locate APs away from boundary</li>
+                    <li>Use encryption</li>
+                    <li>Use IEEE 802.1x network access control</li>
+                    <li>Change the router user ID from default</li>
+                    <li>Change the router password from default</li>
+                    <li>MAC filtering</li>
+                </ul>
+            </p>
+
+            <h3>Configuring security and other key parameters</h3>
+            <h3>None(Plain text)</h3>
+            <p>
+                If you select none as your security mode, no additional security settings are configurable on the
+                WAP device. This mode means that any data transferred to and from the WAP device is not
+                encrypted. This security mode can be useful during initial network configuration or for problem
+                solving, but it is not recommended for regular use on the internal network because it is not secure.</p>
+            <h3>Static WEP</h3>
+            <p><b>Wired Equivalent Privacy(WEP)</b> is a data encryption protocol for 802.11 wireless networks. All
+                wireless stations and access points on the network are configured with a static 64-bit (40-bit secret
+                key plus 24-bit initialization vector (IV)) or 128-bit (104-bit secret key plus 24-bit IV) Shared Key
+                for data encryption.<br>
+                <b>Static WEP is not the most secure mode available</b> but it offers more protection than setting the
+                security mode to None(Plain text), as it does prevent an outsider from easily sniffing out
+                unencrypted wireless traffic.<br>
+                WEP encrypts data moving across the wireless network based on a static key. The encryption
+                algorithm is a stream cipher called RC4.</p>
+            <h3>Transfer Key Index</h3>
+            <p>Enter a key index list. Key indexes 1 through 4 are available. The default
+                is 1. The Transfer Key Index indicates which WEP key the WAP device uses to encrypt the data
+                it transmits. 
+                <ul class="kb">
+                    <li><b>Key Length</b> Choose either 64 bits or 128 bits as the length of the key.</li>
+                    <li><b>Key Type</b> Choose either ASCII or Hex as the key type.</li>
+                    <li><b>WEP Keys</b> You can specify up to four WEP keys. In each text box, enter a string of
+                        characters for each key.</li>
+                    <li><b>ASCII</b> Includes uppercase and lowercase alphabetic letters, the numeric digits and
+                        special symbols such as @ and #.</li>
+                    <li><b>Hex</b> Includes digits 0 to 9 and the letters A to F.</li>
+                </ul>
+            </p>
+
+            <h3>If you use Static WEP, these rules apply:</h3>
+            <p>
+                <ul class="kb">
+                    <li>All client stations must have the Wireless LAN (WLAN) security set to WEP and all
+                        clients must have one of the WEP keys specified on the WAP device in order to decode
+                        AP-to-station data transmissions.</li>
+                    <li>The WAP device must have all keys used by clients for station-to-AP transmit so that it
+                        can decode the station transmissions.</li>
+                    <li>The client stations can use different keys to transmit data to the access point.</li>
+                    <li>On some wireless client software, you can configure multiple WEP keys and define a client
+                        station transfer key index and then set the stations to encrypt the data that they transmit
+                        using different keys.</li>
+                    <li>You cannot mix 64-bit and 128-bit WEP keys between the access point and its client
+                        stations.</li>
+                </ul>
+            </p>
+
+            <h3>Dynamic WEP</h3>
+            <p>
+                Dynamic WEP refers to the combination of 802.1x technology and the Extensible Authentication
+                Protocol (EAP). With Dynamic WEP security, WEP keys are changed dynamically.</p>
+
+            <h3>Testing security and firewall arrangements</h3>
+            <p>
+                A firewall is a vital component of an organization’s security infrastructure and it needs to be
+                protected against exploitation.Firewall testing is like auditing your network security.</p>
+
+            <h3>Methods for Testing Firewall Security</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Penetration Testing</b><p>
+                        Firewall penetration testing, usually undertaken by penetration testers, simulates cyber attacks on
+                        your network devices, similar to how a hacker would infiltrate systems. This form of security
+                        testing mimics actual threats, thus gauging the robustness of your firewall policy and other
+                        defenses.</p></li>
+                    <li>
+                        <b>Port Scanning</b>
+                        <p>Port scanning is an indispensable tool in identifying open and closed ports within your internal
+                            network. Tools like Nmap, Netcat and ShieldsUp play pivotal roles in this. Since open ports can
+                            be gateways for malware and cyber attacks, it’s crucial to determine and seal any unnecessary
+                            ones.</p>
+                    </li>
+                    <li>
+                        <b>Firewall Testing Tools</b>
+                        <p>There is a plethora of tools to test firewalls. Prominent among them are Nmap, Netcat and Shields
+                            Up. These not only assist in port scanning but also in conducting traceroute checks, creating
+                            reverse shell scenarios and ICMP requests, crucial for advanced security testing.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>To Secure your firewall take the following steps:</h3>
+            <p>
+                <ul class="kb">
+                    <li>Disable insecure protocols like telnet and SNMP or use a secure SNMP configuration.</li>
+                    <li>Schedule periodic backups of the configuration and database.</li>
+                    <li>Enable auditing of system changes and send logs via secure syslog or another method to
+                        an external, secured, central SIEM server or firewall management solution for forensics
+                        and reporting.</li>
+                    <li>Add a stealth rule in the firewall policy to hide the firewall from network scans.</li>
+                    <li>Limit management access to specific hosts.</li>
+                </ul>
+            </p>
+
+            <h3>What is Compatibility Testing?</h3>
+            <p>Compatibility testing is a type of testing that examines and compares functionality over multiple
+                browsers, devices, platforms and OS to recognize potential discrepancies. Performing
+                compatibility testing verifies that your product/software works efficiently in its intended
+                environments.</p>
+            
+            <h3>What are the Benefits of Compatibility Testing?</h3>
+            <p>
+                <ul class="kb">
+                    <li>
+                        <b>Improves Software Development Process</b>
+                        <p>Compatibility test estimates the issues in the
+                            software in the SDLC itself. But, it becomes easier to verify the app’s usability, scalability,
+                            and stability across various platforms and deliver feedback.
+                        </p>
+                    </li>
+                    <li>
+                        <b>Detects Bugs before Production</b>
+                        <p>A compatibility test is effective in the timely detection
+                            of bugs in web and mobile apps, even in tricky areas. Since errors are recognized before
+                            production.</p>
+                    </li>
+                    <li>
+                        <b>Complete User Satisfaction</b>
+                        <p>By utilizing compatibility tests, you ensure that every
+                            portion of your product is up and performing as it should across all software, browsers and
+                            devices.
+                        </p>
+                    </li>
+                    <li>
+                        <b>Successful Launches</b>
+                        <p>One of the crucial advantages of compatibility testing, in
+                            conjunction with other testing, is that it gives an entirely successful.</p>
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note" id="four">
+            <h2>Unit 4: Train users</h2>
+            <h3>IP(Internet Protocol) Address</h3>
+            <p>A device on the internet or a local network is identified by its specific IP address, which is different
+                from other addresses.<br>
+                <b>Finding Out Your IP Address</b>
+                You can discover your IP address in a variety of ways. The simplest method would be to enter
+                "what is my IP address" into a search engine like Google.
+                For Windows users, navigate to <b>Start > Settings > Network & internet and choose the Wi-Fi
+                network you're connected to obtain your IP address. Locate your IP address next to "IPv4 address"
+                under Properties.</b></p>
+            <h3>MAC Address</h3>
+            <p>In computer networking, the physical address that identifies each device on a given network is
+                called the Media Access Control (MAC) address. It is also known as Physical address, hardware
+                address, or BIA (Burned In Address). It is 12-digit and 64-bit long, the first 24 bits are utilized for
+                the OUI(Organization Unique Identifier) and the remaining 24 bits are used for NIC/vendor-
+                specific information. It operates on the OSI model's data link layer.
+                It is supplied by the device's manufacturer and included in its NIC, which is ideally fixed and
+                cannot be modified.</p>
+
+            <h3>Ping</h3>
+            <p>
+                Ping a computer network management tool is used to determine whether a host is accessible over
+                an IP network.</p>
+
+            <h3>Address Resolution Protocol(ARP)</h3>
+            <p>
+                The Address Resolution Protocol is a layer 2 protocol used to translate MAC addresses to IP
+                addresses.
+                All hosts on a network may be found using their IP address, although NICs use MAC addresses
+                rather than IP addresses. ARP is the protocol that connects an IP address to a MAC address.</p>
+
+            <h3>Network Scanning Tools</h3>
+            <p>Network Scanning Tools is software that detects network flaws and protects the system
+                from unusual or abnormal activities.</p>
+            <h3>The following are some of the most common network scanning tools:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Nexpose</b> is a network scanning program that is used to do network scanning. To
+                        do the scan, it normally executes the Nmap scripts in the background.</li>
+                    <li><b>Nessus</b> is another network scanning tool used to ensure application security by
+                        magnifying flaws. It like nexpose, checks particular files and directories containing data
+                        relating to the device's security setup.</li>
+                    <li><b>Nmap</b> is another command-line-based network scanning program that is included
+                        with several Linux distributions. It performs a scan to determine the condition of a port
+                        using either the TCP or UDP protocols. It is fast and powerful enough to scan all 65535
+                        ports.</li>
+                    <li><b>Zenmap</b> is the graphical user interface (GUI) based version of the Nmap network
+                        security scanner. Its GUI helps easily map out a network environment.</li>
+                </ul>
+            </p>
+
+
+            <h3>ways to check how many devices are connected to my network</h3>
+            <p>
+                <ul class="kb">
+                    <li>Log into the administrative IP address of your router. Typically, it is 192.168.0.1 or
+                        192.168.1.1.</li>
+                    <li>Launch a web browser on your PC or mobile device, enter your default gateway IP address,
+                        and press Enter.</li>
+                    <li>Use the administrator username and password to log in. For the default credentials, consult the
+                        router's documentation.</li>
+                    <li>You should be able to see the devices connected to your network on the router's home page or
+                        in the router's administrative panel (the interface may vary depending on the router's make and
+                        model).</li>
+                </ul>
+            </p>
+
+            <h3>Techniques to help you achieve the best performance and user experience:-</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Identify and classify traffic</b>
+                        <p>The first step to optimize wireless and mobile networks is to identify and classify the traffic that
+                            flows through them. You can use tools and protocols such as deep packet inspection (DPI),
+                            network analytics and quality of service (QoS) to monitor and categorize the traffic according to
+                            its source, destination, content and priority. For example, you can distinguish between voice,
+                            video, web, gaming and IoT traffic and assign different levels of service and resources to each.</p>
+                    </li>
+                    <li><b>Apply traffic shaping and management</b>
+                        <p>The next step is to apply traffic shaping and management techniques to control and optimize the
+                            flow of traffic. Traffic shaping is the process of manipulating the rate, volume and direction of
+                            traffic to meet the network's capacity and objectives. Traffic management is the process of
+                            enforcing policies and rules to ensure the quality and security of traffic. For example, you can use
+                            traffic shaping to limit or prioritize certain types of traffic and use traffic management to block or
+                            filter unwanted or malicious traffic.</p>
+                    </li>
+                    <li><b>Optimize network protocols and parameters</b>
+                        <p>Another step is to optimize the network protocols and parameters that govern the communication
+                            and transmission of traffic. Network protocols are the rules and standards that enable different
+                            devices and systems to exchange data and information. Network parameters are the settings and
+                            values that affect the performance and behavior of network protocols. For example, you can
+                            optimize the network protocols and parameters to reduce overhead, improve efficiency, enhance
+                            security and adapt to changing conditions.</p>
+                    </li>
+                    <li><b>Leverage network slicing and virtualization</b>
+                        <p>A further step is to leverage network slicing and virtualization technologies to create and manage
+                            multiple logical networks within a single physical network. Network slicing is the process of
+                            dividing a network into multiple segments or slices, each with its own characteristics and
+                            capabilities. Network virtualization is the process of abstracting and decoupling the network
+                            resources and functions from the underlying hardware and software. For example, you can use
+                            network slicing and virtualization to isolate and customize different types of traffic and to increase
+                            flexibility and scalability..</p>
+                    </li>
+                    <li><b>Implement edge computing and caching</b>
+                        <p>A final step is to implement edge computing and caching solutions to reduce the latency and
+                            congestion of traffic. Edge computing is the process of moving the computation and processing of
+                            data closer to the source or destination of traffic, rather than relying on centralized servers or cloud
+                            platforms.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>User documentation and appropriate media</h3>
+            <p>
+                Books, manuals, computer-based tutorials and online help are all media for user documentation.
+                Traditionally user documentation has consisted of a range of paper based documents. However,
+                we are no longer limited to these and organizations are shifting their paper-based user
+                documentation to an online form. <b>There are very good reasons for this:-</b> Increased productivity,increased corporate intelligence,consistency and quality.</p>
+
+            <h3>Advantages of paper media</h3>
+            <p>
+                <ul class="kb">
+                    <li>conventional, most people are used to paper products</li>
+                    <li>Easy and fast to prepare</li>
+                    <li>Inexpensive to produce</li>
+                    <li>Requires readily available software</li>
+                </ul>
+            </p>
+            <h3>Disadvantages of paper media</h3>
+            <p>
+                <ul class="kb">
+                    <li>Hard to maintain control of different versions</li>
+                    <li>It's need cost</li>
+                </ul>
+            </p>
+
+            <h3>Advantages of online media</h3>
+            <p>
+                <ul class="kb">
+                    <li>Convenient advantages</li>
+                    <li>Easy to reach many people geographically dispersed</li>
+                    <li>Can be colorful and fun</li>
+                    <li>Can link to other related documents</li>
+                    <li>Easy to maintain version control</li>
+                    <li>Not costly to update</li>
+                </ul>
+            </p>
+            
+            <h3>The media type you choose will be influenced by the:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Purpose of the documentation</li>
+                    <li>User needs and characteristics</li>
+                    <li>Content (subject matter)</li>
+                </ul>
+            </p>
+
+            <h3>The template may be:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>A Word template</li>
+                    <li>An HTML template</li>
+                    <li>An online help template</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note" id="five">
+            <h2>Unit 5: Monitor and administer wireless network</h2>
+            <h3>Monitoring wireless network performance</h3>
+            <p>Wireless network monitoring is the process of monitoring key aspects of an environment wireless
+                network to have the insight you need to maintain network performance more easily.<br>
+                Wireless network monitoring is typically a part of a broader network monitoring strategy, which
+                involves tracking key metrics tied to a network performance to prevent downtime or slowdowns
+                that can affect end user.</p>
+
+            <h3>Why we need for monitoring wireless networks?</h3>
+            <p>
+                <ul class="kb">
+                    <li>It is essential to ensure that they do not suffer from outages or downtime.</li>
+                    <li>Ensuring that the wireless networks do not suffer from downtime is a key to
+                        business continuity.</li>
+                    <li>To ensure that the network does not
+                        slip into unplanned downtime.</li>
+                </ul>
+            </p>
+
+            <h3>Wireless network strength</h3>
+            <p>The strength of your wireless network plays a crucial role in ensuring network stability and
+                business continuity. A weak network can result in slow connection and sometimes even in
+                termination of connectivity to a few devices in your wireless network.</p>
+            
+            <h3>How do I debug network connectivity issues?</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Physical Layer Checks</b> check your physical connections and make sure they are connected correctly.</li>
+                    <li><b>WAN/ISP Connectivity</b> if you need any help from our support team, you can just take a screenshot, or tap on the "Share"
+                        button in the top-right corner to send the information to our team for more support.</li>
+                    <li><b>Local Network Connectivity</b> can happen if you have a bad cable or problems with the WiFi access point.
+                        In this test, you will need to ping the intermediate networks and make sure they are up.</li>
+                    <li><b>DNS Connectivity</b>
+                        a bad DNS server configuration
+                        may cause issues. To test, you can ping a public IP address, say, 1.1.1.1 to check if the internet is
+                        accessible and 'nslookup' will help you validate if the DNS server is doing a good job to find the
+                        public IP mapping to the domain.</li>
+                </ul>
+            </p>
+
+            <h3>How to secure your documents?</h3>
+            <p>
+                <ul class="kb">
+                    <li>Digitize your documents</li>
+                    <li>Using password protection</li>
+                    <li>Password protecting microsoft 365 documents</li>
+                    <li>Use strong password</li>
+                    <li>Encrypting the files</li>
+                    <li>Cloud storage</li>
+                    <li>Digital signatures and etc...</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note"id='zero'>
+            <h2>Unit Intro: General knowledge</h2>
+            <h3>What does the term Wi-Fi mean?</h3>
+            <p>Wi-Fi is simply a brand name used to market 802.11 WLAN technology.The organization Wireless Ethernet Compatibility Alliance (WECA) was created to further define the
+                IEEE standard in such a way as to force interoperability between vendors. WECA now known as the <b>Wi-Fi Alliance</b>,
+                chose the term Wi-Fi as a marketing brand. </p>
+
+                <h3>Benefits of wireless technology</h3>
+                <p>
+                    <ul class="kb">
+                        <li><b>Mobility</b> allows for easy connection of both stationary and mobile clients</li>
+                        <li><b>Scalability</b> can be easily expanded to allow more users to connect and to increase the coverage area</li>
+                        <li><b>Flexibility</b> provides anytime, anywhere connectivity</li>
+                        <li><b>Cost savings</b> equipment costs continue to fall as the technology matures</li>
+                        <li><b>Reduce installation time</b> installation of a single piece of equipment can provide connectivity for a number
+                            of people</li>
+                        <li><b>Reliability in harsh environments</b> easy to install in emergency and hostile environments</li>
+                    </ul>
+                </p>
+        
+                <h3>The limitations of wireless technology</h3>
+                <p>
+                    <ul class="kb">
+                        <li><b>Interference</b> wireless technology is susceptible to interference from other devices that produce
+                            electromagnetic energies. This includes: cordless phones, microwaves, televisions and other wireless LAN
+                            implementations.</li>
+                        <li><b>Network and Data Security</b> wireless LAN technology is designed to provide access to the data being
+                            transmitted, not security of the data. Additionally, it can provide an unprotected entrance into the wired
+                            network.</li>
+                        <li><b>Technology</b> technology continues to evolve. Wireless LAN technology does not currently provide the speed
+                            or reliability of wired LANs.</li>
+                    </ul>
+                </p>
+
+            <h3>Wireless technologies and devices</h3>
+            <p>The wired network, various technologies exist that <b>allow the transmission of information between
+                hosts without cables</b> is known as wireless technologies. Wireless technologies use electromagnetic waves to carry information between devices. An electromagnetic wave is
+                the same medium that carries radio signals through the air.The electromagnetic spectrum includes such things as <b>radio and television broadcast bands, visible light, x-rays and
+                gamma-rays.</b><br>
+                <b>The most common
+                    wavelengths used for public wireless communications:-</b>
+                <ul class="listno">
+                    <li><b>Infrared(IR)</b>
+                        <p>
+                            <ul class="kb">
+                                <li>Infrared(IR) is relatively low energy and cannot penetrate through walls or other obstacles.</li>
+                                <li>It is commonly
+                                    used to connect and move data between devices such as Personal Digital Assistants (PDAs) and PCs.</li>
+                                <li>A specialized
+                                    communication port known as an Infrared Direct Access(IDA) port uses to exchange information between
+                                    devices.</li>
+                                <li>Infrared(IR) only allows a one-to-one type of connection.</li>
+                                <li>Infrared(IR) is also used for remote control devices, wireless mice and wireless keyboards. It is generally used for short-range,
+                                    line-of-sight, communications.</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li><b>Radio Frequency(RF)</b>
+                        <p>RF waves can penetrate through walls and other obstacles, allowing a much greater range than IR.
+                            <br><b>Types of radio frequency(RF)</b>.
+                            <ul class="kb">
+                                <li><b>Broadcast radio:</b> basically an audio broadcasting service, radio broadcasts sound through the air as radio waves. It uses a transmitter
+                                    to transmit radio waves to a receiving antenna.
+                                </li>
+                                <li><b>Microwave radio:</b> involves the transfer of voice and data through the atmosphere as super high-frequency
+                                    radio waves called microwaves. Microwave transmission is mainly used to transmit messages between ground based stations and satellite communications systems.</li>
+                                <li><b>Communications satellites:</b> is an artificial satellite used specifically as a communication transmitter/receiver in orbit.
+                                    It behaves like a radio relay station above the earth to receive, amplify and redirect analog and digital signals
+                                    carried on a specific radio frequency.</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Applications of wireless communication</h3>
+            <ul class="kb">
+                <li><b>Television remote control:</b> modern televisions use wireless remote control. Currently radio waves are also used.</li>
+                <li><b>Wireless Local Area network:</b> this is a wireless local area network that establishes internet connection with the
+                    portable computers.</li>
+                <li><b>Security systems:</b> for homes and office buildings, hard wired implementation security systems are replaced by the
+                    Wireless technology</li>
+                <li><b>Cellular telephone:</b> radio waves are used to facilitate the operator to make phone calls from any place on the
+                    earth. CDMA, GSM and 3G are examples of the advancement made by wireless communication in the domain</li>
+                <li><b>Wireless energy transfer:</b> a process where a power source transmits electrical energy to electrical load which does
+                    not have built-in power source wirelessly.</li>
+                <li><b>Computer interface devices:</b> making it easy to mediate between a computer and other peripherals including mouse and
+                    keyboard. Earlier, such units required bulky, highly limited transceivers but recent generations of computer
+                    peripherals use compact and high-quality wireless devices such as Bluetooth for communication.</li>
+            </ul>
+            <p><b>Wireless Communications are categorized under three major categories as:</b>
+                <ul class="listno">
+                    <li><b>Mobile:</b> it includes cellular phones (GSM/cdma2000.1x) </li>
+                    <li><b>Portable:</b> it includes WLAN (802.11) and Bluetooth(802.15)</li>
+                    <li><b>Fixed:</b> it includes WiMAX (802.16)</li>
+                </ul>
+            </p>
+
+            <h3>Types of Wireless Network</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Wireless Personal Area Network(WPAN)</b> This is the smallest wireless network used to connect various peripheral devices such as mice, keyboards and PDAs
+                        to a computer. All of these devices are dedicated to a single host with usually use IR or Bluetooth technology. </li>
+                    <li><b>Wireless Local Area Network (WLAN) </b>  used to extend the boundaries of the local wired network (LAN). WLANs use RF technology and
+                        conform to the IEEE 802.11 standards. They allow many users to connect to a wired network through a device
+                        known as an Access Point (AP). An Access Point provides a connection between wireless hosts and hosts on an
+                        Ethernet wired network.</li>
+                    <li><b>Wireless Metropolitan Area Network(WMAN)</b> provides RF coverage to a metropolitan area such as a city and the surrounding suburbs.</li>
+                    <li><b>Wireless Wide Area Network (WWAN)</b> provide coverage over extremely large areas. A good example of a WWAN is the cell phone
+                        network. These networks use technologies such as Code Division Multiple Access (CDMA) or Global System for
+                        Mobile Communication (GSM) and are often regulated by government agencies.
+                    </li>
+                </ul>
+            </p>
+
+            
+
+            <h3>Standard organizations</h3>
+            <p>Each of the standards organizations discussed below help to guide a different aspect of the wireless networking
+                industry.
+                The International Telecommunication Union Radio communication Sector (ITU-R) and local entities such as the
+                Federal Communications Commission (FCC) set the rules for what the user can do with a radio transmitter. These
+                organizations manage and regulate frequencies, power levels and transmission methods. They also work together
+                to help guide the growth and expansion that is being demanded by wireless users.
+            </p>
+
+            <h3>Federal Communications Commission (FCC)</h3>
+            <p>FCC regulates communications within the United States as well as communications to and from the United States. It
+                is responsible for regulating interstate and international communications by radio, television, wire, satellite and
+                cable. The task of the FCC in wireless networking is to regulate the radio signals that are used for wireless
+                networking.<br>
+                <b>The FCC and the respective controlling agencies in the other countries typically regulate two categories
+                    of wireless communications:-</b>
+                <ul class="listno">
+                    <li><b>Licensed spectrum</b> require an approved license application and the financial costs are very high.</li>
+                    <li><b>Unlicensed spectrum</b> no require license application, no financial costs it's free,The main disadvantage to transmitting in an unlicensed frequency band is that anyone else can also
+                        transmit in that same frequency space.Unlicensed frequency bands are often very crowded; therefore, transmissions from other individuals can
+                        cause interference with your transmissions.</li>
+                </ul>
+            </p>
+
+            <h3>International Telecommunication Union Radio communication Sector (ITU-R)</h3>
+            <p>The
+                ITU-R maintains a database of worldwide frequency assignments and coordinates spectrum management through
+                five administrative regions.<br>
+                <ul class="listno">The five regions are broken down as follows:
+                    <li><b>Region A: North and South America</b>  Inter-American Telecommunication Commission (CITEL)</li>
+                    <li><b>Region B: Western Europe</b> European Conference of Postal and Telecommunications Administrations (CEPT) </li>
+                    <li><b>Region C: Eastern Europe and Northern Asia</b> Regional Commonwealth in the field of Communications (RCC)</li>
+                    <li><b>Region D: Africa</b> African Telecommunications Union (ATU)</li>
+                    <li><b>Region E: Asia and Australasia</b> Asia-Pacific Telecommunity (APT)</li>
+                </ul>
+            </p>
+
+            <h3>Institute of Electrical and Electronics Engineers (IEEE)</h3>
+            <p>The Institute of Electrical and Electronics Engineers, commonly known as the IEEE, is a global professional society
+                with more than 400,000 members.</p>
+
+            <h3>Internet Engineering Task Force (IETF)</h3>
+            <p>It is an international community of people in the networking industry whose goal is to make the Internet work
+                Better. The mission of the IETF, as defined by the organization in a document known as RFC3935, is “to produce high
+                quality, relevant technical and engineering documents that influence the way people design, use and manage the
+                Internet in such a way as to make the Internet work better.</p>
+
+            <h3>Wi-Fi Alliance</h3>
+            <p>The Wi-Fi Alliance is a <b>global, nonprofit industry association of more than 350 member companies devoted to
+                promoting the growth of WLANs.</b> One of the primary tasks of the Wi-Fi Alliance is to market the Wi-Fi brand and
+                raise consumer awareness of new 802.11 technologies as they become available.
+                The Wi-Fi Alliances main task is to ensure the interoperability of WLAN products by providing certification testing.
+                The Wi-Fi Alliance, originally named the Wireless Ethernet Compatibility Alliance (WECA), was founded in August
+                1999. The name was changed to the Wi-Fi Alliance in October 2002.
+            </p>
+
+            <h3>International Organization for Standardization (ISO)</h3>
+            <p>ISO is a global, nongovernmental
+                organization that identifies business, government and society needs and develops standards in partnership with the
+                sectors that will put them to use. The ISO is responsible for the creation of the Open Systems Interconnection (OSI)
+                model, which has been a standard reference for data communications between computers since the late 1970s.
+            </p>
+            <h3>Radio frequency fundamentals</h3>
+            <p><b>Bounded medium</b> contains or confines
+                the signal (small amounts of signal leakage can occur). <b>Unbounded medium</b> does not contain the signal, which is free to radiate into the
+                atmosphere in all directions (unless restricted or redirected by some outside influence).</p>
+            
+            <h3>Definition of RF(Radio frequency) signals</h3>
+            <p><b></b>The <b>electro magnetic(EM) spectrum</b> which is usually simply referred to as spectrum, is the range of all possible
+                electromagnetic radiation. This radiation exists as self-propagating electromagnetic waves that can move
+                through matter or space. <b>Examples of electromagnetic waves include:-</b> gamma rays, X-rays, visible light and radio
+                waves. Radio waves are electromagnetic waves occurring on the radio frequency portion of the electromagnetic
+                spectrum.An <b>RF signal starts</b> out as an electrical alternating current(AC) signal that is originally generated by a transmitter.This AC signal is sent through a copper conductor (typically a coaxial cable) and radiated out of an antenna element
+                in the form of an electromagnetic wave. This electromagnetic wave is the wireless signal. Changes of electron flow in
+                an antenna, otherwise known as current, produce changes in the electromagnetic fields around the antenna.An alternating current is an electrical current with a magnitude and direction that varies cyclically, as opposed to
+                direct current, the direction of which stays in a constant form. The shape and form of the AC signal—defined as the
+                waveform—is what is known as a sine wave. <b>Sine wave</b> patterns can also be seen in light,
+                sound and the ocean. The fluctuation of voltage in an AC current is known as cycling, or oscillation. </p>
+
+                <h3>RF(Radio frequency) characteristics</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Wave length</b> is the distance that a single cycle of an RF signal
+                            actually travels.A wavelength is the distance between the two successive crests (peaks) or two successive troughs (valleys) of a wave
+                            pattern.<br>
+                            <b>Wave length formulas:-</b>
+                            <ul class="kb">
+                                <li>Wavelength (inches) =11.811/frequency(GHz)</li>
+                                <li>Wavelength (centimeters) = 30/frequency(GHz)</li>
+                            </ul>
+                        </li>
+                        <li><b>Frequency</b> is the number of times a specified event occurs within a specified time interval. A standard measurement
+                            of frequency is hertz(Hz).An event that occurs
+                            once in 1 second is equal to 1 hertz(Hz).
+                            <b>Different metric prefixes can be applied to the hertz(Hz) measurement of radio frequencies:-</b>
+                            <ul class="kb">
+                                <li>1 hertz(Hz) = 1 cycle per second</li>
+                                <li>1 kilohertz(KHz) = 1,000 cycles per second</li>
+                                <li>1 megahertz(MHz) = 1,000,000 cycles per second</li>
+                                <li>1 gigahertz(GHz) = 1,000,000,000 cycles per second</li>
+                            </ul>
+                        </li>
+                        <li><b>Amplitude</b> Another very important property of an RF signal is the amplitude, which can be characterized simply as the signals
+                            strength, or power.Amplitude can be defined as the maximum displacement of a continuous wave.
+                            <b>When discussing signal strength in a WLAN, amplitude is usually referred to as:-</b>
+                            <ul class="kb">
+                                <li>Transmit amplitude</li>
+                                <li>Received amplitude</li>
+                            </ul>
+                        </li>
+                        <li><b>Phase</b> is not a property of just one RF signal but instead involves the relationship between two or more signals that
+                            share the same frequency.Phase can be measured in distance, time, or degrees. If the peaks of two signals with the same frequency are in
+                            exact alignment at the same time, they are said to be <b>in phase.</b> if frequency are not in exact alignment at the same time, they are said to be <b>out of phase.</b></li>
+                    </ul>
+                </p>
+
+                <h3>RF(Radio frequency) behaviors</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Wave propagation</b> The way in which the RF waves move known as wave propagation.The manner in which a wireless signal moves is often referred to as propagation behavior.
+                        </li>
+                        <li><b>Absorption</b>  If a signal does not bounce off an object, move around an object, or
+                            pass through an object, then 100 percent absorption has occurred.Absorption is a leading cause of
+                            attenuation(loss)</li>
+                        <li><b>Reflection</b> When a wave hits a smooth object
+                            that is larger than the wave itself it's occure reflection behaviors.
+                            <b>Two types of reflections:-</b>
+                            <ul class="kb">
+                                <li><b>Sky wave reflection</b> can
+                                    occur in frequencies below 1 GHz, where the signal has a very large wavelength.</li>
+                                <li><b>Microwave reflection</b> exist between 1 GHz and 300 GHz. Because they are higher frequency signals, they
+                                    have much smaller wavelengths.</li>
+                            </ul>
+                        </li>
+                        <li><b>Scattering</b> can most easily be described as multiple reflections. These multiple reflections occur when the
+                            electromagnetic signals wavelength is larger than pieces of whatever medium the signal is reflecting from or passing
+                            through.
+                            <b>Scattering can happen in two ways:-</b>
+                            <ul class="kb">
+                                <li>The first type of scatter is on a smaller level and has a lesser effect on the signal
+                                    quality and strength</li>
+                                <li>The second type of scattering occurs when an RF signal encounters some type of uneven surface and is reflected
+                                    into multiple directions</li>
+                            </ul>
+                        </li>
+                        <li><b>Refraction</b>  being absorbed or bounced (via reflection or scattering).Fraction most commonly occurs as a result of atmospheric conditions.
+                            <b>The three most common causes of refraction</b> are water vapor, changes in air temperature and changes in air pressure.
+                        </li>
+                        <li><b>Diffraction</b> is the bending of an RF signal around an object.Sitting directly behind the obstruction is an area known as the <b>RF shadow.</b></li>
+                        <li><b>Loss or attenuation</b> decrease of amplitude, or signal strength.</li>
+                        <li><b>Free space path loss(FSPL)</b> is the loss of
+                            signal strength caused by the natural broadening of the waves, often referred to as beam divergence.</li>
+                        <li><b>Multipath</b> is a propagation phenomenon that results in two or more paths of a signal arriving at a receiving antenna
+                            at the same time or within nanoseconds of each other.<br>
+                            <b>The four possible results of multipath are as follows:-</b>
+                            <ul class="kb">
+                                <li><b>Upfade</b> This is increased signal strength. When the multiple RF signal paths arrive at the receiver at the same time.</li>
+                                <li><b>Downfade</b> This is decreased signal strength. When the multiple RF signal paths arrive at the receiver at the same
+                                    time.</li>
+                                <li><b>Nulling</b> This is signal cancellation. When the multiple RF signal paths arrive at the receiver at the same time and are
+                                    180 degrees out of phase with the primary wave.</li>
+                                <li><b>Data corruption</b> The delay spread, along with the fact that there may be multiple reflected signals, the receiver can have problems
+                                    demodulating the RF signals information.</li>
+                            </ul>
+                        </li>
+                        <li><b>Gain or amplification</b> the increase of amplitude, or signal strength.
+                            <b>The two types of gain:-</b>
+                            <ul class="listno">
+                                <li><b>Active gain</b> is usually caused by the transceive.Active gain devices require the <b>use of an external power source.</b></li>
+                                <li><b>Passive gain</b> is accomplished by focusing the RF signal with the use of an antenna.Passive gain devices that <b>do not require an external power source.</b>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>RF(Radio frequency) components</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Transmitter</b> is the initial component in the creation of the wireless medium.</li>
+                        <li><b>Antenna</b> When connected to the transmitter, it collects the
+                            AC signal that it receives from the transmitter and directs the RF waves away from the antenna in a
+                            pattern specific to the antenna type.</li>
+                        <li><b>Receiver</b> is the final component in the wireless medium. The receiver takes the carrier signal that is received
+                            from the antenna and translates the modulated signals into 1s and 0s.</li>
+                        <li><b>Intentional radiator(IR)</b> a device that intentionally generates and emits radio frequency energy by
+                            radiation or induction.</li>
+                        <li><b>Equivalent isotropically radiated power(EIRP)</b> is the highest RF signal strength that is transmitted from a particular
+                            antenna.</li>
+                    </ul>
+                </p>
+
+                <h3>RF(Radio frequency) measurements</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Units of power(absolute)</b>
+                            <ul class="kb">
+                                <li><b>watt(W)</b> is the basic unit of power. 1 watt is equal
+                                    to 1 ampere(amp) of current flowing at 1 volt. Electrical systems have current, which is measured in amps. So the
+                                    amount of watts generated is equal to the volts times the amps.</li>
+                                <li><b>milliwatt(mW)</b> is unit of power. 1 milliwatte is equal to 1000 watt.</li>
+                                <li><b>dBm</b> also provides a comparison, but instead of comparing a signal to another signal, it is used to compare a signal
+                                    to 1 milliwatt of power. dBm means decibels relative to 1 milliwatt.</li>
+                            </ul>
+                        </li>
+                        <li><b>Units of comparison(relative)</b>
+                            <ul class="kb">
+                                <li><b>decibel(dB)</b> is a unit of comparison, not a unit of power.decibel(dB) is a relative expression and
+                                    a measurement of change in power.</li>
+                                <li><b>dBi</b> an isotropic radiator can radiate an equal signal in all directions.</li>
+                                <li><b>dBd</b> is used to describe the gain of an antenna relative to a theoretical isotropic antenna.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Wireless LAN standards</h3>
+                <p>The main organization responsible for the
+                    creation of wireless technical standards is the IEEE.The IEEE 802.11 standard governs the WLAN environment. There are four amendments to the IEEE 802.11 standard
+                    that describe different characteristics for wireless communications.<br>
+                    <b>The currently available amendments are:-</b> 
+                    <ul class="listno">
+                        <li><b>802.11a:</b>
+                            <ul class="kb">
+                                <li>Uses 5 GHz RF spectrum</li>
+                                <li>Not compatible with 2.4 GHz spectrum, i.e. 802.11b/g/n devices</li>
+                                <li>Range is approximately 33% that of the 802.11 b/g</li>
+                                <li>Supports data rates of 6, 9, 12, 18, 24, 36, 48 and 54 Mbps</li>
+                                <li>Relatively expensive to implement compared to other technologies</li>
+                                <li>Increasingly difficult to find 802.11a compliant equipment</li>
+                                <li>Has 12 to 23 clean channels depending on the country</li>
+                            </ul>
+                        </li>
+
+                        <li><b>802.11b:</b>
+                            <ul class="kb"> 
+                                <li>Operate on 2.4GHz to 2.4835GHz radio band</li>
+                                <li>Supports data rates of 1, 2, 5.5 and 11 Mbps</li>
+                                <li>Range of approximately 46 m (150 ft) indoors/96 m (300 ft.) outdoors</li>
+                            </ul>
+                        </li>
+
+                        <li><b>802.11g:</b>
+                            <ul class="kb">
+                                <li>2.4GHz technologies</li>
+                                <li>Maximum data-rate increase to 54Mbps</li>
+                                <li>Same range as the 802.11b</li>
+                                <li>Backward compatible with 802.11b</li>
+                            </ul>
+                        </li>
+
+                        <li><b>802.11n:</b>
+                            <ul class="kb">
+                                <li>uses multiple-input, multiple-output(MIMO) technology</li>
+                                <li>2.4 GHz technologies</li>
+                                <li>Extends the range and data throughput because it uses multiple receiving and transmitting antenna</li>
+                                <li>Backward compatible with existing 802.11g and 802.11b equipment (draft standard specifies support for
+                                    802.11a)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Wireless LAN components</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Wireless client</b>
+                            <ul class="kb">
+                                <li>Any host device that can participate in a wireless network</li>
+                                <li>Most devices that can be connected to a traditional wired network can be connected to a WLAN if equipped
+                                with the proper wireless NIC and software</li>
+                                <li>Can either be stationary or mobile</li>
+                                <li>Commonly referred to as a STA, short for station</li>
+                                <li>Examples include: laptops, PDAs, printers, projectors, storage devices and digital cameras</li>
+                            </ul>
+                        </li>
+                        <li><b>Access point</b>
+                            <ul class="kb">
+                                <li>Controls access between a wired and a wireless network, i.e. allows wireless clients to gain access to a wired
+                                network and vice versa</li>
+                                <li>Acts as a media converter accepting the Ethernet frames from the wired network and converting them to
+                                802.11 compliant frames before transmitting them on the WLAN</li>
+                                <li>Accepts 802.11 frames from the WLAN and converts them into Ethernet frames before placing them onto
+                                the wired network</li>
+                                <li>APs support wireless connections within a limited area, known as a cell or Basic Service Set(BSS)</li>
+                            </ul>
+                        </li>
+                        <li><b>Wireless bridge</b>
+                            <ul class="kb">
+                                <li>Used to connect two wired networks through a wireless link</li>
+                                <li>Allows long-range point-to-point connections between networks</li>
+                                <li>Using the unlicensed RF frequencies, networks 40km(25miles) or more apart can be connected without the
+                                use of wires</li>
+                            </ul>
+                        </li>
+                        <li><b>Antennas</b>
+                            <ul class="kb">
+                                <li>Used on APs and Wireless bridges</li>
+                                <li>Increases the output signal strength from a wireless device</li>
+                                <li>Receives wireless signals from other devices such as STAs</li>
+                                <li>Increase in signal strength from an antenna is known as the gain</li>
+                                <li>Higher gains usually translate into increased transmission distances</li>
+                            </ul>
+                            <ul class="kb"><b>Antennas are classified according to the way they radiate the signal:-</b>
+                                <li>Directional antennas concentrate the signal strength into one direction</li>
+                                <li>Omni-directional antennas are designed to emit equally in all direction</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>WLANs and the SSID</h3>
+                <p>When building a wireless network, it is important to make sure that the wireless components connect to the
+                    appropriate WLAN. This is done using a Service Set Identifier (SSID).
+                    The SSID is a case-sensitive, alpha-numeric string that is up to 32-characters. It is sent in the header of all frames
+                    transmitted over the WLAN. The SSID is used to tell wireless devices which WLAN they belong to and with which
+                    other devices they can communicate. </p>
+                <h3>There are two basic forms of WLAN installations:-</h3>
+                <p>
+                    <ul class="listno">
+                        <li><b>Ad-hoc</b> is the simplest form of a wireless network is created by <b>connecting two or more wireless clients together in a peer to peer network.</b> Ad-hoc network and does not include an
+                            AP. All clients within an ad-hoc network are equal.</li>
+                        <li><b>Infrastructure mode</b> in larger networks require <b> a single device that
+                            controls communications</b> in the wireless cell. If present, an AP will take over this role and control who can talk and
+                            when this is known as infrastructure mode. Individual STAs cannot communicate directly with each
+                            other. To communicate, each device must obtain permission from the AP.The AP controls all communications and
+                            ensures that all STAs have equal access to the medium. The area covered by a single AP is known as a Basic Service
+                            Set (BSS) or cell.<br>The Basic Service Set(BSS) is the smallest building block of a WLAN. The area of coverage of a single AP is limited. To
+                            expand the coverage area, it is possible to connect multiple BSSs through a Distribution System (DS).
+                        </li>
+                    </ul>
+                </p>
+
+                <h3>Wireless channels</h3>
+                <p><b>Channels</b> are created by dividing up the available RF spectrum. Each channel is capable of carrying a different
+                    conversation.Wireless technology uses an access method called Carrier Sense Multiple Access with Collision Avoidance
+                    (CSMA/CA).CSMA/CA creates a reservation on the channel for use by a specific conversation. While a reservation is
+                    in place, no other device may transmit on the channel thus possible collisions are avoided.
+                </p>
+
+                <h3>Limiting access to a WLAN</h3>
+                <p>One way to limit access to your wireless network is to control exactly which devices can gain access to your network.
+                    This can be accomplished through filtering of the MAC address.
+                    <ul class="kb">
+                        <li><b>MAC address filtering:</b> uses the MAC address to identify which devices are allowed to connect to the wireless
+                            network.</li>
+                        <li><b>Implement authentication:</b> Authentication is the process of permitting
+                            entry to a network based on a set of credentials. It is used to verify that the device attempting to connect to the
+                            network is trusted.</li>
+                        <li><b>Pre-shared keys(PSK):</b> both the AP and client must be configured with the same secret word.</li>
+                        <li><b>Extensible Authentication Protocol(EAP):</b> provides two-way authentication as well as user authentication. When EAP software is installed on
+                            the client, the client communicates with a backend authentication server such as Remote Authentication Dial-in
+                            User Service (RADIUS).</li>
+                    </ul>
+                </p>
+
+                <h3>Encryption on a WLAN</h3>
+                <p><b>Encryption</b> is the process of transforming data.</p> 
+                
+                <p><b>Wired Equivalency Protocol(WEP)</b> is an advanced security feature that encrypts network traffic as it travels through
+                            the air.However, there are weaknesses within WEP,
+                            including the use of a static key on all WEP enabled devices.</p>
+                <p><b>Wi-Fi Protected Access(WPA)</b> also uses encryption keys from 64 bits up to 256 bits. However, WPA, unlike WEP, generates new, dynamic
+                    keys each time a client establishes a connection with the AP. For this reason, WPA is considered more secure than
+                    WEP because it is significantly more difficult to crack.</p>
+
+                <h3>Traffic filtering on a WLAN</h3>
+                <p>In addition to controlling who can gain access to the WLAN and who can make use of transmitted data, it is also
+                    worthwhile to control the types of traffic transmitted across a WLAN. This is accomplished using traffic filtering.
+                    Traffic filtering blocks undesirable traffic from entering or leaving the wireless network. Filtering is done by the AP as
+                    traffic passes through it. It can be used to remove traffic from, or destined to, a specific MAC or IP address. It can
+                    also block certain applications by port numbers. By removing unwanted, undesirable and suspicious traffic from the
+                    network.</p>
+
+                <h3>Connecting multiple access points together through Wireless Distribution System(WDS)</h3>
+                <p>Wireless Distribution System(WDS) lets you connect multiple access points together. WDS allows the connected
+                    access points to communicate with each other via wireless connection.</p>
+                
+                <h3>Privacy</h3>
+                <p>The condition that is achieved by successfully maintaining the confidentiality of personal, student,
+                    employee transmitted over a wireless network.
+                </p>
+                <h3>Security</h3>
+                <p>Security is particularly important in wireless networks because data is transmitted using radio
+                    signals that, without implementation of specific data encryption mechanisms, can easily be
+                    intercepted.
+                </p>
+
+                <p>
+                    <b>Pitt IT Responsibilities</b>
+                    <ul class="kb">
+                        <li>Development and maintenance of the wireless standard and wireless guidelines.</li>
+                        <li>Installation and maintenance of all equipment supporting wireless network service.</li>
+                        <li>Investigation and resolution of wireless communication interference problems.</li>
+                        <li>Deployment, management and configuration of wireless network access.</li>
+                        <li>Development and implementation of wireless network security protocols and practices.</li>
+                        <li>Provision of user training on wireless network security issues and acceptable use of wireless
+                        network services.</li>
+                        <li>Performance and security monitoring for all installed wireless access points and provision of
+                        performance statistics.</li>
+                        <li>Monitoring of the development of wireless network technologies and evaluation of their potential.</li>
+                        <li>Responding to problems reported to  IT Help Desk in accordance with standard procedures
+                            and levels of service and etc...</li>
+                    </ul>
+                </p>
+
+                <h3>Wireless User Responsibilities</h3>
+                <p>
+                    <ul class="kb">
+                        <li>Adherence to the wireless network standard and related guidelines and policies.</li>
+                        <li>Implementation of recommended security software, hardware settings, patches and protocols.</li>
+                        <li>Following all relevant policies and procedures along with federal, state and local laws
+                        pertaining to the security of sensitive and confidential data.</li>
+                        <li>Installation of wireless network interface adapters according to published instructions.</li>
+                        <li>Responsibility for support and troubleshooting of problems when using wireless
+                        network interface adapters.</li>
+                        <li>Immediately reporting known misuse and etc...</li>
+                    </ul>
+                </p>
+        </section>
+
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">Video tutorial</h2>
+            <div class="box-container video">
+                <a class="box"href='https://youtu.be/dtyEaQiOL64?si=DwN-zahAolQp1Oef'target= "">
+                    <div class="video-content">
+                        <p>
+                            Access point explained 
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+                <a class="box"href='https://youtu.be/dtyEaQiOL64?si=DwN-zahAolQp1Oef'target= "">
+                    <div class="video-content">
+                        <p>
+                            Step to Setting up Ad-hoc network 
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+                <a class="box" href="https://youtu.be/de-VVjSs_jY?si=8VlJ7SsNQo7t1q1v" target="-blank">
+                    <div class="video-content">
+                        <p>
+                            እንዴት printer ሼር ማድረግ እንችላለን
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i> 
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+                <a class="box" href="https://youtu.be/WZaIfyvERcA?si=ujm1FFA1fuvRBpk3" target="-blank">
+                    <div class="video-content">
+                        <p>
+                            WEP, WPA, WPA2, WPA3, WPS Explained
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i> 
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+                <a class="box" href="https://youtu.be/C3qpbgiMChA?si=NT6s4saztOi2Yv8V" target="-blank">
+                    <div class="video-content">
+                        <p>
+                            Hide and unhide wifi network
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i> 
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+                <a class="box" href="https://youtu.be/Rw9GILLzFAg?si=nmrzrIUy4gkSsy_f" target="-blank">
+                    <div class="video-content">
+                        <p>
+                            የWiFi ፓስዋርድ እንዴት መቀየር እንችላለን
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i> 
+                        </p>
+                    </div>
+                    <h3>Level 4</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- <section class="note" id="last">
+            <h2 class="heading">Question and answer</h2>
+
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../../images/Question and answers/building small wireles lan cover.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../../images/Question and answers/access and use internet first.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../../images/Question and answers/access and use internet second.jpg" style="width:100%">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(1)" alt="Question and Answer">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(2)" alt="Unit 1: Introduction to the internet">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="../../images/lion.svg" style="width:100%" onclick="currentSlide(3)" alt="Unit 1: Introduction to the internet">
+                    </div>
+                </div>
+            </div>  
+        </section> -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

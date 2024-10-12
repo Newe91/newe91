@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Configuring and Administering Server</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header>
+
+        <!-- side bar -->
+        <div class="side-bar">
+
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 3</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+            <h1><span class="samp">Unit of Competence:</samp> Configuring and Administering Server</h1>
+            <hr style="border:1px solid var(--orange);"><br>
+                <ul class='bk shortcutmenu'>
+                    <li><a  href='#first'><span class="samp">Unit 1:</span> Confirm server specification</a></li> 
+                    <li><a href='#second'><span class="samp">Unit 2:</span>  Verify server compatibility and inter-operability</a></li>
+                    <li><a href='#three'><span class="samp">Unit 3:</span>  Configure and test server</a></li>
+                    <li><a href='#Video-tutorials'><span class="samp"></span> Video-tutorials</a></li>
+                </ul>
+        </section>
+
+        <section class="note"id='first'>
+            <h2>Unit 1: Confirm server specification</h2>
+            <h3>What is a Server</h3>
+            <p>Server is a device with a particular set of programs or protocols that provide
+                various services to clients request.</p>
+            <h3>Network server</h3>
+            <p>Network server is a computer designed to process requests and deliver data to
+                client computers over a local network or the Internet.</p>
+            <p><b>Functional requirements</b> the functional requirements documents are the <b>blueprint for the project</b>
+                implementation. Functional requirements are capture the intended behaviour of the system.</p>
+            <p><b>document the requirements this may include identifying:-</b>
+                <ul class="kb">
+                    <li>The business case</li>
+                    <li>What the client considers the project main objectives</li>
+                    <li>What IT infrastructure is already in place</li>
+                    <li>Basic specifications</li>
+                    <li>Conflicting or overlapping requirements</li>
+                    <li>Maintenance and backup requirements</li>
+                    <li>Bandwidth issues that may affect the project</li>
+                    <li>Role definition of parties involved</li>
+                    <li>The nature of the data</li>
+                    <li>Security needs</li>
+                    <li>Available support resources</li>
+                    <li>Costing</li>
+                </ul>
+            </p>
+            <p>
+                <b>User requirements</b>
+                <ul class="kb">
+                    <li>How many users are expected to use the system?</li>
+                    <li>How many people will be utilising the solution at one time?</li>
+                    <li>Where the users will be located?</li>
+                </ul>
+            </p>
+
+            <p>
+                <b>Technical requirements</b>
+                <ul class="kb">
+                    <li>What types of computers or operating systems will the users operate?</li>
+                    <li>Are their desktops all the same?</li>
+                    <li>What bandwidth restrictions occur presently?</li>
+                    <li>What security will they need?</li>
+                    <li>What backup policies need to be in place?</li>
+                    <li>Who will have administration rights?</li>
+                    <li>What will the business do if the system fails at any stage?</li>
+                    <li>Who is the project sponsor?</li>
+                    <li>What does management expect the system will do and won't do?</li>
+                </ul>
+            </p>
+
+            <p>
+                <b>Hardware requirements</b>
+                <ul class="kb">
+                    <li>Compatibility
+                    <li>Will the new system be supported by existing resources within the company?</li>
+                    <li>What funding is available for new hardware?</li>
+                    <li>What is the backup strategy? Has this been costed?</li>
+                    <li>Does the system need to be redundant, load balanced or clustered?</li>
+                    <li>Will there be time delays to purchase and install hardware?</li>
+                    <li>Who will be building the server?</li>
+                    <li>Are there other projects that you may be able to share hardware costs with?</li>
+                </ul>
+            </p>
+
+            <p>
+                <b>Software requirements</b>
+                <ul class="kb">
+                    <li>What is the true cost of the software?</li>
+                    <li>Are there licensing issues?</li>
+                    <li>How long has the software been on the market for?</li>
+                    <li>What happens if the software company becomes insolvent? Who supports it?</li>
+                    <li>Who owns the source code?</li>
+                    <li>What happens if the source code is modified? Who supports the product then?</li>
+                    <li>Does the solution work with all other company software systems?</li>
+                    <li>If web-based, does the solution function on all common browsers?</li>
+                    <li>Does the software support all file formats?</li>
+                    <li>Is the software easy to use, or are there major training issues or costs? </li>                
+                </ul>
+            </p>
+
+            <h3>List of exit criteria</h3>
+            <p>
+                <ul class="kb">
+                    <li>Server platforms</li>
+                    <li>Operating systems</li>
+                    <li>Applications</li>
+                    <li>Hardware and software limitations</li>
+                    <li>Client and developer responsibilities</li>
+                    <li>Privacy issues</li>
+                    <li>Initial timelines</li>
+                    <li>Budget</li>
+                    <li>State and federal regulations</li>
+                </ul>
+            </p>
+
+            <p><b>Server consists of:-</b>
+                <ul class="kb">
+                    <li>Hardware</li>
+                    <li>Software</li>
+                    <li>Network connection</li>
+                </ul></p>
+            
+            <h3>List of server architectures</h3>
+            <p>
+                <ul class="kb">
+                    <li>Mainframe architecture</li>
+                    <li>File sharing architecture</li>
+                    <li>Client/server architecture</li>
+                    <li>Web based architecture</li>
+                    <li>Thin client architecture</li>
+                    <li>Blade architecture.</li>
+                </ul>
+            </p>
+
+            <h3>Platform</h3>
+            <p><b>Hardware platform</b> refers to the hardware components that make up the computer
+                system.<br>
+                <b>Software platform</b> refers to the operating system or programming language
+                developed for the hardware.
+                <b>Example of platform:-</b> Wintel,Lintel,Mac, Macintel,Mainframe,UNIX,Alpha AXP,Java,.Net and etc...
+            </p>
+
+            <h3>Functions provided by a server:</h3>
+            <p>
+                <ul class="kb">
+                    <li>Mail services</li>
+                    <li>Web services</li>
+                    <li>Transactional processing services</li>
+                    <li>Streaming media services</li>
+                    <li>Remote access services</li>
+                    <li>File storage and retrieval services</li>
+                    <li>Network access</li>
+                    <li>Application services</li>
+                </ul>
+            </p>
+
+            <h3>Common hardware technologies</h3>
+            <p>
+                <ul class="kb">
+                    <li>Processors</li>
+                    <li>Random access memory</li>
+                    <li>Storage</li>
+                    <li>Optical drive.</li>
+                </ul>
+            </p>
+
+            <h3>System requirements</h3>
+            <p><b>Minimum requirements </b>
+                <ul class="kb">
+                    <li><b>The type and speed of the processor(CPU)</b></li>
+                    <li><b>Memory(RAM)</b></li>
+                    <li><b>Available disk space</b></li>
+                    <li><b>Operating system</b></li>
+                    <li><b>Compatibility</b> for hardware components you will need to ensure compatibility with the
+                    existing system.</li>
+                    <li><b>Hard drives and optical drives</b> ensure that there is an available drive bay,
+                    power cable and interface connection.</li>
+                    <li><b>Expansion cards</b> ensure that there is a suitable expansion slot for
+                    installation of the expansion card and etc...</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note"id='second'>
+            <h2>Unit 2:Verify server compatibility and inter-operability</h2>
+            <h3>Checking minimum requirements</h3>
+            <table>
+                <tr>
+                    <th>Requirement</th>
+                    <th>Standard Edition</th>
+                    <th>Enterprise Edition</th>
+                    <th>Datacenter Edition</th>
+                    <th>Web Edition</th>
+                </tr>
+                <tr>
+                    <td>CPU Speed</td>
+                    <td>133 MHz(Recommended 550 MHz)</td>
+                    <td>133 MHz(Recommended 733 MHz)</td>
+                    <td>400 MHz(Recommended 733 MHz)</td>
+                    <td>133 MHz(Recommended 550 MHz)</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>128 MB(Recommended 256 MB)</td>
+                    <td>128 MB(Recommended 256 MB)</td>
+                    <td>512 MB(Recommended 1 GB)</td>
+                    <td>128 MB(Recommended 256 MB)</td>
+                </tr>
+                <tr>
+                    <td>Multiprocessor support</td>
+                    <td>Up to 4 </td>
+                    <td>Up to 8</td>
+                    <td>Minimum 8 required Maximum 64</td>
+                    <td>Up to 2</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="note"id='three'>
+            <h2>Unit 3:Configure and test server </h2>
+            <h3>What is network operating system? </h3>
+            <p>Network operating systems typically are used to run computers that act as servers.</p>
+            <h3>Server hardware configuration</h3>
+            <p><b>Hardware configurations you may need to consider include:-</b>
+                <ul class="kb">
+                    <li>Storage</li>
+                    <li>Boot sequences</li>
+                    <li>Specific devices</li>
+                    <li>Redundant components.</li>
+                </ul>
+            </p>
+
+            <h3>Server software configuration</h3>
+            <p>
+                <b>A server may be configured for one or more of the following roles:-</b>
+                <ul class="kb">
+                    <li><b>An application server</b> which runs specific software applications for end users,
+                        such as a server that runs a central Oracle Database that is accessed by users across
+                        an organization.</li>
+                    <li><b>A storage server</b> which provides a central storage place for data that can be
+                        accessed by computer users around a network.</li>
+                    <li><b>A network services server</b> which provides specific services such as print, user
+                        authentication and authorisations, dynamic host configuration protocol (DHCP),
+                        and domain name system (DNS) are some examples of the services that can be
+                        provided.</li>
+                </ul>
+            </p>
+
+            <h3>Server items to be configured</h3>
+            <p>
+                <b>The following items will need to be configured on a server:-</b>
+                <ul class="kb">
+                    <li><b>Network setting</b> which includes network protocol to be used, network
+                        addressing, server name and network adaptor settings.</li>
+                    <li><b>Services</b> which include enabling and configuring specific services to run on the
+                        server, such as setting the server to run dynamic host configuration protocol
+                        (DHCP) and domain name system (DNS) services for an organization.</li>
+                    <li><b>Authentication</b> which involves setting how users of the server will be identified.
+                        This may involve setting up local user accounts with passwords on the server or
+                        setting the server to authenticate users via some other mechanism.</li>
+                    <li><b>Authorisation</b> which is setting up which authenticated users are permitted to
+                        access and use the server, such as allocating user permission to access data storage
+                        or server applications or programs.</li>
+                    <li><b>Environment setting and policies</b> which are settings for the server to operate as
+                        required or settings dictated by organizational policy. Having data backup
+                        schedules for the server is an example of environment setting.</li>
+                </ul>
+            </p>
+
+            <h3>Test events</h3>
+            <p>Test events are designed to establish operational levels at which the new server
+                starts to fail and to measure how it performs under overloaded conditions.
+                <b>Test events aim to reveal failures such as:-</b>
+                <ul class="kb">
+                    <li>Total system crashes</li>
+                    <li>Bottlenecks in interfaces between components</li>
+                    <li>Data corruption</li>
+                    <li>Process overloading</li>
+                    <li>Performance degradation below a usable level.</li>
+                </ul>
+            </p>
+
+            <h3>Planning tests</h3>
+            <p>The purpose of planning the testing process is to identify, conduct and review test
+                events.<br>
+                <b>Documents used for planning include:-</b>
+                <ul class="kb">
+                    <li><b>Project plan</b> which states the objectives of the product and the
+                        operational environment.</li>
+                    <li><b>Test plan</b> which details the scheduling and resources
+                        for all test events.</li>
+                    <li><b>Functional specifications</b> which contain technical details of software
+                        modules. </li>
+                </ul>
+            </p>
+
+            <h3>Test requirements include</h3>
+            <p>
+                <ul class="kb">
+                    <li><b>Test objectives:</b> list what the test is supposed to test</li>
+                    <li><b>Acceptance criteria:</b> conditions for the test passing or failing</li>
+                    <li><b>Test environment:</b> conditions under which the test is to be performed</li>
+                    <li><b>Roles and responsibilities</b></li>
+                    <li><b>Test script:</b> steps to be performed during the test steps</li>
+                    <li><b>Results:</b> procedures for processing and authorising results.</li>
+                </ul>
+            </p>
+            
+            <h3>Determining critical defects</h3>
+            <p><b>Critical defects</b> are non-conformance of product to requirements, rendering the product
+                unusable.<br>
+                <b>Examples include:-</b>
+                <ul class="kb">
+                    <li>Data stored by one module in a system test cannot be accessed and processed by
+                        another</li>
+                    <li>Interface to a legacy system fails</li>
+                    <li>Process fails to initiate another in a defined sequence</li>
+                    <li>System crashes at less than maximum transaction levels.</li>
+                </ul>
+            </p>
+
+            <h3>Workgroups</h3>
+            <p><ul class="kb">
+                <li>Used in Peer-to-peer network</li>
+                <li>Decentralized management</li>
+                <li>Practical for small networks</li>
+                <li>Mostly used for few users</li>
+                <li>Simple to design and implement</li>
+            </ul></p>
+
+            <h3>Domain</h3>
+            <p>A domain is just a group of servers and workstations that agree to <b>centralize user
+                or machine accounts in a Shared database.</b>
+            </p>
+
+            <h3>Server</h3>
+            <p>A server is a device with a particular set of programs or protocols that provide
+                various services to clients request.</p>
+
+            <h3>Types of servers</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>File Server</b> Provides convenient, centralized access to files and directories
+                        for individual users, departments and entire organizations</li>
+                    <li><b>Print Server</b> Provides centralized and managed access to printing devices
+                        by serving shared printers and printer drivers to client computers.</li>
+                    <li><b>Application Server</b> (IIS, ASP.NET) Provides infrastructure components
+                        required to support the hosting of Web applications.</li>
+                    <li><b>Mail Server</b> (POP3, SMTP) Installs POP3 and SMTP so that the server can act
+                        as an e-mail server for POP3 clients.</li>
+                    <li><b>Domain Controller(Active Directory)</b> Provides directory services to clients in
+                        the network.</li>
+                    <li><b>DHCP Server</b> Provides automatic IP addressing services to clients configured
+                        to use dynamic IP addressing.</li>
+                    <li><b>Terminal Server</b> Provides applications and server resources, such as printers
+                        and storage, to multiple users as if those applications and resources were installed
+                        on their own computers.</li>
+                    <li><b>Remote Access/VPN Server</b> Provides multiple-protocol routing and remote
+                        access services for dial-in, local area networks(LANs) and wide area networks
+                        (WANs).</li>
+                </ul>
+            </p>
+
+            <h3>Directory Services</h3>
+            <p>Directory Services also known as store access control allow users to look up things by name or by type of service or
+                resource such as printers.</p>
+
+            <h3>Domain name space(DNS)</h3>
+            <p>The domain name space consists of a tree of domain names. Each node or leaf in
+                the tree has one or more resource records, which hold information associated with
+                the domain name.</p>
+        </section>
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">Video Tutorial</h2>
+            <div class="box-container video">
+                <a class="box"href="https://youtu.be/1hsKbZhrny0?si=Gm-9di2hNbs_CFCW"target= "">
+                    <div class="video-content">
+                        <p>
+                            Window server 2008r2 installation overview
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/9owS1VvEgiA?si=-h3qyGgQFBtcCljW" target= "">
+                    <div class="video-content">
+                        <p>
+                            Installation and configuration part 1
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/ZwSNAo2iO8o?si=_k8mjuyHfcyTovTL" target= "">
+                    <div class="video-content">
+                        <p>
+                            Installation and configuration part 2
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/aNW1wYZgguw?si=xEmh5m63ILQ67FNU" target= "">
+                    <div class="video-content">
+                        <p>
+                            OU,Group and User part 1
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/B-oDM2rnlRI?si=m-Osg8ZZFUE4Ijvg" target= "">
+                    <div class="video-content">
+                        <p>
+                            OU,Group and User part 2
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/E_ngOPrsOyk?si=PoOTVF_aLGV1WNuV" target= "">
+                    <div class="video-content">
+                        <p>
+                            Install DHCP and join client computer
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/BZO3rIiPfHk?si=YJ3aR1wlsMzMxVQc" target= "">
+                    <div class="video-content">
+                        <p>
+                            Remote desktop connection
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/rZ8ECL9e03g?si=Zm4GPsQXO-dUy32a" target= "">
+                    <div class="video-content">
+                        <p>
+                            Printer installation and configuration in window server
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box" href="https://youtu.be/Hn092iksGUw?si=yva1aZA_SUQApK97" target= "">
+                    <div class="video-content">
+                        <p>
+                            Group policy
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+
+
+                <a class="box"href='https://youtu.be/b253bUxZ270?si=VYPMkvIaV4obCCue'target= "">
+                    <div class="video-content">
+                        <p>
+                            Configuring Group Policy (Part 1)
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+                <a class="box"href='https://youtu.be/_zbzfSC4hNI?si=xM2fC6rxemf0wHrG'target= "">
+                    <div class="video-content">
+                        <p>
+                            Configuring Group Policy (Part 2)
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 3</h3>
+                </a>
+            </div>
+        </section>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

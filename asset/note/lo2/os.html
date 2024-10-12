@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Installing and optimizes OS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header> 
+
+        <!-- side bar -->
+        <div class="side-bar">
+
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 2</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+            <h1><span class="samp">Unit of Competence:</samp> Installing and optimizes OS software</h1>
+            <hr style="border:1px solid var(--orange);"><br>
+                <ul class='bk shortcutmenu'>
+                    <li><a  href='#first'><span class="samp">Unit 1:</span> Function of operating system</a></li> 
+                    <li><a href='#second'><span class="samp">Unit 2:</span>  Obtain operating system</a></li>
+                    <li><a href='#three'><span class="samp">Unit 3:</span> Installation, configuration and optimization of
+                        operating system</a></li>
+                    <li><a href='#four'><span class="samp">Unit 4:</span> New software requirements</a></li>
+                    <li><a href='#Video-tutorials'><span class="samp"></span> Video-tutorials</a></li>
+                </ul>
+        </section>
+
+        <section class="note"id='first'>
+            <h2>Unit 1: Function of operating system</h2>
+            <p><b>Operating system(OS)</b> is system software that manages computer hardware, software
+                resources and provides common services for computer programs.</p>
+            <h3>The purpose of operating systems</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Program execution</b> execute of all types of programs.</li>
+                    <li><b>Handling input and output operations</b>  responsible for handling all sort
+                        of inputs device and systems.</li>
+                    <li><b>Manipulation of file system</b> responsible for making of decisions
+                        regarding the storage of all types of data or files.</li>
+                    <li><b>Error detection and handling</b> responsible for detection of any types
+                        of error that can occur while any task and handling that error.</li>
+                    <li><b>Resource allocation</b> ensures the proper use of all the resources
+                        available by deciding which resource to be used by whom for how much time.</li>
+                    <li><b>Accounting</b> The Operating System tracks an account of all the functionalities taking place in
+                        the computer system at a time.</li>
+                    <li><b>Information and resource protection</b> the Operating System is responsible for using all the
+                        information and resources available on the machine in the most protected way.</li>
+                    <li><b>Security</b> uses password protection to protect user data.</li>
+                    <li><b>Control over system performance</b> monitor overall system health to help improve
+                        performance.</li>
+                    <li><b>Job accounting</b> keeps track of time and resources used by various tasks and users.</li>
+                    <li><b>Error detecting</b> the operating system constantly monitors the system to detect errors and
+                        avoid the malfunctioning of a computer system.</li>
+                    <li><b>Coordination between other software and users</b> g systems also coordinate and
+                        assign interpreters, compilers, assemblers and other software to the various users of the
+                        computer system.</li>
+                    <li><b>Memory management</b> the operating system manages the primary memory and main memory.</li>
+                    <li><b>Processor management</b> the OS decides the order in
+                        which processes have access to the processor.</li>
+                    <li><b>Device management</b> communication via their respective drivers.</li>
+                    <li><b>File management</b> organized into directories.</li>
+                </ul>
+            </p>
+            <h3>Batch system VS real-time system VS multi-tasking system</h3>
+            <p>
+                <b>Batch system operating system</b>
+                <ul class="kb">
+                    <li>The users of a batch operating system do not interact with the computer directly.</li>
+                    <li>Each user
+                        prepares his job on an off-line device like punch cards and submits it to the computer operator. </li>
+                    <li>Lack of interaction between the user and the job.</li>
+                </ul>
+            </p>
+            <p>
+                <b>Real-Time operating system</b>
+                <ul class="kb">
+                    <li>The time taken by the
+                        system to respond to an input and display of required updated information is termed as the
+                        response time.</li>
+                    <li>Real-time operating system must have well-defined, fixed time
+                        constraints, otherwise the system will fail.</li>
+                    <li><b>There are two types of real-time
+                        operating systems:-</b>
+                        <ul class="listno">
+                            <li><b>Hard real-time systems</b> guarantee that critical tasks complete on time. In hard real-time systems,
+                                secondary storage is limited or missing and the data is stored in ROM. In these systems, virtual
+                                memory is almost never found.</li>
+                            <li><b>Soft real-time systems</b> are less restrictive. A critical real-time task gets priority over other tasks
+                                and retains the priority until it completes. Soft real-time systems have limited utility than hard
+                                real-time systems.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <b>Multi-tasking operating system</b>
+                <ul class="kb">
+                    <li>The CPU to ensure that things are happening
+                        in time.</li>
+                </ul>
+            </p>
+
+            <h3>Types of operating systems</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Microsoft Windows:</b> Windows comes pre-loaded
+                        on most new PCs, which helps to make it the most popular operating system in the world.There have been many
+                        different versions of Windows, but the most recent ones are Windows 11.</li>
+                    <li><b>Mac OS:</b> previously called OS X is a line of operating systems created by Apple. It comes
+                        preloaded on all Macintosh computers, or Macs.</li>
+                    <li><b>Linux:</b> pronounced LINN-ux is a family of open-source operating systems and command line interface operating system, which means they
+                        can be modified and distributed by anyone around the world.The
+                        advantages of Linux are that it is free.</li>
+                    <br>Mac OS users account for less than 10% of global
+                    operating systems much lower than the percentage of Windows users (more than 80%). One
+                    reason for this is that Apple computers tend to be more expensive. However, many people do
+                    prefer the look and feel of macOS over Windows.Linux users account for less than 2% of global
+                    operating systems. However, most servers run Linux because it's relatively easy to customize.
+                </ul>
+            </p>
+
+            <h3>Virtual memory</h3>
+            <p>Virtual memory is a technique that allows the execution of processes which are not completely
+                available in memory.</p>
+        </section>
+
+        <section class="note"id='second'>
+            <h2>Unit 2: Obtain operating system</h2>
+            <h3>Technical specifications and system requirement </h3>
+            <p>Technical requirements, otherwise known as technical specifications or specs, refer to the
+                implemented solutions professionals use to resolve technical problems and issues involving
+                software.</p>
+            <h3>Why is it important to have technical requirements?</h3>
+            <p><ul class="kb">
+                <li>Helps users to understand the best way to use the software</li>
+                <li>Helps to software
+                    that has a proper process for implementation</li>
+                <li>Decrease the wast of time and etc...</li>
+            </ul></p>
+
+            <h3>List of 17 technical requirement examples</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Accessibility</b> refers to seeks to make a service, software or
+                        technology accessible to all users and parties.</li>
+                    <li><b>Authentication and authorization</b> this is a technical requirement that states that a system must abide by certain authentication and
+                        authorization policies. Authentication refers to assessing data as valid and authorization provides
+                        clearance for users to access it.</li>
+                    <li><b>Availability</b> is a technical requirement that functions more like a metric.</li>
+                    <li><b>Data quality</b> is a technical requirement that refers to data and information that is of a certain
+                        quality.</li>
+                    <li><b>Human error</b> this is a technical requirement where software can detect when people have inputted inaccurate
+                        information.</li>
+                    <li><b>Information security</b> this technical requirement refers to the encryption and security of user credentials and personal
+                        private information within an online storage base</li>
+                    <li><b>Internal controls</b> a technical requirement means that only certain users can access the
+                        decryption keys for encrypted user and highly classified data.</li>
+                    <li><b>Interoperability</b> a technical requirement states that software must offer comprehensive
+                        compatibility.</li>
+                    <li><b>Maintainability</b> simply means that software must maintain its integrity.</li>
+                    <li><b>Performance</b> a technical requirement determines average wait times and how long it takes for
+                        software or a page to load.</li>
+                    <li><b>Privacy</b> refers to protecting a customers sensitive data from internal data professionals and
+                        employees.</li>
+                    <li><b>Productivity</b> refers to processes that allow users to be more productive. </li>
+                    <li><b>Reliability</b> refers to the average time that a system or software operates between downtimes or
+                        failures.</li>
+                    <li><b>Serviceability</b> this technical requirement states systems must not
+                        completely shut down when software upgrades or changes.</li>
+                    <li><b>Standards</b> a system must follow and done
+                        with the security and architectural requirements. This refers to how to design and structure a
+                        system for flexibility, reusability and feasibility.</li>
+                    <li><b>System errors</b> when a system has an error, this technical requirement causes an error code to communicate this
+                        discrepancy with the user.</li>
+                    <li><b>Vendor lock-in</b> is a technical requirement that means software or system is open-sourced.</li>
+                </ul>
+            </p>
+
+            <h3>Operating system installation process and components</h3>
+            <p><b>List of boot methods:-</b>
+                <ul class="listno">
+                    <li><b>CD-ROM</b></li>
+                    <li><b>DVD</b></li>
+                    <li><b>USB</b></li>
+                    <li><b>PXE</b> The Pre boot Execution Environment is a capability that is present in most computers
+                        which allows for automatic installation of an operating system whose files are on a network
+                        drive. <b>In this case, physical media is not required.</b></li>
+                </ul>
+            </p>
+
+            <h3>Type of installations</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Unattended installation:</b> this is a type of installation where the user must not be present
+                        so as to respond to the numerous prompts that come during the installation.</li>
+                    <li><b>Upgrade:</b>  a type of installation where the installation begins with the
+                        presence of the previous operating system.</li>
+                    <li><b>Clean installation:</b> is erasing of every file in the computer.</li>
+                    <li><b>Repair installation:</b> is use when the operating system files are corrupted or damaged.</li>
+                    <li><b>Multi boot:</b> at times, one may desire to install a new operating system version without
+                        having to do away with the old or existing operating system. In such a case, one should be in a
+                        position to support a Multi boot configuration also known as dual boot configuration.</li>
+                    <li><b>Remote network installation</b> this especially comes into place where physical media is not required during
+                        the installation. One should put all one's windows installation files and configurations in a
+                        network drive.</li>
+                    <li><b>Image deployment:</b> this simply involves cloning the particular OS image to another PC if
+                        there is need for the machine to be deployed.</li>
+                    <li><b>Creating image:</b> One should know that this task basically requires the installer to come up
+                        with a windows operating system that is a cloned by taking an existing OS version and make
+                        sector copies of everything on the computer.</li>
+                </ul>
+            </p>
+
+            <h3>Partitioning</h3>
+            <p>Hard drive partitioning is a prompt that one should come across when installing any windows
+                operating system especially if it is a first time installation. Presently, most of the available
+                computers run a Master Boot Record Partition Table which supports four partitions on one hard
+                disk. The newer Globally Unique Identifier partition table supports 128 partitions.
+                <br><b>Types of hard drive partitions</b>
+                <ul class="listno">
+                    <li><b>Dynamic:</b> A dynamic disk partition is one that has the capability to deny addition of any new
+                        drive in addition to spanning of data from the basic partition into the newly installed drive.
+                        This dynamic disk partition can be supported by several Windows operating systems.</li>
+                    <li><b>Basic:</b> A basic disk partition is an idea of Microsoft. This either has a Disk Operating System
+                        or Windows installed on it. It can bear primary and logical partitions with logical drives also
+                        inclusive.</li>
+                    <li><b>Primary:</b> A primary partition is basically a partition that one's operating system can boot
+                        from. A primary partition allows performance of Multi boot capability where one of the
+                        partitions is designed as the active partition which automatically launches once the computer
+                        is powered on.</li>
+                    <li><b>Extended:</b> Extended partitions come into use when one wants to have more than four
+                        partitions in a disk. One can also create more partitions on the extended partition. Extended
+                        partitions are not as flexible as primary partitions since one can't boot from them.</li>
+                    <li><b>Logical:</b> Logical partitions are basically partitions that are created inside of an extended
+                        partition. An OS cannot boot from such partitions.</li>
+                </ul>
+            </p>
+
+            <h3>File system types or formatting</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>FAT:</b> File Allocation Table was among the pioneer file systems for personal computers which
+                        have been on constant update throughout years.</li>
+                    <li><b>FAT32:</b> is considered an update or rather advancement of the FAT. It began with Windows
+                        2000 and now in all later versions. It allowed for one to have volume sizes of almost two
+                        terabytes with files of a four gigabytes maximum size.</li>
+                    <li><b>CDFS:</b> The Compact Disk File System is one that is present in operating systems that allow
+                        the reading of compact disks or DVD-ROMS. It can be used on Microsoft windows, UNIX,
+                        Linux and Macintosh systems being an ISO standard number 9660. It simplifies the task of
+                        writing information on a CD.</li>
+                    <li><b>NTFS:</b> is a file system type that has more improvements compared to FAT32. This file
+                        system allows for file compression and encryption utilities without having to use specific
+                        software. It is a utility built to function with the file system and operate with the OS. It also
+                        has data recovery features and additional security in addition to many improvements
+                        regarding this file system. It has many versions with version 1.0 being the first.</li>
+                </ul>
+            </p>
+
+            <h3>Quick formatting VS Full Formatting</h3>
+            <p>
+                <b>Quick formatting</b> is a specific type of formatting that occurs very fast. It generally erases data
+                from the drive, <b>formats it with the specified file system without going through the drive to check
+                for bad errors.</b><br>
+                <b>Full formatting</b>  on the other hand involves putting on the new file system meaning that it wipes data
+                and puts the file system in place. <b>This one goes through all sectors in
+                the entire storage device.</b>
+            </p>
+
+            <h3>Operating System licensing</h3>
+            <p>An Operating System license is almost like a proof of purchase. Operating System licenses are
+                sometimes called an <b>OS License Key</b>. After entering a valid OS license that you purchased,
+                you will be able to use the OS without any limitations thereafter.</p>
+        </section>
+
+        <section class="note"id='three'>
+            <h2>Unit 3: Installation, configuration and optimization of
+                operating system</h2>
+            <h3>Types of User Interface</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Command line interface or Command interpreter</b> allow users to
+                        directly enter commands that are to be performed by the operating system.</li>
+                    <li><b>Graphical user interface(GUI)</b> is through a user friendly rather than having users directly enter commands via a command-line
+                        interface, a GUI allows provides a mouse-based window-and-menu system as an interface.</li>
+                </ul>
+            </p>
+            <h3>List of system optimize</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Updating Windows:</b> contains new features, better security, eliminate bugs and also included
+                        performance enhancements.</li>
+                    <li><b>Updating Device drivers:</b> A device driver is a computer program that operates or works intermediate between the operating
+                        system and particular devices to communicate. So, it is necessary to update device.</li>
+                    <li><b>Uninstall Programs you never use:</b> Reclaim the hard disk space by uninstalling the programs which are not in use for a long time.
+                        To reclaim your memory on the hard disk.</li>
+                    <li><b>Check for Viruses and Spyware</b> Virus and spyware can not only slow down your device but even can corrupt your data and do
+                    identity theft. So, it’s better to scan for viruses and spyware to remove.</li>
+                    <li><b>Disk Clean-up:</b> is a computer maintenance utility tool used to remove temporary files, files in the
+                    recycle bin and other items that you no longer need.</li>
+                    <li><b>Optimize your Hard Drive:</b> Fragmentation occurs when the allotted memory is larger than the memory requested by the
+                        program, then the difference between allotted and requested memory is known as fragmentation.
+                        So, we need to run a disk defragmenter to rearrange fragmentation which makes drives work
+                        more efficiently</li>
+                    <li><b>Adjust for Best Performance</b> Lowering or customizing the settings of Windows visual effects will increase the performance of
+                        your devices.</li>
+                    <li><b>Turn off Transparency Effects:</b> Transparency effects will make your Windows device slow as it consumes resources. You can
+                        disable transparency to reclaim that resources.</li>
+                    <li><b>Disable Background Apps</b> There may be some bloatware (pre-installed applications) on your Windows device which runs
+                        in the background even if you are using them. You can even disable the background applications.</li>
+                    <li><b>Limit Start-up programs:</b> Start-up programs are the programs that are configured to start when you log in. In most cases,
+                        apps will start minimized or may only start in background tasks.</li>
+                    <li><b>Change the size of Virtual Memory:</b> A paging file is an area on the hard disk that Window uses as if it were RAM. We can adjust this
+                        paging file size to improve window performance.</li>
+                    <li><b>Close running applications that are not in use:</b>
+                        Every running application consumes resources like CPU and memory. So, it is necessary to close
+                        all the application which is not used to reclaim the allocated resources.</li>
+                    <li><b>Turn Off Tips and Notifications</b> We can also stop some background services that provide tips and suggestions to use Windows.</li>
+                    <li><b>Improve Hardware</b> To improve the performance of Windows PC we can also upgrade the hardware. Adding better
+                        technology hardware will definitely improve the read and write speed of your device.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="note" id="four">
+            <h2>Unit 4: New software requirements</h2>
+            <h3>List of approach in migrating clients to new software</h3>
+            <p>
+                <ul class="kb">
+                    <li>Make one person accountable</li>
+                    <li>Revisit learnings from the initial adoption trial</li>
+                    <li>Segment your client base</li>
+                    <li>Create a migration system</li>
+                    <li>Set clear client expectations</li>
+                </ul>
+            </p>
+            <h3>Client feedback</h3>
+            <p>Customer feedback is information customers share with you about their experience with your products or services.
+                <b>Customer feedback can help</b> improvement product, customer success, customer support,
+                and marketing teams understand where there is room for improvement.
+            </p>
+            <h3>Client base</h3>
+            <p>Client base means the group of people or companies who regularly use a company services or buy its products.</p>
+        </section>
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">Video Tutorial</h2>
+            <div class="box-container video">
+                <a class="box"href='https://youtu.be/IkU2hqRUHwQ?si=7dQJX97PT7NJVi47'target= "">
+                    <div class="video-content">
+                        <p>
+                            How to install window 7
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 2</h3>
+                </a>
+                <a class="box"href='https://youtu.be/kn15iThXIpk?si=ZNwzVaxTJ3V0QJ-f'target= "">
+                    <div class="video-content">
+                        <p>
+                            How to install window 10
+                            <i class="fas fa-play" style='font-size:100px;z-index:9933;'></i>
+                        </p>
+                    </div>
+                    <h3>Level 2</h3>
+                </a>
+            </div>
+        </section>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>

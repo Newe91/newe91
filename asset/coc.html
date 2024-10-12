@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> hnscourse |  COC</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="shortcut icon" href="images/lion.svg" type="image/x-icon">
+   <link rel="stylesheet" href="css/style.css">
+   <style>
+      .red{
+         background:#c73d3d;
+      }
+      .blue{
+         background:blue;
+      }
+      .quiz{
+         margin:0 auto;width:99%;
+      }
+      
+      h1 {
+      text-align: center;
+      }
+      
+      .question {
+         font-weight: bold;font-size:20px;
+         margin-bottom: 20px;
+      }
+      
+      .options {
+         margin-bottom: 20px;margin-left:10px;
+      }
+      
+      .option {
+         display: block;
+         margin-bottom: 10px;
+      }
+      
+      .button {
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: var(--main-color);
+         color: var(--white);
+         border: none;
+         cursor: pointer;
+         font-size: 16px;
+         border-radius: 4px;
+         transition: background-color 0.3s;
+         margin-right: 10px;
+      }
+      
+      .button:hover {
+         background-color:var(--black);
+      }
+      
+      .result {
+         text-align: center;
+         margin-top: 20px;
+         font-weight: bold;
+      }
+      
+      .hide {
+      display: none;
+      }
+   </style>
+</head>
+<body>
+   <div class="all-container">
+
+      <!-- header section -->
+      <header class="header">
+         <section class="flex">
+               <a href="../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+            <div class="icons">
+                  <div  id="dark-btn"><span></span></div>
+                  <div id="menu-btn" >&#8801;</div>
+            </div>
+
+         </section>
+      </header>
+
+      <!-- side bar -->
+      <div class="side-bar">
+
+         <div class="close-side-bar" id="close-btn">
+            <span class='Xclose'>X</span>        
+         </div>
+
+         <div class="profile">
+            <a href="../index.html"> <img src="images/lion.svg" alt="slideimg"></a><br>
+            <span>Hardware networking service</span>
+         </div>
+
+         <nav class="navbar">
+            <a href="../index.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+            <a href="coc.html"><i class="fas fa-running"></i><span>coc</span></a>
+            <a href="contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+         </nav>
+      </div>
+
+      <section class="note quiz" >
+         <h1 class="heading">COC Theory Quiz</h1>
+         <div id="quiz"></div>
+         <div id="result" class="result"></div>
+         <button id="submit" class="button">Submit</button>
+         <button id="retry" class="button hide">Retry</button>
+         <button id="showAnswer" class="button hide">Show Answer</button>
+      </section>
+      
+      <section class="courses coc">
+         <h1 class="heading">COC Practical Tutorial <i class="fa-solid fa-face-smile"></i></h1>         
+         <div class="box-container">
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Level 1 package exam questions and answers</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/nTwKlEMIIew?si=q4RRMDwWOmZYdRyA" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Log off computer</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/QX47kfr5rXE?si=TAU2Myx_l1q0zX9a" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Muhammed computer technology</h3>
+                     <span>Part 1</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/xHS1MKFjBQQ?si=twfZd8lzg3g-wi91" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Muhammed computer technology</h3>
+                     <span>Part 2</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/oWk1KiBwaa4?si=T5jOXI7o6fDxNCqV" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Ethio Reel</h3>
+                     <span></span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/Tr60uz9Uxww?si=4lFPr95lmmxdA6Hs" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Ethio Online Tech</h3>
+                     <span>Part 1</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/rTjTUF6oB08?si=eQGdyBrvLKXRAfe5" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+               <div>
+                  <h3>By Ethio Online Tech</h3>
+                  <span>Part 2</span>
+               </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/03F4z96e7WQ?si=worhmWgDEByRFRbW" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                  <h3>By Abdi Tech</h3>
+                  <span>Student grade report</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/kgLpMQal2ek?si=QI9AVmEE5o7bV53d" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Database</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/uyJGOdwQI8Q?si=k8vxYaSl_n9gYnyr" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+               <div>
+                  <h3>By Tegona Tube</h3>
+                  <span>How to make Rj45 cable</span>
+               </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/TOEpekbkBLc?si=PkdvXQ9g-pT2b-13" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                  <h3>By Tegona Tube</h3>
+                  <span>How to connect two computers</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/PSsfdf2dr-I?si=KoaSwb2jBAnwmw7B" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Window server 2008r2 installation overview</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/1hsKbZhrny0?si=Gm-9di2hNbs_CFCW" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Installation and configuration part 1</span>
+                  </div>
+                  </div>
+                  <h3 class="title">Video Tutorial</h3>
+                  <a href="https://youtu.be/9owS1VvEgiA?si=-h3qyGgQFBtcCljW" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Installation and configuration part 2</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/ZwSNAo2iO8o?si=_k8mjuyHfcyTovTL" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>OU,Group and User part 1</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/aNW1wYZgguw?si=xEmh5m63ILQ67FNU" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+               <div>
+                  <h3>By Abren Endeg</h3>
+                  <span>OU,Group and User part 2</span>
+               </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/B-oDM2rnlRI?si=m-Osg8ZZFUE4Ijvg" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Install DHCP and join client computer</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/E_ngOPrsOyk?si=PoOTVF_aLGV1WNuV" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Remote desktop connection</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/BZO3rIiPfHk?si=YJ3aR1wlsMzMxVQc" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Printer installation and configuration in window server</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/rZ8ECL9e03g?si=Zm4GPsQXO-dUy32a" class="inline-btn">Play</a>
+            </div>
+            <div class="box">
+               <div class="tutor">
+                  <div>
+                     <h3>By Abren Endeg</h3>
+                     <span>Group policy</span>
+                  </div>
+               </div>
+               <h3 class="title">Video Tutorial</h3>
+               <a href="https://youtu.be/Hn092iksGUw?si=yva1aZA_SUQApK97" class="inline-btn">Play</a>
+            </div>
+         </div>
+         
+      </section>
+
+      <section class="courses coc">
+         <h1 class="heading">Major contents</h1>
+         <div class="box-container">
+            <span class="box">
+               <p class="title">Design new network infrastructure sample including everything</p>
+               <a class="inline-btn red" href="pdf/pdf.html">Show me</a>
+               <a href="pdf/Design new network infrastructure sample.zip" class="inline-btn blue" download>Download</a>
+            </span>
+            <span class="box">
+               <p class="title">Recovery disasters plan including backup method and strategy's</p>
+               <a class="inline-btn red" href="pdf/pdf2.html">Show me</a>
+               <a href="pdf/Recovery disasters plan.pdf" class="inline-btn blue" download>Download</a>
+            </span>
+         </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer fixedFooter">
+         <p>
+            <a href="../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+            &copy; copyright | all rights reserved 2024!
+         </p> 
+      </footer>
+
+   </div>
+
+
+   <script src="js/script.js"></script>
+   <script>
+      const quizData = [
+            {
+            question: '1. __ external or tangible devices which are attached to the external part of the computer.',
+               options: [
+                        ' Peripheral devices',' Device drivers',' Processing devices',' All'],
+               answer: ' Peripheral devices',
+            },
+            {
+            question: '2. __ small program that tells the computer how to communicate with peripheral devices, Allows computer to recognize new hardware.',
+               options: [
+                        ' Peripheral  devices',' Device drivers',' Processing devices',' All'],
+               answer: ' Device drivers',
+            },
+            {
+            question: '3. __ a socket that is used to connect the cables from peripheral devices to the computer or the position to plug peripheral devices.',
+            options: [
+            ' Cord',' Ports',' Cable',' Connecter'],
+            answer: ' Ports',
+            },
+            {
+            question: '4. ___ is a device that supplies electrical energy to one or more electric loads. The term is most commonly applied to devices that convert one form of electrical energy to another.',
+            options: [
+            ' Power supply',' Hard disk',' Processor ',' Power cord'],
+            answer: ' Power supply',
+            },
+            {
+            question: '5. ___ is a document provided to a user that helps in using a particular system, product or service seamlessly. ',
+            options: [
+            ' User manual',' Warranty',' Client support',' User requirement'],
+            answer: ' User manual',
+            },
+
+
+            {
+            question: '6. ___ is the process of verifying the identity of people who are attempting to access the network or system.',
+            options: [
+            ' Authentication',' Authorisation',' Physical access',' All'],
+            answer: ' Authentication',
+            }
+            ,
+            {
+            question: '7. ___ are give granted access to the network or system.',
+            options: [
+            ' Authentication',' Authorisation',' Physical access',' All'],
+            answer: ' Authorisation',
+            },
+            {
+            question: '8. Which of the following is user account?',
+            options: [
+            ' Administrator accounts ',' Guest accounts',' Standard accounts',' All'],
+            answer: ' All',
+            },
+
+   {
+            question: '9. ___ provide the most control over a computer and should only be used when necessary.',
+            options: [
+            ' Administrator accounts',' Guest accounts',' Standard accounts',' All'],
+            answer: ' Administrator accounts',
+            },
+   {
+            question: '10. ___ are intended primarily for people who need temporary use of a computer.',
+            options: [
+            ' Administrator accounts',' Guest accounts',' Standard accounts',' All'],
+            answer: ' Guest accounts',
+            }
+            ,
+   {
+            question: '11. ___ can use most programs that are installed on the computer and change settings that affect your user account. However, you can not install or uninstall some software and hardware, you can not delete files that are required for the computer to work.',
+            options: [
+            ' Administrator accounts',' Guest accounts',' Standard accounts',' All'],
+            answer: ' Standard accounts',
+            },
+   {
+            question: '12. ___ is a program that can infect other programs by modifying them to include a possibly evolved copy of itself.',
+            options: [
+            ' Virus',' Trojan horse',' Worms',' Logic bombs'],
+            answer: ' Virus',
+            }
+            ,
+   {
+            question: '13. ___ it helps in running the computer hardware and the computer system.',
+            options: [
+            ' System software',' Application software',' Database software',' Presentation software '],
+            answer: ' System software',
+            },
+   {
+            question: '14. ___ it enables the end users to accomplish certain specific tasks.',
+            options: [
+            ' System software',' Application software',' Database software',' Presentation software '],
+            answer: ' Application software',
+            },
+   {
+            question: '15. ___ is that does not display messages or windows during its progress.',
+            options: [
+            ' Silent Installation',' Unattended Installation',' Self-Installation',' Clean Installation'],
+            answer: ' Silent Installation',
+            },        {
+            question: '16. ___ be performed by formatting its destination partition before the actual installation process.',
+            options: [
+            ' Silent Installation',' Unattended Installation',' Self-Installation',' Clean Installation'],
+            answer: ' Clean Installation',
+            },
+   {
+            question: '17. ___ is perform unattended installation, without the need of initial launch of the process.',
+            options: [
+            ' Silent Installation',' Unattended Installation',' Self-Installation',' Clean Installation'],
+            answer: ' Self-Installation',
+            },
+   {
+            question: '18. ___ no user present at all, except eventually for the initial launch of the process.',
+            options: [
+            ' Silent Installation',' Unattended Installation',' Self-Installation',' Clean Installation'],
+            answer: ' Unattended Installation',
+            },
+   {
+            question: '19. Which one of the following is used to calculation?',
+            options: [
+            ' Microsoft word',' Microsoft excel',' Microsoft powerpoint',' Microsoft publisher'],
+            answer: ' Microsoft excel',
+            },
+            {
+            question: '20. Which one of the following used for presentation?',
+            options: [
+            ' Microsoft word',' Microsoft excel',' Microsoft powerpoint',' Microsoft publisher'],
+            answer: ' Microsoft powerpoint',
+            }
+            ,
+            {
+            question: '21. Which one of the following is types of Operating system?',
+            options: [
+            ' Window/ Mac OS /Linux/ Android',' Avast anti virus',' Microsoft office',' Chrome'],
+            answer: ' Window/ Mac OS /Linux/ Android',
+            },
+            {
+            question: '22. Which one of the following is used for help and support?',
+            options: [' F1',' F2',' F3',' F4',
+            ],
+            answer: ' F1',
+            },
+   {
+            question: '23. ____  is a software that allows your computer to search the Internet.',
+            options: [' Search engine',' Web browser ',' WWW',' Hyperlink',
+            ],
+            answer: ' Web browser ',
+            },
+   {
+            question: '24. ____  is a tool or special website we use to find websites and information on the Internet.',
+            options: [' Search engine',' Web browser ',' WWW',' Hyperlink',
+            ],
+            answer: ' Search engine',
+            },
+   {
+            question: '25. ____  is simply part of the text (or graphic) on a Web page, that when clicked on will automatically take you to a different part of the same page.',
+            options: [' URL',' Home page ',' WWW',' Hyperlink',
+            ],
+            answer: ' Hyperlink',
+            },
+   {
+            question: '26. ____  it is a collection of interlinked documents that are accessible over the Internet.',
+            options: [' URL',' Home page',' WWW',' Hyperlink',
+            ],
+            answer: ' WWW',
+            },
+   {
+            question: '27. ____  refer to the page that is the default page of any website.',
+            options: [' URL',' Home page',' WWW',' Hyperlink',
+            ],
+            answer: ' Home page',
+            },
+   {
+            question: '28. ____  it specifies the location of a resource on the Internet. It consists of the basic address and path. ',
+            options: [' URL',' Home page ',' WWW',' Hyperlink',
+            ],
+            answer: ' URL',
+            },
+   {
+            question: '29. Which one of the following is types of web browser?',
+            options: [
+            ' Google/yahoo/bing',
+            ' MS office',
+            ' Mozilla/internet explorer/opera/chrome',
+            ' Google',
+            ],
+            answer: ' Mozilla/internet explorer/opera/chrome',
+            },
+   {
+            question: '30. Which one of the following is types of search engine?',
+            options: [
+            ' Google/yahoo/bing',
+            ' MS office',
+            ' Mozilla/internet explorer/opera/chrome',
+            ' Google',
+            ],
+            answer: ' Google/yahoo/bing',
+            }
+            ,
+   {
+            question: '31. Which types of maintenance uses schedule and preventive before sign fail occur?',
+            options: [
+            ' Operational maintenance',
+            ' Preventive maintenance',
+            ' Corrective maintenance',
+            ' All',
+            ],
+            answer: ' Preventive maintenance',
+            },
+            {
+            question: '32. Which one of the following cable is used to connect system unit and monitor?',
+            options: [
+            ' Video graphics adapter(VGA)',' USB cable',' RJ-45',' Network cable'],
+            answer: ' Video graphics adapter(VGA)',
+            },
+            {
+            question: '33. Which types of connector used to connect telephone line?',
+            options: [
+            ' RJ-45',' RJ-11',' USB',' Network cable'],
+            answer: ' RJ-11',
+            },
+            {
+            question: '34. ___ used to interconnect distributed communities of computers located within a single building.',
+            options: [
+            ' Local Area Network(LAN)',' Metropolitan area Network(MAN)',' Personal area Network(PAN)',' Wide area Network(WAN)'],
+            answer: ' Local Area Network(LAN)',
+            },
+   {
+            question: '35. ___ a larger network that usually spans several buildings in the same city.',
+            options: [
+            ' Local Area Network(LAN)',' Metropolitan area Network(MAN)',' Personal area Network(PAN)',' Wide area Network(WAN)'],
+            answer: ' Metropolitan area Network(MAN)',
+            },
+   {
+            question: '36. ___ it is cover larger area best example is internet.',
+            options: [
+            ' Local Area Network(LAN)',' Metropolitan area Network(MAN)',' Personal area Network(PAN)',' Wide area Network(WAN)'],
+            answer: ' Wide area Network(WAN)',
+            },
+   {
+            question: '37. ___ is also called Workgroup. There are no dedicated servers and there is no hierarchy among the computers. All the computers are equal.',
+            options: [
+            ' Peer-to-Peer network',' Client/server network', ' Network topology',' Internet'],
+            answer: ' Peer-to-Peer network',
+            },
+   {
+            question: '38. ___ is also called Domain. There are dedicated servers and there is hierarchy among the computers.',
+            options: [
+            ' Peer-to-Peer network',' Client/server network', ' Network topology',' Internet'],
+            answer: ' Client/server network',
+            },
+   {
+            question: '39. ___ refers to the arrangement of computers, cables and other components on the network',
+            options: [
+            ' Peer-to-Peer network',' Client/server network',' Network topology',' Internet'],
+            answer: ' Network topology',
+            },
+   {
+            question: '40. ___ is often referred to as a linear bus because the computers are connected in a straight line.',
+            options: [
+            ' Bus topology',' Ring topology',' Star topology',' Mesh topology'],
+            answer: ' Bus topology',
+            },
+   {
+            question: '41. ___ computer are connected to a centralized component called a hub or switch.',
+            options: [
+            ' Bus topology',' Ring topology',' Star topology',' Mesh topology'],
+            answer: ' Star topology',
+            },
+   {
+            question: '42. ___ connects computers on a single circle of cable.',
+            options: [
+            ' Bus topology',' Ring topology',' Star topology',' Mesh topology'],
+            answer: ' Ring topology',
+            },
+   {
+            question: '43. ___ offers superior redundancy and reliability. In a mesh topology, each computer is connected to every other computer by separate cabling.',
+            options: [
+            ' Bus topology',' Ring topology',' Star topology',' Mesh topology'],
+            answer: ' Mesh topology',
+            },
+   {
+            question: '44. ___ it is a combination of two or more standard topologies for example star bus.',
+            options: [
+            ' Hybrid topology',' Ring topology',' Star topology',' Mesh topology'],
+            answer: ' Hybrid topology',
+            },
+
+   {
+            question: '45. Which of the following is advantage of bus topology?',
+            options: [
+            ' Cheapest of all topologies',
+            ' It is easy to install and no special equipment is needed for installation',
+            ' It needs less cable length than do other topologies',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '46. Which of the following is disadvantage of bus topology?',
+            options: [
+            ' A break in cable or a missing terminator can bring down the entire network',
+            ' It is difficult to troubleshoot and administer',
+            ' Adding of more computers degrades performance',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '47. Which of the following is advantage of ring topology?',
+            options: [
+            ' Easy to install',
+            ' Better administration',
+            ' Easy to install',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '48. Which of the following is disadvantage of ring topology?',
+            options: [
+            ' Slow activity rate',
+            ' Difficult to troubleshoot',
+            ' Break in a cable or fault computer can bring slow down entire network',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '49. Which of the following is advantage of star topology?',
+            options: [
+            ' Easy to install',
+            ' No disruptions to the network when adding and removing devices',
+            ' Easy to detect faults and to remove parts',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '50. Which of the following is disadvantage of star topology?',
+            options: [
+            ' If the centralized point fails the network fails',
+            ' Requires more cable length than a bus topology',
+            ' More expensive than linear bus topologies',
+            ' All'],
+            answer: ' All',
+            }
+            ,
+   {
+            question: '51. Which of the following is advantage of mesh topology?',
+            options: [
+            ' Redundancy and reliability',
+            ' The failure of a single computer or a cable fault does not affect network operations',
+            ' Computers can be added or removed without affecting the network',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '52. Which of the following is disadvantage of mesh topology?',
+            options: [
+            ' Uses a lot of cabling',
+            ' It is difficult to install and troubleshoot',
+            ' It is very expensive',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '53. Which of the following is advantage of hybrid topology?',
+            options: [
+            ' Reliable to use',
+            ' Any topology can be combined to make a new network',
+            ' Scalable and very effective',
+            ' All'],
+            answer: ' All',
+            },
+   {
+            question: '54. Which of the following is disadvantage of hybrid topology?',
+            options: [
+            ' Difficult to install',
+            ' Occur cable failure',
+            ' Costly very expensive',
+            ' All'],
+            answer: ' All',
+            },
+            {
+            question: '55. Which one of the following topology wants more cable?',
+            options: [
+            ' Star',' Ring',' Mesh',' Hybrid'],
+            answer: ' Mesh',
+            },
+            {
+            question: '56. Which one of the following is uses token pass?',
+            options: [
+            ' Star',' Ring',' Mesh',' Bus'],
+            answer: ' Ring',
+            },
+            {
+            question: '57. Which types of topology uses UTP cable and coaxial cable?',
+            options: [
+            ' Star',' Ring',' Mesh',' Bus'],
+            answer: ' Bus',
+            },
+   {
+            question: '58. ____ the communication can take place in both directions but only in one direction at a time.',
+            options: [
+            ' Simplex mode',' Half-Duplex mode',' Full-Duplex mode',' All'],
+            answer: ' Half-Duplex mode',
+            },
+            {
+            question: '59. ____ the communication can take place in both directions simultaneously.',
+            options: [
+            ' Simplex mode',' Half-Duplex mode',' Full-Duplex mode',' All'],
+            answer: ' Full-Duplex mode',
+            },
+            {
+            question: '60. ____ data is sent in one direction only from sender to receiver. Senders cannot even be sure that the data is received.',
+            options: [
+            ' Simplex mode',' Half-Duplex mode',' Full-Duplex mode',' All'],
+            answer: ' Simplex mode',
+            }
+            ,
+            {
+            question: '61. Which one of the following example of  simplex mode?',
+            options: [
+            ' Radios/walkie-talkies and television',' internet browser',' Phone',' All'],
+            answer: ' Radios/walkie-talkies and television',
+            },
+            {
+            question: '62. Which one of the following example of  Half-Duplex mode?',
+            options: [
+            ' Radios/walkie-talkies and television',' internet browser',' Phone',' All'],
+            answer: ' internet browser',
+            },
+   {
+            question: '63. Which one of the following example of  Full-Duplex mode?',
+            options: [
+            ' Radios/walkie-talkies and television',' internet browser',' Phone',' All'],
+            answer: ' Phone',
+            },
+   {
+            question: '64. ___ this layer relates to the services that directly support user applications such as software for internet explorer and email.',
+            options: [
+            ' Application layer',' Data link layer',' Network layer',' Transport layer'],
+            answer: ' Application layer',
+            },
+   {
+            question: '65. ___ makes to application to open, use and close a connection.',
+            options: [
+            ' Application layer',' Data link layer',' Network layer',' Transport layer'],
+            answer: ' Data link layer',
+            },
+   {
+            question: '66. ___ responsible for the delivery of packets from the source host to the destination host based on their IP addresses.',
+            options: [
+            ' Application layer',' Data link layer',' Network layer',' Transport layer'],
+            answer: ' Network layer',
+            },
+   {
+            question: '67. ___ responsible for end-to-end communication between applications running on different devices.',
+            options: [
+            ' Application layer',' Data link layer',' Network layer',' Transport layer'],
+            answer: ' Transport layer',
+            },
+   {
+            question: '68. ___ responsible for data formatting, encrypting and compressing data before it is sent across the network.',
+            options: [
+            ' Session layer',' Data link layer',' Presentation layer',' Physical layer'],
+            answer: ' Presentation layer',
+            },
+   {
+            question: '69. ___ responsible for transmitting raw data bits over a physical medium.',
+            options: [
+            ' Session layer',' Data link layer',' Presentation layer',' Physical layer'],
+            answer: ' Physical layer',
+            },
+   {
+            question: '70. ___ responsible for establishing, maintaining and terminating connections between two devices.',
+            options: [
+            ' Session layer',' Data link layer',' Presentation layer',' Physical layer'],
+            answer: ' Session layer',
+            }
+            ,
+
+   {
+         question: '71. ___ is a set of rule and procedures which govern communication between computers.',
+         options: [
+            ' Protocol',' IP',' Network',' Internet'],
+         answer: ' Protocol',
+         },
+   {
+         question: '72. Which one of the following connection based protocol and reliable communication?',
+         options: [
+            ' Transmission control protocol(TCP)',' File transfer protocol(FTP)',' User datagram protocol(UDP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' Transmission control protocol(TCP)',
+         },
+   {
+         question: '73. ____ is a protocol used for transferring files between computers on a network.',
+         options: [
+            ' Transmission control protocol(TCP)',' File transfer protocol(FTP)',' User datagram protocol(UDP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' File transfer protocol(FTP)',
+         },
+   {
+         question: '74. ____ used to send and receive e-mail.',
+         options: [
+            ' Post office protocol(POP3)',' File transfer protocol(FTP)',' User datagram protocol(UDP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' Simple mail transfer protocol(SMTP)',
+         },
+   {
+         question: '75. ____ retrieves emails from a server to a client device.',
+         options: [
+            ' Post office protocol(POP3)',' File transfer protocol(FTP)',' User datagram protocol(UDP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' Post office protocol(POP3)',
+         },
+   {
+         question: '76. ____ is a protocol used for transferring files between computers on a network.',
+         options: [
+            ' Post office protocol(POP3)',' File transfer protocol(FTP)',' User datagram protocol(UDP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' File transfer protocol(FTP)',
+         },
+   {
+         question: '77. ____ used for network management.',
+         options: [
+            ' Post office protocol(POP3)',' File transfer protocol(FTP)',' Simple network management protocol(SNMP)',' Simple mail transfer protocol(SMTP)'],
+         answer: ' Simple network management protocol(SNMP)',
+         },
+   {
+         question: '78. ____ translates domain names into IP addresses to locate resources on the internet.',
+         options: [
+            ' Domain name system(DNS)',' Dynamic host configuration protocol(DHCP)',' Simple network management protocol(SNMP)',' Telnet'],
+         answer: ' Domain name system(DNS)',
+         },
+   {
+         question: '79. ____ assigns IP addresses dynamically to devices on a network.',
+         options: [
+            ' Domain name system(DNS)',' Dynamic host configuration protocol(DHCP)',' Simple network management protocol(SNMP)',' Telnet'],
+         answer: ' Dynamic host configuration protocol(DHCP)',
+         },
+   {
+         question: '80. ____ is a network protocol that allows users to connect to remote computers and access their resources over a network.',
+         options: [
+            ' Domain name system(DNS)',' Dynamic host configuration protocol(DHCP)',' Simple network management protocol(SNMP)',' Telnet'],
+         answer: ' Telnet',
+         },
+   {
+         question: '81. Which types of device use for extend the length to which the signal can be transmitted over the same network?',
+         options: [
+            ' Repeater',' Switch',' Bridge',' Firewall'],
+         answer: ' Repeater',
+         },
+   {
+         question: '82. Which one of the following is used to prevent internal and against external threat?',
+         options: [
+            ' Gateway',' Proxy server',' Bridge',' Firewall'],
+         answer: ' Firewall',
+         },
+         {
+         question: '83. Which one of the following is enable communication between different protocol?',
+         options: [
+            ' Gateway',' Proxy server',' Bridge',' Router'],
+         answer: ' Gateway',
+         },
+         {
+         question: '84. Which one of the following is allow used to connect multiple device?',
+         options: [
+            ' Gateway',' Proxy server',' Bridge',' Router'],
+         answer: ' Router',
+         },
+         {
+         question: '85. The process of sending message to all is called ____',
+         options: [
+            ' Multicast',' Proxy server',' Unicast',' Broadcast'],
+         answer: ' Broadcast',
+         },
+         {
+         question: '86. Which device is used to connect different LAN?',
+         options: [
+            ' Repeater',' Switch',' Bridge',' Firewall'],
+         answer: ' Bridge',
+         },
+   {
+         question: '87.  ___ is a network device that connects devices together on a computer network by using packet switching to receive, process and forward data to the destination device.',
+         options: [
+            ' Repeater',' Switch',' Bridge',' Firewall'],
+         answer: ' Switch',
+         },
+   {
+         question: '88. ____ is the equipment needed to allow home computer to connect the internet is called? ',
+         options: [
+            ' Gateway',' Modem',' Router',' Hub'],
+         answer: ' Modem',
+         },
+   {
+         question: '89. Electronic discharge(ESD) would cause the most damage to which component? ',
+         options: [
+            ' Monitor',' Power supply',' Keyboard ',' Expansion board'],
+         answer: ' Expansion board',
+         },
+         {
+         question: '90. The maximum length of UTP cable?',
+         options: [
+            ' 50m',' 500m',' 100m',' 140m'],
+         answer: ' 100m',
+         },
+         {
+         question: '91. ____ is a command used to see/check all configuration of computer',
+         options: [
+            ' IPCONFIG/all',' Ping',' Nslookup',' Loopback'],
+         answer: ' IPCONFIG/all',
+         },
+         {
+         question: '92. ____ is a utility program that allow you to check connectivity between network device of the network',
+         options: [
+            ' IPCONFIG/all',' Ping',' Nslookup',' Loopback'],
+         answer: ' Ping',
+         },
+         {
+         question: '93. IPV6 uses _______ bit address',
+         options: [
+            ' 32',' 48',' 64',' 128'],
+         answer: ' 128',
+         },
+         {
+         question: '94. ____ is the brain of the computer',
+         options: [
+            ' Central processing unit',' RAM',' ROM',' Motherboard'],
+         answer: ' Central processing unit',
+         },
+         {
+         question: '95. Which one of the following is used to transfer file over the internet? ',
+         options: [
+            ' TCP',' UDP',' HTTP',' FTP'],
+         answer: ' FTP',
+         },
+         {
+         question: '96. Which one of the following purpose of DHCP',
+         options: [
+            ' To provide storage for email',
+            ' To provide an IP configuration information hosts',
+            ' To translate IPV4 address to MAC addresses',
+            ' To translate URL to IP addresses'],
+         answer: ' To provide an IP configuration information hosts',
+         },
+   {
+         question: '97. Which types of cable susceptible for electromagnetic interface?',
+         options: [
+            ' Twisted pair cable',' Coaxial cable',' Fiber optics',' RJ-45'],
+         answer: ' Twisted pair cable',
+         },
+   {
+         question: '98. Hardware address is known as ____',
+         options: [
+            ' Hardware brand',
+            ' IP address',
+            ' Network interface card',
+            ' MAC address'],
+         answer: ' MAC address',
+         },
+   {
+         question: '99. Which of the following is not include in MS access data base object?',
+         options: [
+            ' Table',' Form',' Module',' Worksheets'],
+         answer: ' Worksheets',
+         },
+   {
+         question: '100. The possible ranges of Class A?',
+         options: [
+            ' 1 – 127',' 128 – 190',' 191 – 223',' 224 – 239',' 240 – 254'],
+         answer: ' 1 – 127',
+         },
+   {
+         question: '101. The possible ranges of Class B?',
+         options: [
+            ' 1 – 127',' 128 – 190',' 191 – 223',' 224 – 239',' 240 – 254'],
+         answer: ' 128 – 190',
+         },
+   {
+         question: '102. The possible ranges of Class C?',
+         options: [
+            ' 1 – 127',' 128 – 190',' 191 – 223',' 224 – 239',' 240 – 254'],
+         answer: ' 191 – 223',
+         },
+   {
+         question: '103. The possible ranges of Class D?',
+         options: [
+            ' 1 – 127',' 128 – 190',' 191 – 223',' 224 – 239',' 240 – 254'],
+         answer: ' 224 – 239',
+         },
+   {
+         question: '104. The possible ranges of Class E?',
+         options: [
+            ' 1 – 127',' 128 – 190',' 191 – 223',' 224 – 239',' 240 – 254'],
+         answer: ' 240 – 254',
+         },
+   {
+         question: '105. Which of the following default subnet mask Class A?',
+         options: [
+            ' 255.0.0.0',' 255.255.0.0',' 255.255.255.0',' All'],
+            answer: ' 255.0.0.0',
+         },
+   {
+         question: '106. Which of the following default subnet mask Class B?',
+         options: [
+            ' 255.0.0.0',' 255.255.0.0',' 255.255.255.0',' All'],
+         answer: ' 255.255.0.0',
+         },
+   {
+         question: '107. Which of the following default subnet mask Class C?',
+         options: [
+            ' 255.0.0.0',' 255.255.0.0',' 255.255.255.0',' All'],
+         answer: ' 255.255.255.0',
+         },
+         {
+         question: '108. The process by which window server verifies that the user match the user account employed to gain access',
+         options: [
+            ' Active directory',
+            ' Domain address',
+            ' DNS',
+            ' DC promo'],
+         answer: ' Active directory',
+         },
+         {
+         question: '109. ____ used to resolve name to ip address & ip addresses to name.',
+         options: [
+            ' Active directory server',
+            ' DNS server',
+            ' Printer server',
+            ' FTP server'],
+         answer: ' DNS server',
+         },
+         {
+         question: '110. The process of keeping address in the memory for future is called ___',
+         options: [
+            ' Routing',
+            ' Resolving',
+            ' Caching',
+            ' Checking'],
+         answer: ' Caching',
+         },
+         {
+         question: '111. Which one of the following Provides directory services to clients in the network?',
+         options: [
+            ' Domain Controller(Active Directory)',
+            ' Resolving',
+            ' Caching',
+            ' DHCP server'],
+         answer: ' Domain Controller(Active Directory)',
+         },
+   {
+         question: '112. Which one of the following uses multiple-input, multiple-output(MIMO) technology 2.4 GHz technologies?',
+         options: [
+            ' 802.11n',
+            ' 802.11g',
+            ' 802.11a',
+            ' 802.11b'],
+         answer: ' 802.11n',
+         },
+         {
+         question: '113. ____ are most commonly used to connect a host to a client in other word use to connect different device.connecting a switch directly to another router.',
+         options: [
+            ' Straight through',
+            ' Crossover cable',
+            ' Rollover cable',
+            ' All'],
+         answer: ' Straight through',
+         },
+         {
+         question: '114. ____ are most commonly used to connect two hosts directly in other word use to connect same device like connecting a switch directly to another switch.',
+         options: [
+            ' Straight through',
+            ' Crossover cable',
+            ' Rollover cable',
+            ' All'],
+         answer: ' Crossover cable',
+         }
+
+      ]
+
+      const quizContainer = document.getElementById('quiz');
+      const resultContainer = document.getElementById('result');
+      const submitButton = document.getElementById('submit');
+      const retryButton = document.getElementById('retry');
+      const showAnswerButton = document.getElementById('showAnswer');
+
+      let currentQuestion = 0;
+      let score = 0;
+      let incorrectAnswers = [];
+
+      function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+      }
+      }
+
+      function displayQuestion() {
+      const questionData = quizData[currentQuestion];
+
+      const questionElement = document.createElement('div');
+      questionElement.className = 'question';
+      questionElement.innerHTML = questionData.question;
+
+      const optionsElement = document.createElement('div');
+      optionsElement.className = 'options';
+
+      const shuffledOptions = [...questionData.options];
+      shuffleArray(shuffledOptions);
+
+      for (let i = 0; i < shuffledOptions.length; i++) {
+            const option = document.createElement('label');
+            option.className = 'option';
+
+            const radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.name = 'quiz';
+            radio.value = shuffledOptions[i];
+
+            const optionText = document.createTextNode(shuffledOptions[i]);
+
+            option.appendChild(radio);
+            option.appendChild(optionText);
+            optionsElement.appendChild(option);
+      }
+
+      quizContainer.innerHTML = '';
+      quizContainer.appendChild(questionElement);
+      quizContainer.appendChild(optionsElement);
+      }
+
+      function checkAnswer() {
+      const selectedOption = document.querySelector('input[name="quiz"]:checked');
+      if (selectedOption) {
+            const answer = selectedOption.value;
+            if (answer === quizData[currentQuestion].answer) {
+            score++;
+            } else {
+            incorrectAnswers.push({
+               question: quizData[currentQuestion].question,
+               incorrectAnswer: answer,
+               correctAnswer: quizData[currentQuestion].answer,
+            });
+            }
+            currentQuestion++;
+            selectedOption.checked = false;
+            if (currentQuestion < quizData.length) {
+            displayQuestion();
+            } else {
+            displayResult();
+            }
+      }
+      }
+
+      function displayResult() {
+      quizContainer.style.display = 'none';
+      submitButton.style.display = 'none';
+      retryButton.style.display = 'inline-block';
+      showAnswerButton.style.display = 'inline-block';
+      resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
+      }
+
+      function retryQuiz() {
+      currentQuestion = 0;
+      score = 0;
+      incorrectAnswers = [];
+      quizContainer.style.display = 'block';
+      submitButton.style.display = 'inline-block';
+      retryButton.style.display = 'none';
+      showAnswerButton.style.display = 'none';
+      resultContainer.innerHTML = '';
+      displayQuestion();
+      }
+
+      function showAnswer() {
+      quizContainer.style.display = 'none';
+      submitButton.style.display = 'none';
+      retryButton.style.display = 'inline-block';
+      showAnswerButton.style.display = 'none';
+
+      let incorrectAnswersHtml = '';
+      for (let i = 0; i < incorrectAnswers.length; i++) {
+            incorrectAnswersHtml += `
+            <p>
+               <strong>Question:</strong> ${incorrectAnswers[i].question}<br>
+               <strong>Your Answer:</strong> ${incorrectAnswers[i].incorrectAnswer}<br>
+               <strong>Correct Answer:</strong> ${incorrectAnswers[i].correctAnswer}
+            </p>
+            `;
+      }
+
+      resultContainer.innerHTML = `
+            <p>You scored ${score} out of ${quizData.length}!</p>
+            <p>Incorrect Answers:</p>
+            ${incorrectAnswersHtml}
+      `;
+      }
+
+      submitButton.addEventListener('click', checkAnswer);
+      retryButton.addEventListener('click', retryQuiz);
+      showAnswerButton.addEventListener('click', showAnswer);
+
+      displayQuestion();
+   </script>
+</body>
+</html>

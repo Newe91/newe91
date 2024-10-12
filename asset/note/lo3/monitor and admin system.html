@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hnscourse |  Monitor and admin system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../../images/lion.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="all-container">
+
+        <!-- header section -->
+        <header class="header">
+            <section class="flex">
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+
+                <div class="icons">
+                    <div  id="dark-btn"><span></span></div>
+                    <div id="menu-btn" >&#8801;</div>
+                </div>
+
+            </section>
+        </header>
+
+        <!-- side bar -->
+        <div class="side-bar">
+
+            <div class="close-side-bar" id="close-btn">
+                <span class='Xclose'>X</span>        
+            </div>
+
+            <div class="profile">
+                <a href="../../../index.html"> <img src="../../images/lion.svg" alt=""></a><br>
+                <span>Level 3</span>
+            </div>
+
+            <nav class="navbar">
+                <a href="../../../index.html"><i class="fas fa-home"></i><span>home</span></a>
+                <a href="../../courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+                <a href="../../video.html"><i class="fa-brands fa-youtube"></i><span>video tutorial</span></a>
+                <a href="../../coc.html"><i class="fas fa-running"></i><span>Coc</span></a>
+                <a href="../../contact.html"><i class="fas fa-message"></i><span>contact us</span></a>
+            </nav>
+        </div>
+
+        <!-- main content -->
+        <section class="note">
+            <div>
+                <h1><span class="samp">Unit of Competence:</samp> Monitoring and administrating system</h1>
+                <hr style="border:1px solid var(--orange);"><br>
+                
+                    <ul class='bk shortcutmenu'>
+                        <li><a  href='#first'><span class="samp"></span> Theory</a></li>
+                        <li><a href='#Video-tutorials'><span class="samp"></span> Video-tutorials</a></li>
+                    </ul>
+            </div>
+        </section>
+
+        <section class="note"id='first'>
+            <h2>Theory</h2>
+            <h3>Control user accounts</h3>
+            <p><b>User</b> is an individual who uses a computer system, resources or application
+                <br><b>User account</b> defines the actions a user can perform in Windows. On a stand-alone computer or
+                a computer that is a member of a workgroup, a user account establishes the privileges assigned to
+                each user. On a computer that is part of a network domain, a user must be a member of at least
+                one group. The permissions and rights granted to a group are assigned to its members. User
+                accounts on a computer that is a member of a network domain.</p>
+            <h3>Authentication</h3>
+            <p>Authentication is the process of verifying the identity of people who are attempting to
+                access the network or system. This is usually the first step in gaining access to a
+                computer system. A process of determining what activities or access will be permitted
+                for user. This may include access to network resources, data and applications.</p>
+
+            <h3>Strong passwords</h3>
+            <p>Computer security includes the use of strong passwords for your network logon and the
+                Administrator account on your computer. For a password to be strong, it should: Be at least
+                seven characters long. Because of the way passwords are encrypted, the most secure passwords
+                are seven or 14 characters long. And also the password must contain uppercase(ABC...), lowercase(abc...),numbers(1,2,3...) and also symbols(!,@,#...). </p>
+            
+            <h3>Network security</h3>
+            <p>Network security is the prevention and protection of network assets from unauthorized access,
+                use, alteration, degradation, destruction and other threats. It involves the authorization of access
+                to data in a network which is controlled by the network administrator and the organization
+                policies. Users choose or an ID and password or authenticating information that allows them
+                access to information and program within their authority. It also covers a variety of computer
+                networks, both public and private, that are used in everyday jobs conducting transactions and
+                communications among businesses, government agencies and individuals Networks can be
+                private, such as within a company, and others which might be open to public access. Network
+                security is involved in organizations, enterprises, and other types of institutions. It does as its title
+                explains: It secures the network, as well as protecting and overseeing operations being done.
+            </p>
+
+            <h3>Group policy</h3>
+            <p>Group policy is a User Account Control; helps to protect the systems even though a user is
+                logged on as an administrator.</p>
+
+            <h3>User accounts and computer accounts</h3>
+            <p>Active Directory user accounts and computer accounts represent a physical entity such as a
+                computer or person. User accounts can also be used as dedicated service accounts for some
+                applications.<br>
+                User accounts and computer accounts(as well as groups) are also referred to as security
+                principals. Security principals are directory objects that are automatically assigned security IDs
+                which can be used to access domain resources.
+                <br><b>User or computer account is used to:-</b>
+                <ul class="kb">
+                    <li>Authenticate the identity of a user or computer</li>
+                    <li>Authorize or deny access to domain resources</li>
+                    <li>Administer other security principals</li>
+                    <li>Audit actions performed using the user or computer account</li>
+                </ul>
+            </p>
+
+            <h3>Defining group</h3>
+            <p>A group can be defined as a collection of accounts that are grouped together so that
+                Administrators can assign permissions and rights to the group as a single entity. This removes
+                the need for an Administrator to individually assign permissions and rights to each account.
+                Therefore, while a user account is associated with an individual or entity, a group account or a
+                group is created to simplify the administration of multiple user accounts (users). When
+                permissions are granted to a group, all accounts that are part of that particular group are granted
+                the permissions. Permissions actually control which actions users can perform on a network
+                resource. Rights, on the other hand, relate to system tasks.<br>
+                Windows Server 2003 provides user accounts and group accounts (of which users can be a
+                member). User accounts are designed for individuals. Group accounts are designed to make the
+                administration of multiple users easier.
+            </p>
+
+            <h3>Group types</h3>
+            <p>
+                <ul class="listno">
+                    <li><b>Security groups</b>
+                        <p>A security group is a collection of users who have the same permissions to
+                            resources and the same rights to perform certain system tasks. These are the groups to which
+                            permissions are assigned so that its members can access resources. Security groups therefore
+                            remove the need for an Administrator to individually assign permissions to users. Users that
+                            need to perform certain tasks can be grouped in a security group then assigned the necessary
+                            permissions to perform these tasks. Each user that is a member of the group has the same
+                            permissions. In addition to this, each group member receives any e-mail sent to a security
+                            group. When a security group is first created, it receives an SID (security ID). It is this SID
+                            that enables permissions to be assigned to security groups.</p>
+                    </li>
+                    <li>
+                        <b>Distribution groups</b>
+                        <p>Distribution groups are created to share information with a group of
+                            users through e-mail messages. Thus, a distribution group is not created for security
+                            purposes. A distribution does not obtain an SID when it is created. Distribution groups enable
+                            the same message to be simultaneously sent to its group members. Messages do not need to
+                            be individually sent to each user. Applications such as Microsoft Exchange that work with
+                            Active Directory can use distribution groups to send bulk e-mail to groups of users.
+                            </p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>List of group scopes</h3>
+            <p>
+                <ul class="listno">
+                    <li>
+                        <b>Global groups</b>
+                        <p>Global groups are containers for user accounts and computers accounts in
+                            the domain. They assign permissions to objects that reside in any domain in a tree or
+                            forest. Users can include a global group in the access control list (ACL) of objects in any
+                            domain in the tree/forest. A global group can, however, only have members from the
+                            domain in which it is created. What this means is that a global group cannot include user
+                            accounts, computer accounts and global groups from other domains.<br>
+                            <b>The default global groups that are created are listed below:</b>
+                            <ul class="kb">
+                                <li><b>Domain Admins:</b> Members of the Domain Admins group have permissions to
+                                    perform administrative functions on computers in the domain.</li>
+                                <li><b>Domain Users:</b> Group members are user accounts that are created in the domain.</li>
+                                <li><b>Domain Computers:</b> Group members are computer accounts that are created in the
+                                    domain. This includes all workstations and servers that are part of the domain.</li>
+                                <li><b>Domain Controllers:</b> Group members are domain controllers of the domain.</li>
+                                <li><b>Domain Guests:</b> Group members are guest accounts in the domain.</li>
+                                <li><b>Group Policy Creator:</b> Group members can change the domain's group policy.</li>
+                                <li><b>DnsUpdateProxy:</b> Group members are DNS clients. Members can perform
+                                    dynamic updates for clients such as DHCP servers.</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Domain local groups</b>
+                        <p>Domain local groups can have user accounts, computer accounts,
+                            global groups, and universal groups from any domain as group members. However, only
+                            domain local groups can assign permissions to local resources or to resources that reside
+                            in the domain in which the domain local group was created.<br>
+                            <b>The default domain local groups that are created are listed below:-</b>
+                            <ul class="kb">
+                                <li><b>Cert publishers:</b> Members of this group can publish certificates to Active
+                                    Directory.</li>
+                                <li><b>DnsAdmins:</b> Group members have administrative access to the DNS server
+                                    service.</li>
+                                <li><b>HelpServicesGroup:</b> Group members can assign rights to support applications.</li>
+                                <li><b>RAS and IAS Servers:</b> Servers assigned to this default group can access a user's
+                                    remote access properties.</li>
+                                <li><b>TelnetClients:</b> Group members have administrative access to Telnet Server.
+                                    </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Universal groups</b>
+                        <p>Universal groups can have user accounts, computer accounts, global
+                            groups, and other universal groups from any domain in the tree or forest as members. This
+                            basically means that users can add members from any domain in the forest to a universal group.
+                            Users can use universal groups to assign permissions to access resources that are located in any
+                            domain in the forest. Universal groups are only available when the domain functional level for
+                            the domain is Windows 2000 Native or Windows Server 2003. Universal groups are not
+                            available when domains are functioning in the Windows 2000 Mixed domain functional level.
+                            Users can convert a universal group to a global group or to a domain local group if the particular
+                            universal group has no other universal group as a group member. When adding members to
+                            universal groups, it is recommended to add global groups as members and not individual users.<br>
+                            <b>The default universal groups that are created are listed below:-</b>
+                            <ul class="kb">
+                                <li><b>Enterprise Admins:</b> Members of this group can perform administrative functions
+                                    for the whole network.</li>
+                                <li><b>Schema Admins:</b> Members of this group can perform administrative tasks on the
+                                    schema.</li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>When formulating a strategy for setting up domain local groups and global groups, follow the
+                guidelines listed below:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Add users that perform the same function in the organization to a global group.</li>
+                    <li>Domain local groups should be created for a resources that multiple users need to share.</li>
+                    <li>Add any global groups that have to access a resources to the appropriate domain local
+                        group.</li>
+                    <li>The domain local group should be assigned with the proper permissions to the resource.</li>
+                </ul>
+            </p>
+
+            <h3>Define group policy object</h3>
+            <p>Group policy is a set of rules that control the working environment of user accounts and computer
+                accounts. Group Policy provides the centralized management and configuration of operating
+                systems, applications and users settings in an Active Directory environment. In other words,
+                Group Policy in part controls what users can and cannot do on a computer system.</p>
+
+            <h3>Group policy can help you do the following:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Configure user's desktops</li>
+                    <li>Configure local security on computers</li>
+                    <li>Install applications</li>
+                    <li>Run logon or logoff scripts</li>
+                    <li>Configure internet eExplorer settings</li>
+                    <li>Redirect special folders</li>
+                </ul>
+            </p>
+
+            <h3>Local policy</h3>
+            <p>Local policy refers to the policy that configures the local computer or server, and is not
+                inherited from the domain. You can set local policy by running gpedit.msc from the Run
+                command, or you can add "Group Policy Object Editor" snap-in to MMC. Local Policies also
+                exist in the Active Directory environment, but have many fewer configuration options that the
+                full-fledged Group Policy in Active Directory.</p>
+
+            <h3>Group policy object(GPO)</h3>
+            <p>Group policy object refers to the policy that is configured at the Active Directory
+                level and is inherited by the domain member computers. You can configure a Group
+                Policy Object - at the site level, domain level or Organization Unit level.
+            </p>
+
+            <h3>Managing and administering network resources</h3>
+            <p>Network management refers to the activities, methods, procedures, and tools relevant to the
+                operation, administration, maintenance, and provisioning of networked systems. A network
+                administrator, network analyst or network engineer is a person responsible for the
+                maintenance of computer hardware and software that comprises a computer network. This
+                normally includes deploying, configuring, maintaining and monitoring active network
+                equipment.</p>
+
+            <h3>Network resource access permission</h3>
+            <p>Network resource should accessible for only authenticated users and users should manipulate the resources based on the level of permission
+                given for them by the network administrator. In order to protect the resources that are made
+                available through shared folders, administrators must configure “permissions” for the folders and
+                files that are made available over the network.<br> <b>Permissions include:-</b>
+                <ul class="kb">
+                    <li><b>Full control</b> Permits reading, writing, changing
+                        and deleting of the file.</li>
+                    <li><b>Modify</b> Permits reading and writing of the
+                        file and also allows deletion of the file, can't change the file.</li>
+                    <li><b>Read and execute</b> Permits viewing and accessing of
+                        the file's contents as well as
+                        executing of the file, can't modify and delete.</li>
+                    <li><b>Read</b> Permits viewing or accessing of the
+                        file's contents.</li>
+                    <li><b>Write</b> Permits writing to a file.</li>
+                    <li><b>List folder contents</b> Can't access the file by anyway.</li>
+                </ul>
+            </p>
+
+            <h3>Connecting and configuring network printer</h3>
+            <p>If you have multiple computers that need to share one printer, then you need to know how to
+                configure a print server. A print server is most often a single computer set up to handle print jobs
+                sent to one or more printers from several other computers. By setting up one computer as the
+                server, you allow any computer sharing the network to send and print documents utilizing the
+                same printer.</p>
+
+            <h3>Planning and implementing security</h3>
+            <p><b>Security</b> refers to the measures taken to protect certain things or elements of information. There
+                are three main elements:-<b>Confidentiality,Integrity and Availability.</b></p>
+
+            <h3>Security policy should contain some important function:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>The security policy must be understandable</li>
+                    <li>The security policy must be realistic</li>
+                    <li>The security policy must be consistent</li>
+                    <li>The security policy must be enforceable</li>
+                    <li>The security policy must be documented, distributed and communicated properly</li>
+                    <li>A successful security policy needs to be flexible</li>
+                </ul>
+            </p>
+
+            <h3>Planning your security policy</h3>
+            <p>There are three factors to keep in mind when planning your policy. The first requires you to
+                express the goals of your policy. What are you trying to accomplish? What are you trying to
+                protect? The second step requires you to scan the work environment and identify vulnerabilities
+                that exist within current processes. The final step asks you to create a plan of action that will help
+                alleviate the faults. All are equal contributors to planning success.
+                <br><b>Step to make planning security policy:-</b>
+                <ul class="listno">
+                    <li>
+                        <b>Setting goals for your security policy</b>
+                        <p>Your security policy goals should run parallel with the goals set for your company. For example,
+                            if your company is customer oriented, then a goal of your security policy should be to protect
+                            your customer and their data through use of encryption and network security. </p>
+                    </li>
+                    <li>
+                        <b>Identifying security vulnerabilities</b>
+                        <p>A company must examine existing procedures and identify all processes that pose a security risk.
+                            For example, policies regarding data management; how data is protected during storage, how
+                            long it is kept and proper methods for data deletion are common pains in the corporate world.
+                            <br><b>Some questions that may help identify such vulnerability include:-</b>
+                            <ul class="kb">
+                                <li>What types of sensitive information does your company handle?</li>
+                                <li>Which department handles each piece of sensitive information?</li>
+                                <li>Is sensitive information stored with non-sensitive information</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <b>Creating a plan of action</b>
+                        <p>After identifying which processes require change, create a plan of action for mitigating these
+                            risks. Each plan should consider how long it will take for the each change to occur, what type of
+                            training is necessary for each individual/department to meet the newly adopted standards and
+                            also what responsibilities each individual/department can be held accountable for (i.e. how often
+                            are gap analyses regarding security conducted and who conducts them.</p>
+                    </li>
+                </ul>
+            </p>
+
+            <h3>Security solutions</h3>
+            <p>
+                <ul class="kb">
+                    <li>Access control lists</li>
+                    <li>Use proxy server</li>
+                    <li>Application layer gateways or state full firewalls</li>
+                    <li>Network interruption detection system</li>
+                    <li>Antivirus software</li>
+                    <li>Access control server or user authentication and authorization or Network user authentication</li>
+                    <li>IP source guard and Dynamic Host Configuration Protocol(DHCP)</li>
+                    <li>Switch port security</li>
+                    <li>Password policy </li>
+                    <li>Multilevel administration and authorization levels</li>
+                    <li>Private LANs for network and system admin</li>
+                    <li>Log-in services to track access and configuration changes</li>
+                    <li>Regular audits</li>
+                    <li>Regular analysis and implementation of new security technologies</li>
+                    <li>Regular reviews and updates of security policy</li>
+                    <li>Frequently reviewing system logs</li>
+                    <li>Cross training on systems and regular training updates for administrators</li>
+                    <li>Publishing all user security guidelines and penalties</li>
+                    <li>Cipher lock or keyed lock access to network and computing systems</li>
+                    <li>Badge access to network and computing systems</li>
+                    <li>Video surveillance of network and computing systems</li>
+                    <li>Video surveillance of external doors</li>
+                    <li>Security guards</li>
+                    <li>Background checks on employees and administrators</li>
+                    <li>System level key locks</li>
+                </ul>
+            </p>
+
+            <h3>Viruses and worms</h3>
+            <p>
+                <ul class="cc">
+                    <li><b>Virus</b> is a program or piece of code that is loaded onto your computer without your
+                        knowledge and runs against your wishes. Viruses can cause a huge amount of damage to computers.
+                        <br>An example of a virus would be if you opened an email and a malicious piece of code
+                        was downloaded onto your computer causing your computer to freeze. </li>
+                    <li><b>Worm</b> is similar to a virus but a worm can run itself whereas a virus needs a host
+                        program to run. </li>
+                    <li><b>The solution to reduce virus and worm:-</b> Install a security suite, such as Kasper sky Total Protection that protects the
+                        computer against threats such as viruses and worms.</li>
+                </ul>
+            </p>
+
+            <h3>Trojan horses</h3>
+            <p>
+                <ul class="cc">
+                    <li>Trojan horse is a program in which malicious or harmful code is contained inside it
+                        appears that harmless programming or data in such a way that it can get control and do its
+                        chosen form of damage, such as corrupted the file allocation table on your hard disk.</li>
+                    <li>In a network if a Trojan horse is installed on a computer and tampers with the file
+                        allocation table it could cause a massive amount of damage to all computers of that
+                        network.</li>
+                    <li><b>Solution:</b> Security suites, such as Norton Internet Security, will prevent you from
+                        downloading Trojan Horses.</li>
+                </ul>
+            </p>
+
+            <h3>Spam</h3>
+            <p>
+                <ul class="cc">
+                    <li>Spam is flooding the Internet with many copies of the same message, in an attempt to
+                        force the message on people who would not otherwise choose to receive it.</li>
+                    <li>Spam may not be the biggest risk to a network because even though it may get
+                        maddening and plentiful it still doesn't destroy any physical elements of the network.</li>
+                    <li><b>Solution:</b> spam filters are an effective way to stop SPAM, these filters come with most
+                        of the e-mail providers on line. Also you can buy a variety of SPAM filters that work
+                        effectively. </li>
+                </ul>
+            </p>
+            <h3>Phishing</h3>
+            <p>
+                <ul class="cc">
+                    <li>Phishing is “an e-mail fraud method in which the performer sends out legitimate-looking
+                        emails in an attempt to gather personal and financial information from recipients.</li>
+                    <li>Phishing is one of the worst security threats over a network because a lot of people that
+                        use computers linked up to a network are unpaid and would be very vulnerable to giving
+                        out information that could cause situations such as theft of money or identity theft.</li>
+                    <li><b>Solution:</b> Similar to SPAM use Phishing filters to filter out this unwanted mail and to
+                        prevent threat. </li>
+                </ul>
+            </p>
+
+            <h3>Packet sniffers</h3>
+            <p>
+                <ul class="cc">
+                    <li>A packet sniffer is a device or program that allows listen on traffic traveling between
+                        networked computers. The packet sniffer will capture data that is addressed to other
+                        machines, saving it for later analysis.</li>
+                    <li>In a network a packet sniffer can filter out personal information and this can lead to areas
+                        such as identity theft so this is a major security threat to a network.</li>
+                    <li><b>Solution:</b> When strong encryption is used, all packets are unreadable to any but the
+                        destination address, making packet sniffers useless. So one solution is to obtain strong
+                        encryption. </li>
+                </ul>
+            </p>
+
+            <h3>Maliciously coded websites</h3>
+            <p>
+                <ul class="cc">
+                    <li>Some websites across the net contain code that is malicious.</li>
+                    <li>Malicious code is Programming code that is capable of causing harm to availability, integrity of
+                        code or data or confidentiality in a computer system.</li>
+                    <li><b>Solution:</b> Using a security suite, such as AVG, can detect infected sites and try to prevent the
+                        user from entering the site.</li>
+                </ul>
+            </p>
+
+            <h3>Password attacks</h3>
+            <p>
+                <ul class="cc">
+                    <li>Password attacks are attacks by hackers that are able to determine passwords or find
+                        passwords to different protected electronic areas.</li>
+                    <li>Many systems on a network are password protected and hence it would be easy for a hacker to
+                        hack into the systems and steal data.</li>
+                    <li>This may be the easiest way to obtain private information because you are able to get software
+                        online that obtains the password for you.</li>
+                    <li><b>Solution:</b> At present there is no software that prevents password attacks.</li>
+                </ul>
+            </p>
+
+            <h3>Hardware loss and residual data fragments</h3>
+            <p>
+                <ul class="cc">
+                    <li>Hardware loss and residual data fragments are a growing worry for companies, governments
+                        etc...</li>
+                    <li>An example this is if a number of laptops get stolen from a bank that have client details on
+                        them, this would enable the thief's to get personal information from clients and maybe
+                        steal the clients identities.</li>
+                    <li>This is a growing concern and as of present the only solution is to keep data and hardware
+                        under strict surveillance. </li>
+                </ul>
+            </p>
+
+            <h3>Zombie computers and botnets</h3>
+            <p>
+                <ul class="cc">
+                    <li>A zombie computer or drone is a computer that has been secretly compromised by hacking
+                        tools which allow a third party to control the computer and its resources remotely.</li>
+                    <li>A hacker could hack into a computer and control the computer and obtain data.</li>
+                    <li><b>Solution:</b> Antivirus software can help prevent zombie computers</li>
+                </ul>
+            </p>
+
+            <h3>Security policy</h3>
+            <p>A security policy is a document that states in writing how a company plans to protect the
+                company's physical and information technology (IT) assets.<br> A security policy is often
+                considered to be a "living document" meaning that the document is never finished, but is
+                continuously updated as technology and employee requirements change. A company's security
+                policy may include an acceptable use policy, a description of how the company plans to
+                educate its employees about protecting the company's assets, an explanation of how security
+                measurements will be carried out and enforced and a procedure for evaluating the
+                effectiveness of the security policy to ensure that necessary corrections will be made.
+            </p>
+
+            <h3>Using the window firewall</h3>
+            <p>Windows firewall is a software component of Microsoft Windows that provides firewalling and
+                packet filtering functions. windows Firewall provides host-firewall protection on computers
+                running Windows Server 2003 with Service Pack 1 (SP1) and Windows XP with Service Pack 2
+                (SP2). As a host firewall, Windows Firewall runs on each of your servers and clients, providing
+                protection from network attacks that pass through your perimeter network or originate inside
+                your organization, such as Trojan horse attacks, worms, or any other type of malicious program
+                spread through unwanted incoming traffic.</p>
+
+            <h3>Install and update latest antivirus</h3>
+            <p>Anti-virus software is one of the main defenses against online
+                problems. It continually scans for viruses, including Trojans and worms. To be effective it
+                must be kept up-to-date.<br>
+                <b>Without anti-virus software you are very vulnerable to computer viruses including:-</b>
+                <ul class="kb">
+                    <li> Infected email attachments.</li>
+                    <li>Drive-by infections caused by visiting corrupt websites.</li>
+                    <li>Viruses that attack over the internet worms.</li>
+                    <li>Spyware that is introduced by virus infections.</li>
+                    <li>Viruses that are spread using macros in application documents.</li>
+                    <li>Depending on the software you use, it may detect some spyware.</li>
+                </ul>
+                <b>Being infected by a virus can have very serious consequences including:</b>
+                <ul class="kb">
+                    <li>Identity theft</li>
+                    <li>Fraud</li>
+                    <li>Loss of data</li>
+                    <li>A slow or unusable computer</li>
+                </ul>
+                <b>What anti-virus software does?</b>
+                <ul class="kb">
+                    <li>It scans incoming emails for attached viruses.</li>
+                    <li>It monitors files as they are opened or created to make sure they are not infected</li>
+                    <li>It performs periodic scans of every file on the compute</li>
+                </ul>
+                <b>Anti-virus software will not protect you against:-</b>
+                <ul class="kb">
+                    <li>Programs that you choose to install that may contain unwanted features</li>
+                    <li>Spam</li>
+                    <li>Against any kind of fraud or criminal activity online</li>
+                    <li>A hacker trying break into your computer over the internet.</li>
+                </ul>
+            </p>
+
+            <h3>Standalone anti-virus or security suite</h3>
+            <p>Most anti-virus software companies sell a standalone program that only scans for viruses as well
+                as security suite packages that include other protective software such as a firewall, spam
+                filtering, anti-spyware and so on.<br><b>Advantages of a suite:</b> a suite should cover all the bases, share a single user interface and
+                be easier and cheaper than buying each individual program separately. 
+            </p>
+
+            <h3>Free or commercial antivirus</h3>
+            <p>There are a number of anti-virus products that are free for personal or non-commercial use.
+                In most cases, these ‘free’ products are scaled-back versions of commercial products to which
+                the software manufacturer hopes you will, one day, upgrade. Unless getting free software is
+                critical, it is preferable to buy a fully-supported commercial product.</p>
+
+            <h3>How to evaluate anti-virus software main criteria are such as:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Price</li>
+                    <li>Review on reputable technical websites</li>
+                    <li>How easy it is to set up and use</li>
+                    <li>Level and quality of technical support, including the support website</li>
+                    <li>Frequency and responsiveness of signature updates. This is hard for most people to
+                        evaluate but well-known and reputable software companies should be okay</li>
+                </ul>
+            </p>
+
+            <h3>How to buy anti-virus software</h3>
+            <p>Then it is a matter of buying it or downloading it. Suppliers include: high street retailers, online
+                retailers or direct purchase and download from the software developers over the internet.</p>
+            
+            <h3>Business anti-virus software</h3>
+            <p>For networks of five or more computers and for business use, you should consider business
+                versions of popular anti-virus software that are designed to make installation, updating and
+                management easier on multiple computers.</p>
+
+            <h3>Many companies use commercial anti-virus software such as:-</h3>
+            <p>
+                <ul class="kb">
+                    <li>Trend Micro</li>
+                    <li>Sophos</li>
+                    <li>Symantec</li>
+                    <li>F-Secure</li>
+                    <li>Kaspersky</li>
+                    <li>McAfee</li>
+                    <li>Avast</li>
+                </ul>
+            </p>
+
+            <h3>Virus protection advice</h3>
+            <p>
+                <ul class="kb">
+                    <li> Do not open any files attached to an email from an unknown, doubtful or untrustworthy
+                        source, no matter how charming it may seem.</li>
+                    <li>Switch on macro protection in Microsoft Office applications like Word and Excel.</li>
+                    <li>You don't have to use the anti-virus program that came with your new computer but if
+                        you decide to stick with it, don't forget to subscribe once the free trial period is over so
+                        that you stay up-to-date.</li>
+                    <li>Only use one anti-virus program at a time. Uninstall one anti-virus program before you
+                        install another.</li>
+                    <li>Providing you update virus signatures regularly, as a general rule, you don't need to buy
+                        every single new release of the anti-virus software to stay protected.</li>
+                    <li>Free online scans are useful diagnostic tools but they are not a substitute for a proper antivirus program that is installed on your PC. Prevention is better than cure.</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="playlist-videos" id="Video-tutorials">
+            <h2 class="heading">No need video</h2>
+        </section>
+
+        
+        <!-- footer -->
+        <footer class="footer">
+            <p>
+                <a href="../../../index.html" class="logo">HNS <span style="font-size:small;">Course</span></a>
+                &copy; copyright | all rights reserved 2024!
+            </p>
+        </footer>
+
+    </div>
+
+<script src="../../js/script.js"></script>
+</body>
+</html>
