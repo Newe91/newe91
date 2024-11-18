@@ -8,10 +8,72 @@
     <meta name="google-site-verification" content="9dBXggCWaoqNbfz3NXd3vJWmDmTEZ7GakPq6yvgWj_c" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="asset/images/lion.svg" type="image/x-icon">
-    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/style.css"> 
+      <style>
+    /* General body reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrolling during loading */
+    }
+
+    /* Full-screen loading page styles */
+    #loading-page {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #a1d6e8;
+      z-index: 1000; /* Ensure it overlays content */
+    }
+
+    .loading-image {
+      width:100%;max-width:500px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      width: 80%;
+      max-width: 500px;
+      height: 20px;
+      background-color:#b1e2d5;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color:white;
+      transition: width 0.3s ease;
+    }
+
+    /* Main content styles */
+    #AfterLoad {
+      display: none;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
-<body>
-    <div class="all-container">
+<body> 
+      <div id="loading-page">
+    <img src="LoadingImg.jpg" alt="Loading Image" class="loading-image">
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+    <div class="all-container" id="AfterLoad">
         <!-- header section -->
         <header class="header">
             <section class="flex">
@@ -105,5 +167,34 @@
     
     
 <script src="asset/js/script.js"></script> 
+  <script>
+    // JavaScript for Loading Page Functionality
+    document.addEventListener("DOMContentLoaded", () => {
+      const loadingPage = document.getElementById("loading-page");
+      const content = document.getElementById("AfterLoad");
+      const progress = document.querySelector(".progress");
+
+      let progressValue = 0;
+
+      // Simulate progress bar loading
+      const loadingInterval = setInterval(() => {
+        progressValue += 10;
+        progress.style.width = progressValue + "%";
+
+        if (progressValue >= 100) {
+          clearInterval(loadingInterval);
+
+          // Hide loading page and show content
+          loadingPage.style.display = "none";
+          content.style.display = "block";
+
+          // Reset the body's and html's overflow and size
+          document.body.style.overflow = "auto"; // Allow scrolling again
+          document.documentElement.style.height = "auto"; // Reset full height
+          document.body.style.height = "auto"; // Reset full height
+        }
+      }, 300); // Adjust time for your loading effect
+    });
+  </script>
 </body>
 </html>
